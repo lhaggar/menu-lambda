@@ -1,29 +1,101 @@
 [
   [
     {
-      "title": "From The Oven",
-      "mains": [
+      "title": "From the Oven",
+      "body": [
         "Crispy pork belly strip with cider gravy",
         "Salmon & tofu zen bowl"
       ],
       "sides": [
-        "Smashed swede",
-        "Braised red cabbage",
-        "Pickled veg salad",
-        "Glazed pak choy"
+        "Smashed swede, braised red cabbage, pickled veg salad or glazed pak choy"
       ]
     },
     {
       "title": "Chefs Theatre",
       "body": [
-        "Soft taco filled with courgette corn",
-        "Chicken mole with rice verde"
+        "Soft taco filled with courgette corn or chicken mole with rice verde"
       ],
       "sides": ["Green bean with sesame and chard broccoli"]
     },
     {
       "title": "Soup",
-      "body": ["Carrot & coriander", "Chicken, sweet potato & coconut"]
+      "body": ["Carrot & coriander", "Chicken, sweet potato & coconut"],
+      "sides": []
+    }
+  ],
+  [
+    {
+      "title": "From the Oven",
+      "body": ["Shepherd's pie or veggie pie"],
+      "sides": ["Glazed carrot/ mange tout/ crusty bread"]
+    },
+    {
+      "title": "Healthy Bar",
+      "body": [
+        "Roots and shoots with chicken, beet falafel (v) or poached salmon"
+      ],
+      "sides": ["Warm seasonal salads"]
+    },
+    {
+      "title": "Chefs Theatre",
+      "body": ["Phat bouy burger"],
+      "sides": ["Rainbow slaw/fries"]
+    },
+    {
+      "title": "Soup",
+      "body": ["Cream of mushroom (v)", "Pork noodle soup"],
+      "sides": []
+    }
+  ],
+  [
+    {
+      "title": "From the Oven",
+      "body": ["Beef and onion pie/ squash and feta, mash liquor"],
+      "sides": ["Green panache, green beans and pea"]
+    },
+    {
+      "title": "Healthy Bar",
+      "body": ["Roots and shoots with falafel add on chicken or baked salmon"],
+      "sides": ["Warm seasonal salads"]
+    },
+    {
+      "title": "Chefs Theatre",
+      "body": [
+        "Slow roast harissa lamb, pitta breads, mint yoghurt, shredded lettuce add vegi grilled hummus"
+      ],
+      "sides": ["Rainbow slaw or fries"]
+    },
+    {
+      "title": "Soup",
+      "body": ["Leek  and potato (v)", "Spiced minestrone"],
+      "sides": []
+    }
+  ],
+  [
+    {
+      "title": "From the Oven",
+      "body": [
+        "Genuine chip shop - punk ipa battered catch of the day & battered sausages, savaloys"
+      ],
+      "sides": ["Chips, peas & mushy peas"]
+    },
+    {
+      "title": "Healthy Bar",
+      "body": ["Steamed day boat fish, new potato"],
+      "sides": ["Steamed brocolli"]
+    },
+    {
+      "title": "Chefs Theatre",
+      "body": ["Dirty rice bar, prawn roast chicken and coriander"],
+      "sides": ["Wedges"]
+    },
+    {
+      "title": "Soup",
+      "body": [
+        "Carrot and cumin (v)",
+        "Spiced lemon grass chicken and coconut"
+      ],
+      "sides": []
     }
   ]
 ]
