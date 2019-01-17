@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "title": "From The Oven",
+      "mains": [
+        "Crispy pork belly strip with cider gravy",
+        "Salmon & tofu zen bowl"
+      ],
+      "sides": [
+        "Smashed swede",
+        "Braised red cabbage",
+        "Pickled veg salad",
+        "Glazed pak choy"
+      ]
+    },
+    {
+      "title": "Chefs Theatre",
+      "body": [
+        "Soft taco filled with courgette corn",
+        "Chicken mole with rice verde"
+      ],
+      "sides": ["Green bean with sesame and chard broccoli"]
+    },
+    {
+      "title": "Soup",
+      "body": ["Carrot & coriander", "Chicken, sweet potato & coconut"]
+    }
+  ]
+]
