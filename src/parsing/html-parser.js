@@ -2,19 +2,29 @@ const cheerio = require('cheerio');
 
 const { format } = require('./formatter');
 
-const mainMenuOptions = require('./main-menu-options');
-const cafeMenuOptions = require('./cafe-menu-options');
+const mainMenuOptions = require('./options/main-menu');
+const cafeMenuOptions = require('./options/cafe-menu');
 
 // Clean up bad tags which will break things before we run through cheerio
 // e.g. <strong>sides</strong> (see test fixtures).
 const sanitiseHtml = menuHtml =>
-  menuHtml.replace(/<(\/?)strong>|<(\/?)b>/g, '');
+  menuHtml.replace(/<(\/?)strong>|<(\/?)b>|<noscript>.*<\/noscript>/g, '');
+
+const push = (obj, key, data) => {
+  if (!obj[key]) {
+    // eslint-disable-next-line no-param-reassign
+    obj[key] = [data];
+  } else {
+    obj[key].push(data);
+  }
+};
 
 const createParser = ({
   SECTIONS,
   IGNORE_LIST,
-  END_SECTION_MATCHER,
-  SIDES_MATCHER,
+  END_SECTIONS_MATCHER,
+  SUBSECTION_MATCHERS = [],
+  DEFAULT_SUBSECTION_NAME = 'body',
 }) => {
   // Util for checking if text matches against an entry in the ignore list.
   const isIgnored = txt => IGNORE_LIST.some(matcher => matcher.test(txt));
@@ -23,7 +33,7 @@ const createParser = ({
   // or return null (i.e. if a content line).
   const createSection = line => {
     const SECTION = SECTIONS.find(({ matcher }) => matcher.test(line));
-    return SECTION ? { title: SECTION.displayName, body: [], sides: [] } : null;
+    return SECTION ? { title: SECTION.displayName } : null;
   };
 
   // Take the html string and return an array of strings (the menu lines).
@@ -44,7 +54,9 @@ const createParser = ({
     });
 
     // Look for our terminator section matcher, we exclude that line and everything after it.
-    const finalIndex = arr.findIndex(txt => END_SECTION_MATCHER.test(txt));
+    const finalIndex = END_SECTIONS_MATCHER
+      ? arr.findIndex(txt => END_SECTIONS_MATCHER.test(txt))
+      : undefined;
     return arr.slice(0, finalIndex);
   };
 
@@ -59,12 +71,20 @@ const createParser = ({
         const currentSection = acc[acc.length - 1];
         // If we don't have a section then just ignore and continue.
         if (currentSection) {
-          if (SIDES_MATCHER.test(line)) {
-            // Sides line, strip the matcher, split up and store.
-            currentSection.sides.push(format(line.replace(SIDES_MATCHER, '')));
+          const subsection = SUBSECTION_MATCHERS.find(([matcher]) =>
+            matcher.test(line),
+          );
+          if (subsection) {
+            const [subsectionMatcher, subsectionName] = subsection;
+            // Subsection line, strip the matcher and store.
+            push(
+              currentSection,
+              subsectionName,
+              format(line.replace(subsectionMatcher, '')),
+            );
           } else {
             // Append the line to the current section body.
-            currentSection.body.push(format(line));
+            push(currentSection, DEFAULT_SUBSECTION_NAME, format(line));
           }
         }
       }

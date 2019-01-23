@@ -19,8 +19,7 @@
     },
     {
       "title": "Soup",
-      "body": ["Carrot & coriander", "Chicken, sweet potato & coconut"],
-      "sides": []
+      "body": ["Carrot & coriander", "Chicken, sweet potato & coconut"]
     }
   ],
   [
@@ -43,8 +42,7 @@
     },
     {
       "title": "Soup",
-      "body": ["Cream of mushroom (v)", "Pork noodle soup"],
-      "sides": []
+      "body": ["Cream of mushroom (v)", "Pork noodle soup"]
     }
   ],
   [
@@ -67,8 +65,7 @@
     },
     {
       "title": "Soup",
-      "body": ["Leek  and potato (v)", "Spiced minestrone"],
-      "sides": []
+      "body": ["Leek and potato (v)", "Spiced minestrone"]
     }
   ],
   [
@@ -91,11 +88,7 @@
     },
     {
       "title": "Soup",
-      "body": [
-        "Carrot and cumin (v)",
-        "Spiced lemon grass chicken and coconut"
-      ],
-      "sides": []
+      "body": ["Carrot and cumin (v)", "Spiced lemon grass chicken and coconut"]
     }
   ]
 ]

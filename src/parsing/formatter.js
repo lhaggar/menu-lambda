@@ -4,6 +4,8 @@ const FORMATTERS = [
   [/\s+,\s+/g, ', '],
   // Remove the word OR from the end of lines
   [/\s+OR\s*$/gi, ''],
+  // Remove excess spaces
+  [/\s{2,}/gi, ' '],
 ];
 
 const format = txt => {

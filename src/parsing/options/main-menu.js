@@ -23,8 +23,8 @@ module.exports = {
   IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /^\s*OR\s*$/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
-  END_SECTION_MATCHER: /CANTEEN\s+DINNER/i,
+  END_SECTIONS_MATCHER: /CANTEEN\s+DINNER/i,
 
-  // Matcher to determine if a line is specifying sides or not.
-  SIDES_MATCHER: /^\s*SIDES:/i,
+  // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
+  SUBSECTION_MATCHERS: [[/^\s*SIDES:/i, 'sides']],
 };

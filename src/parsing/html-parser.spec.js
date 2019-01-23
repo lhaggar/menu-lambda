@@ -1,13 +1,10 @@
 const menuFixtures = require('../../fixtures/main-menu');
 const menuSnapshots = require('../../snapshots/main-menu');
-// const cafeMenuFixtures = require('../../fixtures/cafe-menu');
-// const cafeMenuSnapshots = require('../../snapshots/cafe-menu');
+const cafeMenuFixtures = require('../../fixtures/cafe-menu');
+const cafeMenuSnapshots = require('../../snapshots/cafe-menu');
 const { assertFixtures } = require('../../test-utils/assert-fixtures');
 
-const {
-  mainMenuParser,
-  //  cafeMenuParser,
-} = require('./html-parser');
+const { mainMenuParser, cafeMenuParser } = require('./html-parser');
 
 describe('html-parser.js', () => {
   describe('mainMenuParser', () => {
@@ -22,15 +19,15 @@ describe('html-parser.js', () => {
     });
   });
 
-  // describe('cafeMenuParser', () => {
-  //   assertFixtures(cafeMenuFixtures, cafeMenuSnapshots);
+  describe('cafeMenuParser', () => {
+    assertFixtures(cafeMenuFixtures, cafeMenuSnapshots);
 
-  //   cafeMenuFixtures.forEach((fixture, i) => {
-  //     const snapshot = cafeMenuSnapshots[i];
+    cafeMenuFixtures.forEach((fixture, i) => {
+      const snapshot = cafeMenuSnapshots[i];
 
-  //     it('should parse the html snippet', () => {
-  //       expect(cafeMenuParser(fixture)).toEqual(snapshot);
-  //     });
-  //   });
-  // });
+      it('should parse the html snippet', () => {
+        expect(cafeMenuParser(fixture)).toEqual(snapshot);
+      });
+    });
+  });
 });
