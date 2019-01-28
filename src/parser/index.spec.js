@@ -4,7 +4,7 @@ const cafeMenuFixtures = require('../../fixtures/cafe-menu');
 const cafeMenuSnapshots = require('../../snapshots/cafe-menu');
 const { assertFixtures } = require('../../test-utils/assert-fixtures');
 
-const { mainMenuParser, cafeMenuParser } = require('./html-parser');
+const { mainMenuParser, cafeMenuParser } = require('.');
 
 describe('html-parser.js', () => {
   describe('mainMenuParser', () => {

@@ -4,18 +4,22 @@ module.exports = {
     {
       matcher: /FROM\s+THE\s+OVEN/i,
       displayName: 'From the Oven',
+      color: '#C41017',
     },
     {
       matcher: /CHEFS\s+THEATRE/i,
       displayName: 'Chefs Theatre',
+      color: '#00BFFF',
     },
     {
       matcher: /^\s*SOUP\s*$/i,
       displayName: 'Soup',
+      color: '#e6e600',
     },
     {
       matcher: /HEALTHY\s+BAR/i,
       displayName: 'Healthy Bar',
+      color: '#007404',
     },
   ],
 

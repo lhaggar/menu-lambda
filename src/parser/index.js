@@ -1,14 +1,9 @@
 const cheerio = require('cheerio');
 
-const { format } = require('./formatter');
+const { sanitiseHtml, sanitiseLine } = require('./sanitiser');
 
 const mainMenuOptions = require('./options/main-menu');
 const cafeMenuOptions = require('./options/cafe-menu');
-
-// Clean up bad tags which will break things before we run through cheerio
-// e.g. <strong>sides</strong> (see test fixtures).
-const sanitiseHtml = menuHtml =>
-  menuHtml.replace(/<(\/?)strong>|<(\/?)b>|<noscript>.*<\/noscript>/g, '');
 
 const push = (obj, key, data) => {
   if (!obj[key]) {
@@ -24,7 +19,6 @@ const createParser = ({
   IGNORE_LIST,
   END_SECTIONS_MATCHER,
   SUBSECTION_MATCHERS = [],
-  DEFAULT_SUBSECTION_NAME = 'body',
 }) => {
   // Util for checking if text matches against an entry in the ignore list.
   const isIgnored = txt => IGNORE_LIST.some(matcher => matcher.test(txt));
@@ -33,7 +27,9 @@ const createParser = ({
   // or return null (i.e. if a content line).
   const createSection = line => {
     const SECTION = SECTIONS.find(({ matcher }) => matcher.test(line));
-    return SECTION ? { title: SECTION.displayName } : null;
+    return SECTION
+      ? { title: SECTION.displayName, subsections: {}, color: SECTION.color }
+      : null;
   };
 
   // Take the html string and return an array of strings (the menu lines).
@@ -78,13 +74,13 @@ const createParser = ({
             const [subsectionMatcher, subsectionName] = subsection;
             // Subsection line, strip the matcher and store.
             push(
-              currentSection,
+              currentSection.subsections,
               subsectionName,
-              format(line.replace(subsectionMatcher, '')),
+              sanitiseLine(line.replace(subsectionMatcher, '')),
             );
           } else {
             // Append the line to the current section body.
-            push(currentSection, DEFAULT_SUBSECTION_NAME, format(line));
+            push(currentSection, 'body', sanitiseLine(line));
           }
         }
       }

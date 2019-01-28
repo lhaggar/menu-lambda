@@ -21,7 +21,7 @@ module.exports = {
       matcher: /friday/i,
       displayName: 'friday',
     },
-  ],
+  ].map(x => ({ ...x, color: '#3126A2' })),
 
   // Any lines that match these will be excluded from the contents.
   IGNORE_LIST: [/^SOUP:.+/i],
