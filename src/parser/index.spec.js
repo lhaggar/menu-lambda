@@ -1,5 +1,5 @@
-const menuFixtures = require('../../fixtures/main-menu');
-const cafeMenuFixtures = require('../../fixtures/cafe-menu');
+const menuFixtures = require('../../fixtures/main-menu-html');
+const cafeMenuFixtures = require('../../fixtures/cafe-menu-html');
 
 const { mainMenuParser, cafeMenuParser } = require('.');
 
