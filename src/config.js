@@ -1,3 +1,3 @@
 module.exports = {
-  SLACK_URL: process.env.SLACK_URL,
+  CANTEEN_URL: 'http://5438cpa251hgt.co.uk/',
 };

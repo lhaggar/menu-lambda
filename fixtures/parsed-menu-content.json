@@ -1,0 +1,50 @@
+{
+  "mainMenuContent": [
+    {
+      "body": [
+        "Genuine Chip Shop - battered Pollock & battered sausages, savaloys"
+      ],
+      "subsections": {
+        "sides": ["Chips, peas & mushy peas"]
+      },
+      "title": "From the Oven"
+    },
+    {
+      "body": [
+        "Pulled jack fruit",
+        "Freshly baked salmon",
+        "served with red onion freekeh, toasted hazelnut and lemon dressing"
+      ],
+      "subsections": {},
+      "title": "Healthy Bar"
+    },
+    {
+      "body": ["Chilli glazed chicken, wild rice and red pepper"],
+      "subsections": {
+        "sides": ["Glazed sugar snaps and broccoli"]
+      },
+      "title": "Chefs Theatre"
+    },
+    {
+      "body": ["Roasted parsnip (v)", "Curried cauliflower and bacon"],
+      "subsections": {},
+      "title": "Soup"
+    }
+  ],
+  "cafeMenuContent": [
+    {
+      "subsections": {
+        "breakfast": ["Smoked bacon frittata"],
+        "lunch": ["Roasted aubergine and Parma ham on focaccia"]
+      },
+      "title": "monday"
+    },
+    {
+      "subsections": {
+        "breakfast": ["Pork and Beans"],
+        "lunch": ["Fried egg and instant noodles"]
+      },
+      "title": "tuesday"
+    }
+  ]
+}

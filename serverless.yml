@@ -1,0 +1,31 @@
+service: menu-lambda
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 128
+  stage: production
+  region: eu-west-1
+package:
+  exclude:
+    - '*.spec.js'
+    - 'fixtures/**'
+    - 'snapshots/**'
+    - 'test-utils/**'
+    - 'jest.config.js'
+    - 'README.md'
+functions:
+  send:
+    handler: handler.run
+    events:
+      - schedule:
+        name: presend-morning-test
+        enabled: true
+        rate: cron(30 6 ? * 1-5 *)
+        input:
+          slackUrl: ${env:SLACK_URL_PRESEND}
+      - schedule:
+        name: send-morning
+        enabled: false
+        rate: cron(30 8 ? * 1-5 *)
+        input:
+          slackUrl: ${env:SLACK_URL}

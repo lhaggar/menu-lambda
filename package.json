@@ -5,7 +5,10 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node dry-run",
+    "invoke": "./scripts/invoke-local.sh",
+    "deploy": "serverless deploy -v"
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,8 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-prettier": "3.0.1",
     "jest": "23.6.0",
-    "prettier": "1.15.3"
+    "prettier": "1.15.3",
+    "serverless": "1.36.3"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.2",
