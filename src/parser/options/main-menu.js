@@ -7,7 +7,7 @@ module.exports = {
       color: '#C41017',
     },
     {
-      matcher: /CHEFS\s+THEATRE/i,
+      matcher: /CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE/i,
       displayName: 'Chefs Theatre',
       color: '#00BFFF',
     },
@@ -30,5 +30,5 @@ module.exports = {
   END_SECTIONS_MATCHER: /CANTEEN\s+DINNER/i,
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
-  SUBSECTION_MATCHERS: [[/^\s*SIDES:/i, 'sides']],
+  SUBSECTION_MATCHERS: [[/^\s*SIDE(S)?:/i, 'sides']],
 };

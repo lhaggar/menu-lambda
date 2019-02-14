@@ -503,3 +503,46 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 10`] = `
+Array [
+  Object {
+    "body": Array [
+      "CHICKEN KATSU CURRY WITH STICKY RICE, SPRING ONION AND CHILLI",
+      "MEXICAN SPICED BAKED FISH WITH TOMATO AND LIME SAUCE",
+      "CHILLI BEEF WITH ARROZ VERDE",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "VEGETABLE SPRING ROLL OR EDAMAME BEANS, CHILLI OIL PONZU (V)",
+        "NACHOS, SPICED POTATO WEDGE, SOUR CREAM AND CHIVES (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "BUILD YOUR OWN BURGER - BRIOCHE BUN, TOMATO, LETTUCE, GHERKIN AND CHILLI WITH A CHOICE OF",
+      "BEEF PATTY",
+      "VEGGIE PATTY (V)",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {
+      "sides": Array [
+        "CHUNKY STEAK CHIPS",
+      ],
+    },
+    "title": "Chefs Theatre",
+  },
+  Object {
+    "body": Array [
+      "CARROT AND ORANGE (V)",
+      "CHILLI COCONUT CHICKEN",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
