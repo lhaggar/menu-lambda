@@ -9,7 +9,7 @@ package:
   exclude:
     - '*.spec.js'
     - 'fixtures/**'
-    - 'snapshots/**'
+    - '**/__snapshots__/**'
     - 'test-utils/**'
     - 'jest.config.js'
     - 'README.md'
@@ -18,14 +18,14 @@ functions:
     handler: handler.run
     events:
       - schedule:
-        name: presend-morning-test
-        enabled: true
-        rate: cron(30 6 ? * 1-5 *)
-        input:
-          slackUrl: ${env:SLACK_URL_PRESEND}
+          name: presend-morning-test
+          enabled: true
+          rate: cron(30 6 ? * 1-5 *)
+          input:
+            slackUrl: ${env:SLACK_URL_PRESEND}
       - schedule:
-        name: send-morning
-        enabled: false
-        rate: cron(30 8 ? * 1-5 *)
-        input:
-          slackUrl: ${env:SLACK_URL}
+          name: send-morning
+          enabled: false
+          rate: cron(30 8 ? * 1-5 *)
+          input:
+            slackUrl: ${env:SLACK_URL}
