@@ -36,5 +36,5 @@ jobs:
       # run tests!
       - run: npm t
 
-      # deploy!
-      - run: npm run deploy
+      # deploy (if on master)!
+      - run: if [ $CIRCLE_BRANCH = master ] ; then npm run deploy ; fi
