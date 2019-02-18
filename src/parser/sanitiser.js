@@ -10,10 +10,10 @@ const sanitiseHtml = html =>
 const LINE_SANITISERS = [
   // Remove excess spaces around commas
   [/\s+,\s+/g, ', '],
-  // Remove the word OR from the start and end of lines
-  [/^\s*OR\s+|\s+OR\s*$/gi, ''],
+  // Remove the word OR from the start and end of lines (but not if line is only "OR")
+  [/(?!^or$)(^or\s+|\s+or$)/gi, ''],
   // Remove excess spaces
-  [/\s{2,}/gi, ' '],
+  [/\s{2,}/g, ' '],
 ];
 
 const sanitiseLine = line =>
@@ -21,6 +21,6 @@ const sanitiseLine = line =>
     (acc, [searchValue, replaceValue]) =>
       acc.replace(searchValue, replaceValue),
     line.trim(),
-  );
+  ).trim();
 
 module.exports = { sanitiseHtml, sanitiseLine };

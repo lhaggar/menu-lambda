@@ -509,13 +509,23 @@ Array [
   Object {
     "body": Array [
       "CHICKEN KATSU CURRY WITH STICKY RICE, SPRING ONION AND CHILLI",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "VEGETABLE SPRING ROLL OR EDAMAME BEANS, CHILLI OIL PONZU (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
       "MEXICAN SPICED BAKED FISH WITH TOMATO AND LIME SAUCE",
       "CHILLI BEEF WITH ARROZ VERDE",
     ],
     "color": "#C41017",
     "subsections": Object {
       "sides": Array [
-        "VEGETABLE SPRING ROLL OR EDAMAME BEANS, CHILLI OIL PONZU (V)",
         "NACHOS, SPICED POTATO WEDGE, SOUR CREAM AND CHIVES (V)",
       ],
     },
@@ -539,6 +549,52 @@ Array [
     "body": Array [
       "CARROT AND ORANGE (V)",
       "CHILLI COCONUT CHICKEN",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 11`] = `
+Array [
+  Object {
+    "body": Array [
+      "Baked Swedish beef meatballs with celeriac mash",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Warm beetroot and apple salad or crusty farm house loaf (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Cumberland sausage ring, lyonnaise potato and roasted plum tomato sauce",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Buttered cabbage and roasted Kentish root vegetables (v)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Slow roast cauliflower, tomato, preserved lemon pesto, with chicken thigh or crispy smoked paprika coated halloumi (V)",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {},
+    "title": "Chefs Theatre",
+  },
+  Object {
+    "body": Array [
+      "Roast mushroom and thyme (V)",
+      "Chicken and bacon soup",
     ],
     "color": "#e6e600",
     "subsections": Object {},

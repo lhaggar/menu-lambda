@@ -14,6 +14,9 @@ const push = (obj, key, data) => {
   }
 };
 
+const getSubsection = (SUBSECTION_MATCHERS, line) =>
+  SUBSECTION_MATCHERS.find(([matcher]) => matcher.test(line));
+
 const createParser = ({
   SECTIONS,
   IGNORE_LIST,
@@ -31,6 +34,14 @@ const createParser = ({
       ? { title: SECTION.displayName, subsections: {}, color: SECTION.color }
       : null;
   };
+
+  // Create a new section from existing one - this is when we have two meal options under one
+  // section heading, e.g. two choices "From the Oven" with their own respective sides e.t.c.
+  const duplicateSection = ({ title, color }) => ({
+    title,
+    subsections: {},
+    color,
+  });
 
   // Take the html string and return an array of strings (the menu lines).
   const getContents = menuHtml => {
@@ -57,31 +68,36 @@ const createParser = ({
   };
 
   const parse = menuHtml =>
-    getContents(menuHtml).reduce((acc, line) => {
+    getContents(menuHtml).reduce((acc, line, i, lines) => {
       const newSection = createSection(line);
+      const currentSection = acc[acc.length - 1];
+      const lineIsAnOrBreak = line.toLowerCase() === 'or';
+
       if (newSection) {
         // We've hit a section title so add the new section to the list.
         acc.push(newSection);
-      } else {
+      } else if (
+        lineIsAnOrBreak &&
+        getSubsection(SUBSECTION_MATCHERS, lines[i - 1])
+      ) {
+        // We've hit a duplicate section.
+        // (i.e. prev line is "SIDES: xyz" and current line is "or"; two "From the Oven" options for example).
+        acc.push(duplicateSection(currentSection));
+      } else if (currentSection && !lineIsAnOrBreak) {
         // We're not on a section title, so we're dealing with the section content.
-        const currentSection = acc[acc.length - 1];
         // If we don't have a section then just ignore and continue.
-        if (currentSection) {
-          const subsection = SUBSECTION_MATCHERS.find(([matcher]) =>
-            matcher.test(line),
+        const subsection = getSubsection(SUBSECTION_MATCHERS, line);
+        if (subsection) {
+          const [subsectionMatcher, subsectionName] = subsection;
+          // Subsection line, strip the matcher and store.
+          push(
+            currentSection.subsections,
+            subsectionName,
+            sanitiseLine(line.replace(subsectionMatcher, '')),
           );
-          if (subsection) {
-            const [subsectionMatcher, subsectionName] = subsection;
-            // Subsection line, strip the matcher and store.
-            push(
-              currentSection.subsections,
-              subsectionName,
-              sanitiseLine(line.replace(subsectionMatcher, '')),
-            );
-          } else {
-            // Append the line to the current section body.
-            push(currentSection, 'body', sanitiseLine(line));
-          }
+        } else {
+          // Append the line to the current section body.
+          push(currentSection, 'body', sanitiseLine(line));
         }
       }
       return acc;

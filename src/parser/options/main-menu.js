@@ -24,7 +24,7 @@ module.exports = {
   ],
 
   // Any lines that match these will be excluded from the contents.
-  IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /^\s*OR\s*$/i],
+  IGNORE_LIST: [/CANTEEN\s+LUNCH/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
   END_SECTIONS_MATCHER: /CANTEEN\s+DINNER/i,
