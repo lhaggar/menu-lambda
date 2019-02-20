@@ -25,7 +25,7 @@ functions:
             slackUrl: ${env:SLACK_URL_PRESEND}
       - schedule:
           name: send-morning
-          enabled: false
+          enabled: true
           rate: cron(30 8 ? * 1-5 *)
           input:
             slackUrl: ${env:SLACK_URL}
