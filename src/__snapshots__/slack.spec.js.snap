@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`src/slack.js buildPayload should return a snapshot match 1`] = `
+exports[`src/slack.js buildPayload with canteen and cafe data should return a snapshot match 1`] = `
 Object {
   "attachments": Array [
     Object {
-      "color": undefined,
+      "color": "#C41017",
       "mrkdwn_in": Array [
         "text",
       ],
@@ -13,7 +13,7 @@ Sides: chips, peas & mushy peas",
       "title": "From the Oven",
     },
     Object {
-      "color": undefined,
+      "color": "#007404",
       "mrkdwn_in": Array [
         "text",
       ],
@@ -23,7 +23,7 @@ Served with red onion freekeh, toasted hazelnut and lemon dressing",
       "title": "Healthy Bar",
     },
     Object {
-      "color": undefined,
+      "color": "#00BFFF",
       "mrkdwn_in": Array [
         "text",
       ],
@@ -32,7 +32,7 @@ Sides: glazed sugar snaps and broccoli",
       "title": "Chefs Theatre",
     },
     Object {
-      "color": undefined,
+      "color": "#e6e600",
       "mrkdwn_in": Array [
         "text",
       ],
@@ -41,13 +41,64 @@ Curried cauliflower and bacon",
       "title": "Soup",
     },
     Object {
-      "color": undefined,
+      "color": "#3126A2",
       "mrkdwn_in": Array [
         "text",
       ],
       "text": "Breakfast: smoked bacon frittata
 Lunch: roasted aubergine and parma ham on focaccia",
       "title": "Café",
+    },
+    Object {
+      "text": "Menu taken from <https://the-canteen-url.com#canteen|Canteen on 14 website>.
+Menu Lambda 1.33.7. Any issues or suggestions? <https://the-bugs-url.com|Post on the GitHub!>",
+    },
+  ],
+  "icon_emoji": ":hamburger:",
+  "text": "Menu for Friday, February 1, 2019",
+  "username": "Canteen on 14",
+}
+`;
+
+exports[`src/slack.js buildPayload with no cafe content should return a snapshot match 1`] = `
+Object {
+  "attachments": Array [
+    Object {
+      "color": "#C41017",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Genuine chip shop - battered pollock & battered sausages, savaloys
+Sides: chips, peas & mushy peas",
+      "title": "From the Oven",
+    },
+    Object {
+      "color": "#007404",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Pulled jack fruit
+Freshly baked salmon
+Served with red onion freekeh, toasted hazelnut and lemon dressing",
+      "title": "Healthy Bar",
+    },
+    Object {
+      "color": "#00BFFF",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Chilli glazed chicken, wild rice and red pepper
+Sides: glazed sugar snaps and broccoli",
+      "title": "Chefs Theatre",
+    },
+    Object {
+      "color": "#e6e600",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Roasted parsnip (v)
+Curried cauliflower and bacon",
+      "title": "Soup",
     },
     Object {
       "text": "Menu taken from <https://the-canteen-url.com#canteen|Canteen on 14 website>.
