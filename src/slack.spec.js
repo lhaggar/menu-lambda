@@ -30,7 +30,6 @@ describe('src/slack.js', () => {
         getDay: mocks.getDay,
       }));
 
-      // eslint-disable-next-line global-require
       const { buildPayload } = require.requireActual('./slack');
       const result = buildPayload(data.date, data.menuContent);
 
