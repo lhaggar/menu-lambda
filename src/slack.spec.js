@@ -2,12 +2,8 @@ const fixture = require('../fixtures/parsed-menu-content');
 
 describe('src/slack.js', () => {
   describe('buildPayload', () => {
-    let data;
-    let mocks;
-    let result;
-
-    beforeAll(() => {
-      data = {
+    const setup = ({ day } = {}) => {
+      const data = {
         date: new Date('2019-02-01'),
         menuContent: fixture,
         pkgVersion: '1.33.7',
@@ -15,8 +11,8 @@ describe('src/slack.js', () => {
         canteenUrl: 'https://the-canteen-url.com',
       };
 
-      mocks = {
-        getDay: jest.fn(() => 'monday'),
+      const mocks = {
+        getDay: jest.fn(() => day),
       };
 
       jest.doMock('../package.json', () => ({
@@ -34,13 +30,42 @@ describe('src/slack.js', () => {
         getDay: mocks.getDay,
       }));
 
-      // eslint-disable-next-line global-require
       const { buildPayload } = require.requireActual('./slack');
-      result = buildPayload(data.date, data.menuContent);
+      const result = buildPayload(data.date, data.menuContent);
+
+      return {
+        data,
+        mocks,
+        result,
+      };
+    };
+
+    describe('with canteen and cafe data', () => {
+      let result;
+
+      beforeAll(() => {
+        ({ result } = setup({ day: 'monday' }));
+      });
+
+      afterAll(() => jest.resetModules());
+
+      it('should return a snapshot match', () => {
+        expect(result).toMatchSnapshot();
+      });
     });
 
-    it('should return a snapshot match', () => {
-      expect(result).toMatchSnapshot();
+    describe('with no cafe content', () => {
+      let result;
+
+      beforeAll(() => {
+        ({ result } = setup({ day: 'saturday' }));
+      });
+
+      afterAll(() => jest.resetModules());
+
+      it('should return a snapshot match', () => {
+        expect(result).toMatchSnapshot();
+      });
     });
   });
 });

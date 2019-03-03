@@ -12,36 +12,41 @@ const formatSubsection = (key, content) => `${sentenceCase(key)}: ${content}`;
 
 // Format the menu content as a Slack web hook post payload.
 const buildPayload = (date, { mainMenuContent, cafeMenuContent }) => {
+  // For cafe, the section titles are days of the week.
   const day = getDay(date);
+  const todaysCafeMenuContent = cafeMenuContent.find(x => x.title === day);
+
   const payloadContent = [
     ...mainMenuContent,
-    {
-      // For cafe, the section names are days of the week, so we get todays one and rename the title.
-      ...cafeMenuContent.find(x => x.title === day),
+    todaysCafeMenuContent && {
+      // Don't want the day as the title, so override it.
+      ...todaysCafeMenuContent,
       title: 'Café',
     },
-  ].map(section => {
-    // For each section, we want to generate the lines of text.
-    // First the main body content (if any), then each subsection text.
-    const lines = [];
-    if (section.body) {
-      lines.push(...section.body);
-    }
-    lines.push(
-      ...Object.keys(section.subsections).reduce((acc, key) => {
-        acc.push(formatSubsection(key, section.subsections[key]));
-        return acc;
-      }, []),
-    );
+  ]
+    .filter(Boolean)
+    .map(section => {
+      // For each section, we want to generate the lines of text.
+      // First the main body content (if any), then each subsection text.
+      const lines = [];
+      if (section.body) {
+        lines.push(...section.body);
+      }
+      lines.push(
+        ...Object.keys(section.subsections).reduce((acc, key) => {
+          acc.push(formatSubsection(key, section.subsections[key]));
+          return acc;
+        }, []),
+      );
 
-    // Each section output as a Slack attachment object (these will be sent as part of payload).
-    return {
-      title: section.title,
-      color: section.color,
-      text: lines.map(line => sentenceCase(line)).join('\n'),
-      mrkdwn_in: ['text'],
-    };
-  });
+      // Each section output as a Slack attachment object (these will be sent as part of payload).
+      return {
+        title: section.title,
+        color: section.color,
+        text: lines.map(line => sentenceCase(line)).join('\n'),
+        mrkdwn_in: ['text'],
+      };
+    });
 
   const payload = {
     username: 'Canteen on 14',

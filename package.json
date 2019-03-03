@@ -1,11 +1,12 @@
 {
   "name": "menu-lambda",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "private": true,
   "scripts": {
     "test": "jest",
+    "lint": "eslint . --report-unused-disable-directives",
     "start": "node dry-run",
     "invoke": "./scripts/invoke-local.sh",
     "deploy": "serverless deploy -v"

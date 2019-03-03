@@ -77,6 +77,7 @@ const createParser = ({
         // We've hit a section title so add the new section to the list.
         acc.push(newSection);
       } else if (
+        currentSection &&
         lineIsAnOrBreak &&
         getSubsection(SUBSECTION_MATCHERS, lines[i - 1])
       ) {

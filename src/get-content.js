@@ -1,23 +1,26 @@
 const got = require('got');
+const url = require('url');
 
 const { CANTEEN_URL } = require('./config');
 const { mainMenuParser, cafeMenuParser } = require('./parser');
+const { getDay } = require('./utils');
+
+const get = u => got(`${u}?format=json`, { json: true });
 
 // Get the json from the canteen website and run it through the parsers.
-const getContent = async () => {
-  const response = await got(`${CANTEEN_URL}?format=json`, {
-    json: true,
-  });
-
-  const { collections } = response.body.collection;
-
-  const [mainMenuContent, cafeMenuContent] = [
-    ['Canteen', mainMenuParser],
-    ['Terrace Cafe', cafeMenuParser],
-  ].map(([title, parser]) => {
-    const collection = collections.find(x => x.title === title);
-    return collection ? parser(collection.mainContent) : undefined;
-  });
+const getContent = async date => {
+  const day = getDay(date);
+  const [mainMenuContent, cafeMenuContent] = await Promise.all([
+    get(url.resolve(CANTEEN_URL, `/canteen-${day}`)).then(res =>
+      mainMenuParser(res.body.mainContent),
+    ),
+    get(CANTEEN_URL).then(res => {
+      const collection = res.body.collection.collections.find(
+        x => x.title === 'Terrace Cafe',
+      );
+      return collection ? cafeMenuParser(collection.mainContent) : undefined;
+    }),
+  ]);
 
   return { mainMenuContent, cafeMenuContent };
 };
