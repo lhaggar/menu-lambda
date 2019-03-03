@@ -12,4 +12,6 @@ const getDay = date => {
   return days[date.getDay()];
 };
 
-module.exports = { getDay };
+const isWeekend = date => ['saturday', 'sunday'].includes(getDay(date));
+
+module.exports = { getDay, isWeekend };
