@@ -2,23 +2,23 @@ module.exports = {
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
     {
-      matcher: /monday/i,
+      matcher: /^\s*monday\s*$/i,
       displayName: 'monday',
     },
     {
-      matcher: /tuesday/i,
+      matcher: /^\s*tuesday\s*$/i,
       displayName: 'tuesday',
     },
     {
-      matcher: /wednesday/i,
+      matcher: /^\s*wednesday\s*$/i,
       displayName: 'wednesday',
     },
     {
-      matcher: /thursday/i,
+      matcher: /^\s*thursday\s*$/i,
       displayName: 'thursday',
     },
     {
-      matcher: /friday/i,
+      matcher: /^\s*friday\s*$/i,
       displayName: 'friday',
     },
   ].map(x => ({ ...x, color: '#3126A2' })),

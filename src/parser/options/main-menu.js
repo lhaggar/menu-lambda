@@ -2,12 +2,12 @@ module.exports = {
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
     {
-      matcher: /FROM\s+THE\s+OVEN/i,
+      matcher: /^\s*FROM\s+THE\s+OVEN\s*$/i,
       displayName: 'From the Oven',
       color: '#C41017',
     },
     {
-      matcher: /CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE/i,
+      matcher: /^\s*CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE\s*$/i,
       displayName: 'Chefs Theatre',
       color: '#00BFFF',
     },
@@ -17,7 +17,7 @@ module.exports = {
       color: '#e6e600',
     },
     {
-      matcher: /HEALTHY\s+BAR/i,
+      matcher: /^\s*HEALTHY\s+BAR\s*$/i,
       displayName: 'Healthy Bar',
       color: '#007404',
     },

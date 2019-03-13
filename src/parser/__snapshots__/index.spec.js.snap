@@ -65,6 +65,71 @@ Array [
 ]
 `;
 
+exports[`parser/index.js cafeMenuParser should parse the html snippet 2`] = `
+Array [
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "Baked hens egg, wilted spinach, potato and feta",
+      ],
+      "lunch": Array [
+        "Samosa chat, Chana masala, mint yoghurt and Bombay mix (V)",
+      ],
+    },
+    "title": "monday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "Two cheese omelette, tomato and rocket (v)",
+      ],
+      "lunch": Array [
+        "Caramelised goats cheese, balsamic onions and rocket on toasted focaccia",
+      ],
+    },
+    "title": "tuesday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "Waffle Wednesday with crispy bacon and maple syrup",
+      ],
+      "lunch": Array [
+        "Salt beef bagel with gherkin, red onion and whole grain mustard mayo",
+      ],
+    },
+    "title": "wednesday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "Smoked haddock and chive frittata",
+      ],
+      "lunch": Array [
+        "Hickory chicken, jalapenos fried onions and spiced wedges",
+      ],
+    },
+    "title": "thursday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "Toasted sourdough bread with smashed avocado, poached egg and crumbled goats cheese",
+      ],
+      "lunch": Array [
+        "Pulled pork bap with caramelised onion, apple and sage stuffing",
+      ],
+    },
+    "title": "friday",
+  },
+]
+`;
+
 exports[`parser/index.js mainMenuParser should parse the html snippet 1`] = `
 Array [
   Object {

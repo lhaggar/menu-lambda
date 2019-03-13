@@ -1,6 +1,6 @@
 {
   "name": "menu-lambda",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -9,7 +9,8 @@
     "lint": "eslint . --report-unused-disable-directives",
     "start": "node dry-run",
     "invoke": "./scripts/invoke-local.sh",
-    "deploy": "serverless deploy -v"
+    "deploy": "serverless deploy -v",
+    "destroy": "sleep 3; serverless remove -v"
   },
   "repository": {
     "type": "git",
