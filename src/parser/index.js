@@ -17,6 +17,14 @@ const push = (obj, key, data) => {
 const getSubsection = (SUBSECTION_MATCHERS, line) =>
   SUBSECTION_MATCHERS.find(([matcher]) => matcher.test(line));
 
+// Create a new section from existing one - this is when we have two meal options under one
+// section heading, e.g. two choices "From the Oven" with their own respective sides e.t.c.
+const duplicateSection = ({ title, color }) => ({
+  title,
+  subsections: {},
+  color,
+});
+
 const createParser = ({
   SECTIONS,
   IGNORE_LIST,
@@ -34,14 +42,6 @@ const createParser = ({
       ? { title: SECTION.displayName, subsections: {}, color: SECTION.color }
       : null;
   };
-
-  // Create a new section from existing one - this is when we have two meal options under one
-  // section heading, e.g. two choices "From the Oven" with their own respective sides e.t.c.
-  const duplicateSection = ({ title, color }) => ({
-    title,
-    subsections: {},
-    color,
-  });
 
   // Take the html string and return an array of strings (the menu lines).
   const getContents = menuHtml => {

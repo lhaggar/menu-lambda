@@ -667,3 +667,87 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 12`] = `
+Array [
+  Object {
+    "body": Array [
+      "Made to order pizza bar: live cooking at its best with a fresh khobez base and a selection of delicious toppings",
+      "Mexican spiced baked fish with tomato and lime braised beans",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Nachos, spiced potato wedge or sour cream and chives (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Southern style slow cooked BBQ pork ribs",
+      "jambalaya (V)",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {
+      "sides": Array [
+        "Onion rings or spiced wedges (V)",
+      ],
+    },
+    "title": "Chefs Theatre",
+  },
+  Object {
+    "body": Array [
+      "Carrot and orange soup (v)",
+      "Chilli coconut chicken",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 13`] = `
+Array [
+  Object {
+    "body": Array [
+      "Genuine Chip Shop - Catch of The Day, battered sausages and saveloys",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Chips, peas, mushy peas, pickled eggs, pickled onions, gherkins",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Lemon & garlic roasted Suffolk chicken with salt lemon gnocchi and seasonal green",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "FOODARI POP-UP with James Perkins from Cherry Tree Farm -",
+      "Come and meet our farmer & Checkout the theatre bar for lunch & Purchase some RSPCA Assured eggs",
+      "pop-up dish: wild garlic risotto with poached Kent hens egg",
+    ],
+    "color": "#9933FF",
+    "subsections": Object {},
+    "title": "Theatre Bar",
+  },
+  Object {
+    "body": Array [
+      "Puy lentil and pumpkin soup (v)",
+      "Sicilian tomato and fish stew",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
