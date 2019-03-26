@@ -751,3 +751,55 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 14`] = `
+Array [
+  Object {
+    "body": Array [
+      "Haddock and smoked salmon fish cake with buttered leek and chive sauce",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Green bean, kale and cabbage and garden salad",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Chicken tikka masala",
+      "vegetable jalfrezi served (V)",
+      "with pilaf rice",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Vegetable samosa, onion bhaji, poppadum, mango sauce, lime pickle",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Grains and Greens Bar - grilled chicken breast, grains, pearl barley, couscous, toasted quinoa, carrot, garden leaves and hummus",
+    ],
+    "color": "#007404",
+    "subsections": Object {
+      "sides": Array [
+        "red onion and potato salad",
+      ],
+    },
+    "title": "Healthy Station",
+  },
+  Object {
+    "body": Array [
+      "Slow roasted tomato and paprika (v)",
+      "Beef minestrone",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
