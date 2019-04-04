@@ -40,5 +40,8 @@ module.exports = {
   END_SECTIONS_MATCHER: /CANTEEN\s+DINNER/i,
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
-  SUBSECTION_MATCHERS: [[/^\s*SIDE(S)?:/i, 'sides']],
+  SUBSECTION_MATCHERS: [
+    [/^\s*SIDE(S)?:/i, 'sides'],
+    [/^Made to order pizza bar:/i, 'made to order pizza bar'],
+  ],
 };

@@ -671,8 +671,16 @@ Array [
 exports[`parser/index.js mainMenuParser should parse the html snippet 12`] = `
 Array [
   Object {
+    "color": "#C41017",
+    "subsections": Object {
+      "made to order pizza bar": Array [
+        "live cooking at its best with a fresh khobez base and a selection of delicious toppings",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
     "body": Array [
-      "Made to order pizza bar: live cooking at its best with a fresh khobez base and a selection of delicious toppings",
       "Mexican spiced baked fish with tomato and lime braised beans",
     ],
     "color": "#C41017",
