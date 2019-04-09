@@ -17,6 +17,11 @@ module.exports = {
       color: '#9933FF',
     },
     {
+      matcher: /^\s*THEATRE\s+STATION\s*$/i,
+      displayName: 'Theatre Station',
+      color: '#3360ff',
+    },
+    {
       matcher: /^\s*SOUP\s*$/i,
       displayName: 'Soup',
       color: '#e6e600',

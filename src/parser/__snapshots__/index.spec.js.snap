@@ -811,3 +811,44 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 15`] = `
+Array [
+  Object {
+    "body": Array [
+      "Grains and greens: poached South Coast catch of the day",
+      "marinated grilled halloumi (V)",
+      "Flavours of the sunny Deep South: chicken and sausage gumbo",
+      "Creole farmers market vegetable jambalaya (V)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Dirty Creole rice or sweet potato and apple salad (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Dry aged Scotch beef burger with a seeded brioche bun, tomato, lettuce, gherkin and cheese",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Smoked bacon jam, chunky steak chips, onion rings or red cabbage and pomegranate slaw (V)",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Broccoli soup with stilton topping (v)",
+      "Prawn and coriander noodle broth",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
