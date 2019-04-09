@@ -4,8 +4,11 @@ const { CANTEEN_URL } = require('./config');
 const { getDay } = require('./utils');
 
 const sentenceCase = line => {
-  const trimmed = line.trim();
-  return `${trimmed[0].toUpperCase()}${trimmed.slice(1).toLowerCase()}`;
+  const trimmed = line
+    .trim()
+    .toLowerCase()
+    .replace(/[a-zA-z]/, substr => substr.toUpperCase());
+  return trimmed;
 };
 
 const formatSubsection = (key, content) => `${sentenceCase(key)}: ${content}`;

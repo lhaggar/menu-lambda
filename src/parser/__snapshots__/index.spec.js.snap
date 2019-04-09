@@ -852,3 +852,53 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 16`] = `
+Array [
+  Object {
+    "body": Array [
+      "'Chop shop' grilled rare breed pork chop, colcannon, wild mushroom sauce and lemon wedges",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Steamed and buttered spring greens (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Build your gnocchi - rosemary and roasted onion lamb ragu or spinach, ricotta and Kentish foraged wild garlic",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Rosemary focaccia or garden salad (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Grilled harissa and lemon Castlemead chicken with sundried tomato bulgur wheat and cous cous",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {
+      "sides": Array [
+        "Zaatar roasted squash with spiced yoghurt and pickled chillies, flat bread, vegetable samosa (V)",
+      ],
+    },
+    "title": "Chefs Theatre",
+  },
+  Object {
+    "body": Array [
+      "Butter bean and thyme soup (V)",
+      "Bacon, lentil and sweetcorn",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
