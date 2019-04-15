@@ -36,10 +36,15 @@ module.exports = {
       displayName: 'Healthy Station',
       color: '#007404',
     },
+    {
+      matcher: false,
+      displayName: 'No name 😔',
+      color: '#CCCCCC',
+    },
   ],
 
   // Any lines that match these will be excluded from the contents.
-  IGNORE_LIST: [/CANTEEN\s+LUNCH/i],
+  IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /daily\s+canteen\s+menu/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
   END_SECTIONS_MATCHER: /CANTEEN\s+DINNER/i,

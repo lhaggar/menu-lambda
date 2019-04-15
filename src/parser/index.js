@@ -32,15 +32,33 @@ const createParser = ({
   SUBSECTION_MATCHERS = [],
 }) => {
   // Util for checking if text matches against an entry in the ignore list.
-  const isIgnored = txt => IGNORE_LIST.some(matcher => matcher.test(txt));
+  const isIgnored = txt =>
+    IGNORE_LIST.some(matcher => matcher && matcher.test(txt));
 
   // Either create a section object based on the line being an expected title,
   // or return null (i.e. if a content line).
-  const createSection = line => {
-    const SECTION = SECTIONS.find(({ matcher }) => matcher.test(line));
-    return SECTION
-      ? { title: SECTION.displayName, subsections: {}, color: SECTION.color }
-      : null;
+  const createSection = (line, firstLine) => {
+    const SECTION = SECTIONS.find(
+      ({ matcher }) => matcher && matcher.test(line),
+    );
+    if (SECTION) {
+      return {
+        title: SECTION.displayName,
+        subsections: {},
+        color: SECTION.color,
+      };
+    }
+    const unnamedSection = SECTIONS.find(x => !x.matcher);
+    if (firstLine && unnamedSection) {
+      // First title has no section header!
+      return {
+        title: unnamedSection.displayName,
+        body: [line],
+        subsections: {},
+        color: unnamedSection.color,
+      };
+    }
+    return null;
   };
 
   // Take the html string and return an array of strings (the menu lines).
@@ -68,41 +86,48 @@ const createParser = ({
   };
 
   const parse = menuHtml =>
-    getContents(menuHtml).reduce((acc, line, i, lines) => {
-      const newSection = createSection(line);
-      const currentSection = acc[acc.length - 1];
-      const lineIsAnOrBreak = line.toLowerCase() === 'or';
+    getContents(menuHtml)
+      .reduce((acc, line, i, lines) => {
+        const newSection = createSection(line, i === 0);
+        const currentSection = acc[acc.length - 1];
+        const lineIsAnOrBreak = line.toLowerCase() === 'or';
 
-      if (newSection) {
-        // We've hit a section title so add the new section to the list.
-        acc.push(newSection);
-      } else if (
-        currentSection &&
-        lineIsAnOrBreak &&
-        getSubsection(SUBSECTION_MATCHERS, lines[i - 1])
-      ) {
-        // We've hit a duplicate section.
-        // (i.e. prev line is "SIDES: xyz" and current line is "or"; two "From the Oven" options for example).
-        acc.push(duplicateSection(currentSection));
-      } else if (currentSection && !lineIsAnOrBreak) {
-        // We're not on a section title, so we're dealing with the section content.
-        // If we don't have a section then just ignore and continue.
-        const subsection = getSubsection(SUBSECTION_MATCHERS, line);
-        if (subsection) {
-          const [subsectionMatcher, subsectionName] = subsection;
-          // Subsection line, strip the matcher and store.
-          push(
-            currentSection.subsections,
-            subsectionName,
-            sanitiseLine(line.replace(subsectionMatcher, '')),
-          );
-        } else {
-          // Append the line to the current section body.
-          push(currentSection, 'body', sanitiseLine(line));
+        if (newSection) {
+          // We've hit a section title so add the new section to the list.
+          acc.push(newSection);
+        } else if (
+          currentSection &&
+          lineIsAnOrBreak &&
+          getSubsection(SUBSECTION_MATCHERS, lines[i - 1])
+        ) {
+          // We've hit a duplicate section.
+          // (i.e. prev line is "SIDES: xyz" and current line is "or"; two "From the Oven" options for example).
+          acc.push(duplicateSection(currentSection));
+        } else if (currentSection && !lineIsAnOrBreak) {
+          // We're not on a section title, so we're dealing with the section content.
+          // If we don't have a section then just ignore and continue.
+          const subsection = getSubsection(SUBSECTION_MATCHERS, line);
+          if (subsection) {
+            const [subsectionMatcher, subsectionName] = subsection;
+            // Subsection line, strip the matcher and store.
+            push(
+              currentSection.subsections,
+              subsectionName,
+              sanitiseLine(line.replace(subsectionMatcher, '')),
+            );
+          } else {
+            // Append the line to the current section body.
+            push(currentSection, 'body', sanitiseLine(line));
+          }
         }
-      }
-      return acc;
-    }, []);
+        return acc;
+      }, [])
+      .filter(
+        section =>
+          section &&
+          ((section.body && section.body.length) ||
+            Object.keys(section.subsections).length),
+      );
 
   return parse;
 };

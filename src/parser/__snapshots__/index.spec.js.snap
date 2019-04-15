@@ -902,3 +902,53 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 17`] = `
+Array [
+  Object {
+    "body": Array [
+      "Vive la France - Castlemead braised chicken thigh with pancetta and puy lentils or poached salmon with peas a la Francaise",
+    ],
+    "color": "#CCCCCC",
+    "subsections": Object {
+      "sides": Array [
+        "Haricots vert, baguette, lyonnaise potatoes (V)",
+      ],
+    },
+    "title": "No name 😔",
+  },
+  Object {
+    "body": Array [
+      "Kentish farmer's market roasted broccoli and toasted almond risotto with a Kent.co poached egg",
+    ],
+    "color": "#CCCCCC",
+    "subsections": Object {
+      "sides": Array [
+        "Blue cheese, celery and chard salad (V)",
+      ],
+    },
+    "title": "No name 😔",
+  },
+  Object {
+    "body": Array [
+      "Danish frikadelle - Kentish red onions and roasted garlic meatballs with braised red cabbage and pickled cucumber",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {
+      "sides": Array [
+        "Crushed Jersey royals or warm beetroot and apple salad (V)",
+      ],
+    },
+    "title": "Chefs Theatre",
+  },
+  Object {
+    "body": Array [
+      "Cream of mushroom and tarragon soup (V)",
+      "Beef and onion soup",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
