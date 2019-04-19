@@ -1,4 +1,7 @@
+const CAFE_COLOUR = '#3126A2';
+
 module.exports = {
+  CAFE_COLOUR,
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
     {
@@ -21,7 +24,7 @@ module.exports = {
       matcher: /^\s*friday\s*$/i,
       displayName: 'friday',
     },
-  ].map(x => ({ ...x, color: '#3126A2' })),
+  ].map(x => ({ ...x, color: CAFE_COLOUR })),
 
   // Any lines that match these will be excluded from the contents.
   IGNORE_LIST: [/^SOUP:.+/i],

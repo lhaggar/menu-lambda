@@ -1,14 +1,15 @@
 {
   "name": "menu-lambda",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Lambda to post the News UK building canteen menu, daily, to Slack",
   "main": "index.js",
   "private": true,
   "scripts": {
     "test": "jest",
     "lint": "eslint . --report-unused-disable-directives",
-    "start": "node dry-run",
+    "start": "node --inspect dry-run",
     "invoke": "./scripts/invoke-local.sh",
+    "add-fixture": "node ./scripts/add-fixture.js",
     "deploy": "serverless deploy -v",
     "destroy": "sleep 3; serverless remove -v"
   },

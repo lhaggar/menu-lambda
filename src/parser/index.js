@@ -82,7 +82,8 @@ const createParser = ({
     const finalIndex = END_SECTIONS_MATCHER
       ? arr.findIndex(txt => END_SECTIONS_MATCHER.test(txt))
       : undefined;
-    return arr.slice(0, finalIndex);
+
+    return finalIndex === -1 ? arr : arr.slice(0, finalIndex);
   };
 
   const parse = menuHtml =>

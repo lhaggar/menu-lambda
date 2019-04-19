@@ -1,3 +1,5 @@
+const { CAFE_COLOUR } = require('./cafe-menu');
+
 module.exports = {
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
@@ -35,6 +37,12 @@ module.exports = {
       matcher: /^\s*Healthy\s+Station\s*$/i,
       displayName: 'Healthy Station',
       color: '#007404',
+    },
+    {
+      // On a bank holiday the cafe appeared as a main canteen section...
+      matcher: /^\s*Terrace\s+Caf[eé]\s*$/i,
+      displayName: 'Terrace Cafe',
+      color: CAFE_COLOUR,
     },
     {
       matcher: false,

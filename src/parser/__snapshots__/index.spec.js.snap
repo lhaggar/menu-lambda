@@ -952,3 +952,42 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 18`] = `
+Array [
+  Object {
+    "body": Array [
+      "Genuine Chip Shop - battered pollock, battered sausages and saveloys",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {
+      "sides": Array [
+        "Chips, peas, mushy peas, pickled eggs, pickled onions and gherkins",
+      ],
+    },
+    "title": "Terrace Cafe",
+  },
+  Object {
+    "body": Array [
+      "Roasted Suffolk chicken and wild mushroom pie",
+      "Kentish farmers market vegetable pie (V)",
+      "served with buttered mashed potato",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {
+      "sides": Array [
+        "Steamed and buttered kale and cabbage",
+      ],
+    },
+    "title": "Terrace Cafe",
+  },
+  Object {
+    "body": Array [
+      "Puy lentil and pumpkin soup (v)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
