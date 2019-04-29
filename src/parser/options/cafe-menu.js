@@ -30,7 +30,7 @@ module.exports = {
   IGNORE_LIST: [/^SOUP:.+/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
-  END_SECTIONS_MATCHER: null,
+  END_SECTIONS_MATCHERS: null,
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
   SUBSECTION_MATCHERS: [

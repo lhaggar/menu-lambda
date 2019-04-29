@@ -28,7 +28,7 @@ const duplicateSection = ({ title, color }) => ({
 const createParser = ({
   SECTIONS,
   IGNORE_LIST,
-  END_SECTIONS_MATCHER,
+  END_SECTIONS_MATCHERS,
   SUBSECTION_MATCHERS = [],
 }) => {
   // Util for checking if text matches against an entry in the ignore list.
@@ -79,8 +79,10 @@ const createParser = ({
     });
 
     // Look for our terminator section matcher, we exclude that line and everything after it.
-    const finalIndex = END_SECTIONS_MATCHER
-      ? arr.findIndex(txt => END_SECTIONS_MATCHER.test(txt))
+    const finalIndex = END_SECTIONS_MATCHERS
+      ? arr.findIndex(txt =>
+          END_SECTIONS_MATCHERS.some(matcher => matcher && matcher.test(txt)),
+        )
       : undefined;
 
     return finalIndex === -1 ? arr : arr.slice(0, finalIndex);

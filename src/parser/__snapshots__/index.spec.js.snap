@@ -991,3 +991,49 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 19`] = `
+Array [
+  Object {
+    "body": Array [
+      "The Real St George's Day - steak and kidney pie with beer braised onions and horseradish mash",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Buttered greens (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Fresh and crisp Farmers market Cantonese style vegetable stir fry and tempura vegetable (V)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Ginger and garlic bok choy (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "A British Classic - toad in the hole, cumberland sausage, roasted new potatoes, buttered carrots and a rich red onion gravy",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {},
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Curried cauliflower (v)",
+      "Roasted tomato bacon and chickpea",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
