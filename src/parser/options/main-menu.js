@@ -55,7 +55,7 @@ module.exports = {
   IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /daily\s+canteen\s+menu/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
-  END_SECTIONS_MATCHERS: [/CANTEEN\s+DINNER/i, /TERRACE\s+CAFE\s+DINNER/i],
+  END_SECTIONS_MATCHERS: [/CANTEEN\s+DINNER/i, /terrace\s+caf[eé]\s+dinner/i],
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
   SUBSECTION_MATCHERS: [
