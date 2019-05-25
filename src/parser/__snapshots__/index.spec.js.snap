@@ -130,6 +130,71 @@ Array [
 ]
 `;
 
+exports[`parser/index.js cafeMenuParser should parse the html snippet 3`] = `
+Array [
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "Protein punch loaded scrambled egg with spiced beans, seeds, spinach and tomato relish",
+      ],
+      "lunch": Array [
+        "Crispy cod fish finger wrap served with sweet chilli slaw and cos lettuce",
+      ],
+    },
+    "title": "monday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "'on toast' Crushed avocado, honey cured ham or baby spinach with a poached egg",
+      ],
+      "lunch": Array [
+        "Grilled chicken burger served with salad and slaw",
+      ],
+    },
+    "title": "tuesday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "'Baked ricotta on a flat mushroom with a tomato relish",
+      ],
+      "lunch": Array [
+        "Slow poached flaked salmon baguette with a caper crème fraiche salad",
+      ],
+    },
+    "title": "wednesday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "‘on toast’ crushed avocado, honey roast ham or baby spinach with a poached egg",
+      ],
+      "lunch": Array [
+        "feta, olives and roast tomato in a pita",
+      ],
+    },
+    "title": "thursday",
+  },
+  Object {
+    "color": "#3126A2",
+    "subsections": Object {
+      "breakfast": Array [
+        "full english breakfast wrap",
+      ],
+      "lunch": Array [
+        "hot roast smoked salmon with a warm asparagus nicoise salad",
+      ],
+    },
+    "title": "friday",
+  },
+]
+`;
+
 exports[`parser/index.js mainMenuParser should parse the html snippet 1`] = `
 Array [
   Object {

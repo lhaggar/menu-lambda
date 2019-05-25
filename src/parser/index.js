@@ -6,6 +6,9 @@ const mainMenuOptions = require('./options/main-menu');
 const cafeMenuOptions = require('./options/cafe-menu');
 
 const push = (obj, key, data) => {
+  if (!data) {
+    return;
+  }
   if (!obj[key]) {
     // eslint-disable-next-line no-param-reassign
     obj[key] = [data];

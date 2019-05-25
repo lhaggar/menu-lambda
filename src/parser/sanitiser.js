@@ -14,6 +14,8 @@ const LINE_SANITISERS = [
   [/(?!^or$)(^or\s+|\s+or$)/gi, ''],
   // Remove excess spaces
   [/\s{2,}/g, ' '],
+  // If only 1 or 2 characters exists on the line then remove (had a rouge 'f' appear once!)
+  [/^\s*.{1,2}\s*$/, ''],
 ];
 
 const sanitiseLine = line =>
