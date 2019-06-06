@@ -60,6 +60,7 @@ module.exports = {
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
   SUBSECTION_MATCHERS: [
     [/^\s*SIDE(S)?:/i, 'sides'],
+    [/^\s*add\s+on:/i, 'add on'],
     [/^Made to order pizza bar:/i, 'made to order pizza bar'],
   ],
 };

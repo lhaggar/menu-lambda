@@ -33,8 +33,5 @@ module.exports = {
   END_SECTIONS_MATCHERS: null,
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
-  SUBSECTION_MATCHERS: [
-    [/^\s*breakfast:/i, 'breakfast'],
-    [/^\s*lunch:/i, 'lunch'],
-  ],
+  SUBSECTION_MATCHERS: [],
 };

@@ -3,63 +3,48 @@
 exports[`parser/index.js cafeMenuParser should parse the html snippet 1`] = `
 Array [
   Object {
+    "body": Array [
+      "BREAKFAST: Virgin Radio Bap Give Away",
+      "LUNCH: Open club sandwich",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Virgin Radio Bap Give Away",
-      ],
-      "lunch": Array [
-        "Open club sandwich",
-      ],
-    },
+    "subsections": Object {},
     "title": "monday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Poached egg Florentine",
+      "LUNCH: Baked chorizo hens egg, garlic bread and salad",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Poached egg Florentine",
-      ],
-      "lunch": Array [
-        "Baked chorizo hens egg, garlic bread and salad",
-      ],
-    },
+    "subsections": Object {},
     "title": "tuesday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Smoked bacon frittata",
+      "LUNCH: Roasted aubergine and Parma ham on focaccia",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Smoked bacon frittata",
-      ],
-      "lunch": Array [
-        "Roasted aubergine and Parma ham on focaccia",
-      ],
-    },
+    "subsections": Object {},
     "title": "wednesday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Baked Smoked haddock Arnold Bennett",
+      "LUNCH: Harissa salmon, roasted chick peas lemon yoghurt on khobez",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Baked Smoked haddock Arnold Bennett",
-      ],
-      "lunch": Array [
-        "Harissa salmon, roasted chick peas lemon yoghurt on khobez",
-      ],
-    },
+    "subsections": Object {},
     "title": "thursday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Smashed avocado, chilli and tomato on sourdough",
+      "LUNCH: Loaded wedges",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Smashed avocado, chilli and tomato on sourdough",
-      ],
-      "lunch": Array [
-        "Loaded wedges",
-      ],
-    },
+    "subsections": Object {},
     "title": "friday",
   },
 ]
@@ -68,63 +53,48 @@ Array [
 exports[`parser/index.js cafeMenuParser should parse the html snippet 2`] = `
 Array [
   Object {
+    "body": Array [
+      "BREAKFAST: Baked hens egg, wilted spinach, potato and feta",
+      "LUNCH: Samosa chat, Chana masala, mint yoghurt and Bombay mix (V)",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Baked hens egg, wilted spinach, potato and feta",
-      ],
-      "lunch": Array [
-        "Samosa chat, Chana masala, mint yoghurt and Bombay mix (V)",
-      ],
-    },
+    "subsections": Object {},
     "title": "monday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Two cheese omelette, tomato and rocket (v)",
+      "LUNCH: Caramelised goats cheese, balsamic onions and rocket on toasted focaccia",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Two cheese omelette, tomato and rocket (v)",
-      ],
-      "lunch": Array [
-        "Caramelised goats cheese, balsamic onions and rocket on toasted focaccia",
-      ],
-    },
+    "subsections": Object {},
     "title": "tuesday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Waffle Wednesday with crispy bacon and maple syrup",
+      "LUNCH: Salt beef bagel with gherkin, red onion and whole grain mustard mayo",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Waffle Wednesday with crispy bacon and maple syrup",
-      ],
-      "lunch": Array [
-        "Salt beef bagel with gherkin, red onion and whole grain mustard mayo",
-      ],
-    },
+    "subsections": Object {},
     "title": "wednesday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Smoked haddock and chive frittata",
+      "LUNCH: Hickory chicken, jalapenos fried onions and spiced wedges",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Smoked haddock and chive frittata",
-      ],
-      "lunch": Array [
-        "Hickory chicken, jalapenos fried onions and spiced wedges",
-      ],
-    },
+    "subsections": Object {},
     "title": "thursday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: Toasted sourdough bread with smashed avocado, poached egg and crumbled goats cheese",
+      "LUNCH: Pulled pork bap with caramelised onion, apple and sage stuffing",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Toasted sourdough bread with smashed avocado, poached egg and crumbled goats cheese",
-      ],
-      "lunch": Array [
-        "Pulled pork bap with caramelised onion, apple and sage stuffing",
-      ],
-    },
+    "subsections": Object {},
     "title": "friday",
   },
 ]
@@ -133,63 +103,99 @@ Array [
 exports[`parser/index.js cafeMenuParser should parse the html snippet 3`] = `
 Array [
   Object {
+    "body": Array [
+      "BREAKFAST: Protein punch loaded scrambled egg with spiced beans, seeds, spinach and tomato relish",
+      "LUNCH: Crispy cod fish finger wrap served with sweet chilli slaw and cos lettuce",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "Protein punch loaded scrambled egg with spiced beans, seeds, spinach and tomato relish",
-      ],
-      "lunch": Array [
-        "Crispy cod fish finger wrap served with sweet chilli slaw and cos lettuce",
-      ],
-    },
+    "subsections": Object {},
     "title": "monday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: 'on toast' Crushed avocado, honey cured ham or baby spinach with a poached egg",
+      "LUNCH: Grilled chicken burger served with salad and slaw",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "'on toast' Crushed avocado, honey cured ham or baby spinach with a poached egg",
-      ],
-      "lunch": Array [
-        "Grilled chicken burger served with salad and slaw",
-      ],
-    },
+    "subsections": Object {},
     "title": "tuesday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: 'Baked ricotta on a flat mushroom with a tomato relish",
+      "LUNCH: Slow poached flaked salmon baguette with a caper crème fraiche salad",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "'Baked ricotta on a flat mushroom with a tomato relish",
-      ],
-      "lunch": Array [
-        "Slow poached flaked salmon baguette with a caper crème fraiche salad",
-      ],
-    },
+    "subsections": Object {},
     "title": "wednesday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: ‘on toast’ crushed avocado, honey roast ham or baby spinach with a poached egg",
+      "LUNCH: feta, olives and roast tomato in a pita",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "‘on toast’ crushed avocado, honey roast ham or baby spinach with a poached egg",
-      ],
-      "lunch": Array [
-        "feta, olives and roast tomato in a pita",
-      ],
-    },
+    "subsections": Object {},
     "title": "thursday",
   },
   Object {
+    "body": Array [
+      "BREAKFAST: full english breakfast wrap",
+      "LUNCH: hot roast smoked salmon with a warm asparagus nicoise salad",
+    ],
     "color": "#3126A2",
-    "subsections": Object {
-      "breakfast": Array [
-        "full english breakfast wrap",
-      ],
-      "lunch": Array [
-        "hot roast smoked salmon with a warm asparagus nicoise salad",
-      ],
-    },
+    "subsections": Object {},
+    "title": "friday",
+  },
+]
+`;
+
+exports[`parser/index.js cafeMenuParser should parse the html snippet 4`] = `
+Array [
+  Object {
+    "body": Array [
+      "BREAKFAST: Roasted red pepper, chilli and mint shakshuka baked Kentish eggs served with toasted Greenwich bloomer",
+      "LUNCH: BLT - Braised grilled and glazed Waverly pork belly, crisp lettuce and heritage tomato on toasted bloomer",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "monday",
+  },
+  Object {
+    "body": Array [
+      "BREAKFAST: Crushed avocado on sourdough toast with honey roast ham, poached egg and baby spinach",
+      "LUNCH: lightly dusted fish (hake, salmon, pollock) wrap with a slow braised fennel and tomato sauce on a bed of crunchy cos",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "tuesday",
+  },
+  Object {
+    "body": Array [
+      "BREAKFAST: Waffle Wednesday: Nutella, coconut-flavoured yoghurt, clementine or pomegranate seeds and chopped nuts",
+      "LUNCH: Bish, Bash, Bosh - Ultimate falafel wrap in a charred soft flour tortilla with crunchy iceberg, plum tomato and a zesty lemon hummus (V)",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "wednesday",
+  },
+  Object {
+    "body": Array [
+      "BREAKFAST: Genuine Muffins - Sausage and egg muffin with American cheese and HP sauce or egg and American cheese muffin",
+      "Side: Hash Browns",
+      "LUNCH: Grilled Castlemead chicken breast, caramelised onion and Somerset brie sub with a baby leaf salad with dill pickle relish",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "thursday",
+  },
+  Object {
+    "body": Array [
+      "BREAKFAST: Home made baked beans on free range eggy crumpets. (V)",
+      "LUNCH: Castlemead chicken souvlaki with apricot pearled Israeli cous cous and oregano herbed tomato relish served on open flat bread",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
     "title": "friday",
   },
 ]
@@ -1095,6 +1101,56 @@ Array [
     "body": Array [
       "Curried cauliflower (v)",
       "Roasted tomato bacon and chickpea",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 20`] = `
+Array [
+  Object {
+    "color": "#C41017",
+    "subsections": Object {
+      "add on": Array [
+        "Sticky chicken wings, celery and blue cheese sauce",
+      ],
+      "made to order pizza bar": Array [
+        "fresh Khobez base served with a selection of delicious toppings",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Vegan slow roasted rosemary and thyme rubbed butternut with a freekeh and cured rainbow salad topped with a fresh tomato salsa (V)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Rainbow slaw or garlic and herb courgettes and broad beans (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "'Turkish Delight' - rose and cumin slow cooked shoulder of lamb served with pepper roasted herbed barley and Turkish rice",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Tavada (Turkish spiced potato), pitta, hummus, tzatziki, flat bread (V)",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Sweetcorn chowder (v)",
+      "Chicken noodle soup",
     ],
     "color": "#e6e600",
     "subsections": Object {},
