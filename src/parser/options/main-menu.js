@@ -39,7 +39,7 @@ module.exports = {
       color: '#007404',
     },
     {
-      matcher: /^\s*Vegetarian\s+Station\s*$/i,
+      matcher: /^\s*Vegetarian\s+(Station|Counter)\s*$/i,
       displayName: 'Vegetarian Station',
       color: '#008575',
     },

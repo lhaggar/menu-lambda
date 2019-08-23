@@ -1207,3 +1207,52 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 22`] = `
+Array [
+  Object {
+    "body": Array [
+      "Genuine Chip Shop - battered pollock, breaded scampi, beef and onion pie, battered sausages and saveloys",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Chips, peas and mushy peas (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Pickled red cabbage marinated halloumi on a bed of freekeh, roasted peppers, aubergine and courgette salad with a sun blushed tomato vinaigrette (V)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "Herb and garlic bread (V)",
+      ],
+    },
+    "title": "Vegetarian Station",
+  },
+  Object {
+    "body": Array [
+      "BBQ grilled turkey escalope and a succotash (sweetcorn and beans flavoured with chilli and garlic)",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Cajun spiced potatoes, fried spring greens with onion and garlic seasoning (V)",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Vegan red pepper and tomato (v)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
