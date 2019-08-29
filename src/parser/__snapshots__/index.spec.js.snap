@@ -1256,3 +1256,45 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 23`] = `
+Array [
+  Object {
+    "color": "#C41017",
+    "subsections": Object {
+      "made to order pizza bar": Array [
+        "fresh Khobez base served with a selection of delicious toppings",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Vegan counter - roasted bell pepper and chickpea tagine served with herb infused cous cous and a minted cabbage and broccoli salad (V)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "harissa green beans (V)",
+      ],
+    },
+    "title": "Vegan Station",
+  },
+  Object {
+    "body": Array [
+      "Salmon and tuna thai fish cake poke bowl served with flat rice noodles, crunchy vegetables and a miso broth",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {},
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Vegan minted green split pea (v)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
