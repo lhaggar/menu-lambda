@@ -1298,3 +1298,52 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 24`] = `
+Array [
+  Object {
+    "body": Array [
+      "Genuine Chip Shop - battered pollock, breaded scampi, beef and onion pie, battered sausages and saveloys",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Chips, peas and mushy peas (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "buffalo Broccoli bites served with a crème fraiche dressing and a salsa rosso rice salad (V)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Cajun spiced potato wedges (V)",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Korean chicken bulgogi (marinated chicken BBQ) served with Bibimbap (savoury rice) and a fried egg",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "spring roll, prawn crackers, steamed bun (V)",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Creamed leek (v)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;

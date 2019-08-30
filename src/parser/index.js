@@ -95,37 +95,44 @@ const createParser = ({
     getContents(menuHtml)
       .reduce((acc, line, i, lines) => {
         const newSection = createSection(line, i === 0);
-        const currentSection = acc[acc.length - 1];
         const lineIsAnOrBreak = line.toLowerCase() === 'or';
+        let currentSection = acc[acc.length - 1];
 
         if (newSection) {
           // We've hit a section title so add the new section to the list.
           acc.push(newSection);
-        } else if (
-          currentSection &&
-          lineIsAnOrBreak &&
-          getSubsection(SUBSECTION_MATCHERS, lines[i - 1])
-        ) {
-          // We've hit a duplicate section.
-          // (i.e. prev line is "SIDES: xyz" and current line is "or"; two "From the Oven" options for example).
-          acc.push(duplicateSection(currentSection));
-        } else if (currentSection && !lineIsAnOrBreak) {
-          // We're not on a section title, so we're dealing with the section content.
-          // If we don't have a section then just ignore and continue.
-          const subsection = getSubsection(SUBSECTION_MATCHERS, line);
-          if (subsection) {
-            const [subsectionMatcher, subsectionName] = subsection;
-            // Subsection line, strip the matcher and store.
-            push(
-              currentSection.subsections,
-              subsectionName,
-              sanitiseLine(line.replace(subsectionMatcher, '')),
-            );
-          } else {
-            // Append the line to the current section body.
-            push(currentSection, 'body', sanitiseLine(line));
+        } else {
+          if (
+            currentSection &&
+            getSubsection(SUBSECTION_MATCHERS, lines[i - 1]) &&
+            !getSubsection(SUBSECTION_MATCHERS, line)
+          ) {
+            // We have a current section, previous line was a subsection, and current line isn't a subsection.
+            // Means we've hit a duplicate section, so reassign currentSection.
+            // (i.e. prev line is "SIDES: xyz" and a new section was not created; two "From the Oven" options for example).
+            currentSection = duplicateSection(currentSection);
+            acc.push(currentSection);
+          }
+
+          if (currentSection && !lineIsAnOrBreak) {
+            // We're not on a section title, so we're dealing with the section content.
+            // If we don't have a section then just ignore and continue.
+            const subsection = getSubsection(SUBSECTION_MATCHERS, line);
+            if (subsection) {
+              const [subsectionMatcher, subsectionName] = subsection;
+              // Subsection line, strip the matcher and store.
+              push(
+                currentSection.subsections,
+                subsectionName,
+                sanitiseLine(line.replace(subsectionMatcher, '')),
+              );
+            } else {
+              // Append the line to the current section body.
+              push(currentSection, 'body', sanitiseLine(line));
+            }
           }
         }
+
         return acc;
       }, [])
       .filter(
