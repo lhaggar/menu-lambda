@@ -20,18 +20,18 @@ functions:
       - schedule:
           name: presend-morning-test
           enabled: true
-          rate: cron(30 5 ? * 2-6 *)
+          rate: cron(30 6 ? * 2-6 *)
           input:
             slackUrl: ${env:SLACK_URL_PRESEND}
       - schedule:
           name: presend-morning-test-2
           enabled: true
-          rate: cron(15 7 ? * 2-6 *)
+          rate: cron(15 8 ? * 2-6 *)
           input:
             slackUrl: ${env:SLACK_URL_PRESEND}
       - schedule:
           name: send-morning
           enabled: true
-          rate: cron(30 7 ? * 2-6 *)
+          rate: cron(30 8 ? * 2-6 *)
           input:
             slackUrl: ${env:SLACK_URL}
