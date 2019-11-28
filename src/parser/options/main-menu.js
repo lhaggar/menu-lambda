@@ -71,6 +71,7 @@ module.exports = {
   SUBSECTION_MATCHERS: [
     [/^\s*SIDE(S)?:/i, 'sides'],
     [/^\s*add\s+on:/i, 'add on'],
+    [/^\s*EXTRA(S)?:/i, 'extras'],
     [/^Made to order pizza bar:/i, 'made to order pizza bar'],
   ],
 };

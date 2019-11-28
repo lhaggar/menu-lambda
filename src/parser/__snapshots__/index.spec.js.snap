@@ -1347,3 +1347,53 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 25`] = `
+Array [
+  Object {
+    "color": "#C41017",
+    "subsections": Object {
+      "extras": Array [
+        "Limited home made calzones",
+      ],
+      "made to order pizza bar": Array [
+        "fresh Khobez base served with a selection of delicious toppings",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Spinach and zucchini fritters topped with a black bean, avocado and tomato salad with a shredded beetroot vinaigrette (v)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "Spiced potato wedges (v)",
+      ],
+    },
+    "title": "Vegetarian Station",
+  },
+  Object {
+    "body": Array [
+      "Crispy fried pork katsu served with a rich curry sauce with fragrant rice and a pickled cucumber salad",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Wasabi fries, Chilli braised cabbage and kale",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Sweetcorn chowder (v)",
+      "Chicken and country vegetable",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
