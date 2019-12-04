@@ -201,6 +201,56 @@ Array [
 ]
 `;
 
+exports[`parser/index.js cafeMenuParser should parse the html snippet 5`] = `
+Array [
+  Object {
+    "body": Array [
+      "BREAKFAST: Breakfast wrap filled with your choice of bacon, sausage, egg, mushrooms and cheese with a tomato relish",
+      "LUNCH: Crispy crumbed jumbo fish goujon bap served with a spiced tomato relish and gherkin mayonnaise",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "monday",
+  },
+  Object {
+    "body": Array [
+      "Breakfast: Crushed avocado, chilli and lime on toasted sourdough, roasted flat mushroom, baby spinach and a soft poached free range egg",
+      "LUNCH: Cooked to order omelette station with a selection of fillings including ham, tomato, onions, spinach, cheese served with baby leaf salad",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "tuesday",
+  },
+  Object {
+    "body": Array [
+      "BReakfast: Marcus Wareing - English muffin pain perdu (French toast) with crispy bacon, avocado and sriracha",
+      "LUNCH: Vietnamese Banh Mi sandwich filled with sweet chilli glazed beef and crunchy salad in a crunchy baguette",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "wednesday",
+  },
+  Object {
+    "body": Array [
+      "BReakfast: Genuine Muffins - Sausage pattie and egg muffin with American cheese and HP sauce or egg and American cheese muffin with a hash brown",
+      "LUNCH: Gyoza pot - vegetable gyoza served on egg fried savoury rice topped with carrot and sesame salad",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "thursday",
+  },
+  Object {
+    "body": Array [
+      "BReakfast: Potato and chorizo breakfast hash with sauté mushrooms and spinach served with a fried egg",
+      "LUNCH: Char grilled lamb burger served with tzatziki, hummus, sliced tomato and leaf salad",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "friday",
+  },
+]
+`;
+
 exports[`parser/index.js mainMenuParser should parse the html snippet 1`] = `
 Array [
   Object {

@@ -2,7 +2,7 @@
 // e.g. <strong>sides</strong> (see test fixtures).
 const sanitiseHtml = html =>
   html.replace(
-    /<(\/?)strong>|<(\/?)b>|<noscript>.*<\/noscript>|<br\s*\/?>/g,
+    /<(\/?)strong>|<(\/?)b>|<noscript>.*<\/noscript>|<br\s*\/?>|<(\/?)em>/g,
     '',
   );
 
