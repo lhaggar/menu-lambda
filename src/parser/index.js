@@ -1,6 +1,7 @@
 const cheerio = require('cheerio');
 
 const { sanitiseHtml, sanitiseLine } = require('./sanitiser');
+const { addSeasonalEffects } = require('./seasonal-effects');
 
 const mainMenuOptions = require('./options/main-menu');
 const cafeMenuOptions = require('./options/cafe-menu');
@@ -135,6 +136,10 @@ const createParser = ({
 
         return acc;
       }, [])
+      .map(section => ({
+        ...section,
+        ...addSeasonalEffects(section),
+      }))
       .filter(
         section =>
           section &&

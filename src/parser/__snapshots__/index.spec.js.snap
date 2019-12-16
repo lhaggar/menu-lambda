@@ -1447,3 +1447,36 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 26`] = `
+Array [
+  Object {
+    "body": Array [
+      "CHRISTMAS LUNCH - TRADITIONAL ROAST TURKEY WITH ALL THE TRIMMINGS INCLUDING PIGS IN BLANKETS, CHESTNUT STUFFING AND CHEFS ULTIMATE TURKEY JUS SERVED WITH CARAMELISED CARROTS, BUTTERED SPROUTS AND ROAST POTATOES",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
+    "title": "🎄 From the Oven 🎅🏼",
+  },
+  Object {
+    "body": Array [
+      "Autumn squash risotto with sauté spinach and crispy leeks (v)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "broccoli and green beans, tomato fococcia",
+      ],
+    },
+    "title": "Vegetarian Station",
+  },
+  Object {
+    "body": Array [
+      "CHRISTMAS LUNCH - TRADITIONAL ROAST TURKEY WITH ALL THE TRIMMINGS INCLUDING PIGS IN BLANKETS, CHESTNUT STUFFING AND CHEFS ULTIMATE TURKEY JUS SERVED WITH CARAMELISED CARROTS, BUTTERED SPROUTS AND ROAST POTATOES",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {},
+    "title": "🎄 Theatre Station 🎅🏼",
+  },
+]
+`;
