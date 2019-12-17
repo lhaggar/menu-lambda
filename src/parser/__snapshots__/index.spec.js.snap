@@ -798,7 +798,7 @@ Array [
         "live cooking at its best with a fresh khobez base and a selection of delicious toppings",
       ],
     },
-    "title": "From the Oven",
+    "title": "From the Oven 🍕",
   },
   Object {
     "body": Array [
@@ -1171,7 +1171,7 @@ Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
     },
-    "title": "From the Oven",
+    "title": "From the Oven 🍕",
   },
   Object {
     "body": Array [
@@ -1316,7 +1316,7 @@ Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
     },
-    "title": "From the Oven",
+    "title": "From the Oven 🍕",
   },
   Object {
     "body": Array [
@@ -1410,7 +1410,7 @@ Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
     },
-    "title": "From the Oven",
+    "title": "From the Oven 🍕",
   },
   Object {
     "body": Array [
@@ -1477,6 +1477,55 @@ Array [
     "color": "#3360ff",
     "subsections": Object {},
     "title": "🎄 Theatre Station 🎅🏼",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 27`] = `
+Array [
+  Object {
+    "body": Array [
+      "christmas lunch - Traditional roast turkey with all the trimmings including pigs in blankets, chestnut stuffing and chefs ultimate turkey jus",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Caramelised carrots, buttered sprouts and roast potatoes",
+      ],
+    },
+    "title": "🎄 From the Oven 🎅🏼",
+  },
+  Object {
+    "body": Array [
+      "christmas lunch - Mushroom and sage wellington served with all the trimming including butternut stuffing balls and a rich gravy (v)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "Caramelised carrots, buttered sprouts and roast potatoes",
+      ],
+    },
+    "title": "🎄 Vegetarian Station 🎅🏼",
+  },
+  Object {
+    "body": Array [
+      "christmas lunch - Traditional roast turkey with all the trimmings including pigs in blankets, chestnut stuffing and chefs ultimate turkey jus",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Caramelised carrots, buttered sprouts and roast potatoes",
+      ],
+    },
+    "title": "🎄 Theatre Station 🎅🏼",
+  },
+  Object {
+    "body": Array [
+      "broccoli and stilton (v)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
   },
 ]
 `;
