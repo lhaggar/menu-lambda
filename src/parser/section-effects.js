@@ -16,14 +16,14 @@ const effectsMap = [
     matcher: /\b(christmas|xmas)\b/i,
     applyEffect: applyTitleEmojis('🎄', '🎅🏼'),
   },
-  {
-    matcher: /\bpizza\b/i,
-    applyEffect: applyTitleEmojis('', '🍕'),
-  },
-  {
-    matcher: /\bpancakes\b/i,
-    applyEffect: applyTitleEmojis('', '🥞'),
-  },
+  // {
+  //   matcher: /\bpizza\b/i,
+  //   applyEffect: applyTitleEmojis('', '🍕'),
+  // },
+  // {
+  //   matcher: /\bpancakes\b/i,
+  //   applyEffect: applyTitleEmojis('', '🥞'),
+  // },
 ];
 
 const addSectionEffects = section => {
