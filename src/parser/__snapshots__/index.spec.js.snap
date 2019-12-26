@@ -1086,7 +1086,7 @@ Array [
         "Chips, peas, mushy peas, pickled eggs, pickled onions and gherkins",
       ],
     },
-    "title": "Terrace Cafe",
+    "title": "Terrace Café",
   },
   Object {
     "body": Array [
@@ -1100,7 +1100,7 @@ Array [
         "Steamed and buttered kale and cabbage",
       ],
     },
-    "title": "Terrace Cafe",
+    "title": "Terrace Café",
   },
   Object {
     "body": Array [
@@ -1572,6 +1572,39 @@ Array [
     "body": Array [
       "Vegan puy lentil and pumpkin (v)",
       "Spiced chickpea, carrot and lamb",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 29`] = `
+Array [
+  Object {
+    "body": Array [
+      "Beef and mushroom pie served with creamy mash potato and garden peas",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {
+      "sides": Array [
+        "PAPRIKA FRIES, STEAMED CABBAGE AND KALE",
+      ],
+    },
+    "title": "Terrace Café",
+  },
+  Object {
+    "body": Array [
+      "Mushroom carbonara served with penne pasta and a mix leaf salad",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "Terrace Café",
+  },
+  Object {
+    "body": Array [
+      "TOMATO AND BASIL",
     ],
     "color": "#e6e600",
     "subsections": Object {},

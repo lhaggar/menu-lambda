@@ -50,8 +50,8 @@ module.exports = {
     },
     {
       // On a bank holiday the cafe appeared as a main canteen section...
-      matcher: /^\s*Terrace\s+Caf[eé]\s*$/i,
-      displayName: 'Terrace Cafe',
+      matcher: /Terrace\s+Caf[eé]/i,
+      displayName: 'Terrace Café',
       color: CAFE_COLOUR,
     },
     {
