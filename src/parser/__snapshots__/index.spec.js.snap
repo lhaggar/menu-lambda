@@ -308,7 +308,7 @@ Array [
     "body": Array [
       "Roots and Shoots with chicken, beet falafel (v) or poached salmon",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "warm seasonal salads",
@@ -358,7 +358,7 @@ Array [
     "body": Array [
       "Roots and Shoots with falafel add on chicken or baked salmon",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "warm seasonal salads",
@@ -408,7 +408,7 @@ Array [
     "body": Array [
       "Steamed day boat fish, new potato",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "Steamed brocolli",
@@ -458,7 +458,7 @@ Array [
     "body": Array [
       "Roots and Shoots with falafel add on chicken or baked salmon",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "warm seasonal salads",
@@ -508,7 +508,7 @@ Array [
     "body": Array [
       "VEGAN BAR Californian tofu wrap (v)",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "Chilli, roast red onion and preserved lemon salad",
@@ -558,7 +558,7 @@ Array [
     "body": Array [
       "VEGAN BAR Californian tofu wrap (v)",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "Chilli, roast red onion and preserved lemon salad",
@@ -609,7 +609,7 @@ Array [
     "body": Array [
       "Steamed day boat fish with new potato",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "Steamed broccoli",
@@ -662,7 +662,7 @@ Array [
       "Freshly baked salmon",
       "served with red onion freekeh, toasted hazelnut and lemon dressing",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {},
     "title": "Healthy Bar",
   },
@@ -913,7 +913,7 @@ Array [
     "body": Array [
       "Grains and Greens Bar - grilled chicken breast, grains, pearl barley, couscous, toasted quinoa, carrot, garden leaves and hummus",
     ],
-    "color": "#007404",
+    "color": "#2f8500",
     "subsections": Object {
       "sides": Array [
         "red onion and potato salad",
@@ -1036,7 +1036,7 @@ Array [
         "Haricots vert, baguette, lyonnaise potatoes (V)",
       ],
     },
-    "title": "No name 😔",
+    "title": "",
   },
   Object {
     "body": Array [
@@ -1048,7 +1048,7 @@ Array [
         "Blue cheese, celery and chard salad (V)",
       ],
     },
-    "title": "No name 😔",
+    "title": "",
   },
   Object {
     "body": Array [
@@ -1322,7 +1322,7 @@ Array [
     "body": Array [
       "Vegan counter - roasted bell pepper and chickpea tagine served with herb infused cous cous and a minted cabbage and broccoli salad (V)",
     ],
-    "color": "#008575",
+    "color": "#008554",
     "subsections": Object {
       "sides": Array [
         "harissa green beans (V)",
@@ -1605,6 +1605,56 @@ Array [
   Object {
     "body": Array [
       "TOMATO AND BASIL",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 30`] = `
+Array [
+  Object {
+    "body": Array [
+      "canteen closed.",
+    ],
+    "color": "#CCCCCC",
+    "subsections": Object {},
+    "title": "",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 31`] = `
+Array [
+  Object {
+    "body": Array [
+      "Bangers and mash - Cumberland ring or Quorn vegetarian Quorn sausages with creamy mash potato, garden peas and onion gravy",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "caramelised carrots, onion rings",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Spiced and fried halloumi wrap filled with crunchy salad, chilli salsa and mint yoghurt (v)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "potato wedges (v)",
+      ],
+    },
+    "title": "Vegetarian Station",
+  },
+  Object {
+    "body": Array [
+      "Mixed bean and thyme (v)",
     ],
     "color": "#e6e600",
     "subsections": Object {},

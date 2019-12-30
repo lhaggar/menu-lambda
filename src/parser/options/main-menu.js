@@ -19,7 +19,7 @@ module.exports = {
       color: '#9933FF',
     },
     {
-      matcher: /^\s*THEATRE\s+STATION\s*$/i,
+      matcher: /^\s*THEATRE(\s+(STATION|COUNTER))?\s*$/i,
       displayName: 'Theatre Station',
       color: '#3360ff',
     },
@@ -31,22 +31,22 @@ module.exports = {
     {
       matcher: /^\s*HEALTHY\s+BAR\s*$/i,
       displayName: 'Healthy Bar',
-      color: '#007404',
+      color: '#2f8500',
     },
     {
-      matcher: /^\s*Healthy\s+Station\s*$/i,
+      matcher: /^\s*HEALTHY(\s+(STATION|COUNTER))?\s*$/i,
       displayName: 'Healthy Station',
-      color: '#007404',
+      color: '#2f8500',
     },
     {
-      matcher: /^\s*Vegetarian\s+(Station|Counter)\s*$/i,
+      matcher: /^\s*VEGETARIAN(\s+(STATION|COUNTER))?\s*$/i,
       displayName: 'Vegetarian Station',
       color: '#008575',
     },
     {
-      matcher: /^\s*Vegan\s+(Station|Counter)\s*$/i,
+      matcher: /^\s*VEGAN\s+(STATION|COUNTER)\s*$/i,
       displayName: 'Vegan Station',
-      color: '#008575',
+      color: '#008554',
     },
     {
       // On a bank holiday the cafe appeared as a main canteen section...
@@ -56,7 +56,7 @@ module.exports = {
     },
     {
       matcher: false,
-      displayName: 'No name 😔',
+      displayName: '',
       color: '#CCCCCC',
     },
   ],
