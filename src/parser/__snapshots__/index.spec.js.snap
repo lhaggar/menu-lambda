@@ -251,6 +251,51 @@ Array [
 ]
 `;
 
+exports[`parser/index.js cafeMenuParser should parse the html snippet 6`] = `
+Array [
+  Object {
+    "body": Array [
+      "LUNCH: Crispy crumbed jumbo fish goujon sandwich served with a spiced tomato relish and gherkin mayonnaise",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "monday",
+  },
+  Object {
+    "body": Array [
+      "LUNCH: Grilled piri piri chicken thigh, paprika spiced fries, piri piri mayo served with salad and coleslaw",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "tuesday",
+  },
+  Object {
+    "body": Array [
+      "LUNCH: Vietnamese Banh Mi sandwich filled with sweet chilli glazed beef and crunchy salad in a crunchy baguette",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "wednesday",
+  },
+  Object {
+    "body": Array [
+      "Lunch: Garlic and herb seasoned turkey burgers in a soft bap with a red onion marmalade and salad",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "thursday",
+  },
+  Object {
+    "body": Array [
+      "Lunch: Char grilled lamb burger served with tzatziki, hummus, sliced tomato and leaf salad",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "friday",
+  },
+]
+`;
+
 exports[`parser/index.js mainMenuParser should parse the html snippet 1`] = `
 Array [
   Object {
@@ -1655,6 +1700,64 @@ Array [
   Object {
     "body": Array [
       "Mixed bean and thyme (v)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 32`] = `
+Array [
+  Object {
+    "body": Array [
+      "BREAKFAST WRAP FILLED WITH YOUR CHOICE OF BACON, SAUSAGE, EGG, MUSHROOMS AND CHEESE WITH A TOMATO RELISH",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast Special",
+  },
+  Object {
+    "body": Array [
+      "Slow braised beef and chorizo lasagne topped with a two cheese crust and mix baby leaf salad",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "sides": Array [
+        "Herbed garlic bread, Panzanella salad",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Quorn chilli sin carne served with fluffy steamed rice and finished with sour cream coriander chutney (V)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "Nachos topped with salsa, cheese and sour cream",
+      ],
+    },
+    "title": "Vegetarian Station",
+  },
+  Object {
+    "body": Array [
+      "Grilled chicken shish kebab served with shredded salad, garlic mayo, harissa and flatbread",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Fries, Israeli cous cous",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Vegan roasted sweet potato and red onion (v)",
+      "Split pea and pulled chicken",
     ],
     "color": "#e6e600",
     "subsections": Object {},
