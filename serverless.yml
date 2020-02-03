@@ -1,18 +1,18 @@
 service: menu-lambda
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   memorySize: 128
   stage: production
   region: eu-west-1
 package:
   exclude:
-    - '*.spec.js'
-    - 'fixtures/**'
-    - '**/__snapshots__/**'
-    - 'test-utils/**'
-    - 'jest.config.js'
-    - 'README.md'
+    - "*.spec.js"
+    - "fixtures/**"
+    - "**/__snapshots__/**"
+    - "test-utils/**"
+    - "jest.config.js"
+    - "README.md"
 functions:
   send:
     handler: handler.run
