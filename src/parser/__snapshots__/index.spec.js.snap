@@ -1765,3 +1765,74 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 33`] = `
+Array [
+  Object {
+    "body": Array [
+      "GENUINE MUFFINS - SAUSAGE AND EGG MUFFIN WITH AMERICAN CHEESE AND HP SAUCE OR EGG AND AMERICAN CHEESE MUFFIN (SIDE: HASH BROWNS)",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast Special",
+  },
+  Object {
+    "color": "#C41017",
+    "subsections": Object {
+      "made to order pizza bar": Array [
+        "live cooking at its best with a fresh Khobez base and a selection of delicious toppings",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "vegan Made to order pizza bar: live cooking at its best with a fresh Khobez base and a selection of delicious toppings with vegan cheese",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Vegan gyoza pot - Vegetable gyoza served on Singapore noodles topped with carrot and sesame salad (v)",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "sides": Array [
+        "Spring onion and sweet soy glazed crumbed mushrooms (v)",
+      ],
+    },
+    "title": "Vegetarian Station",
+  },
+  Object {
+    "body": Array [
+      "Bangers Bar - Cumberland, Lancashire or chicken sausages with creamy mash potato, garden peas and onion gravy",
+    ],
+    "color": "#3360ff",
+    "subsections": Object {
+      "sides": Array [
+        "Caramelised carrots, Onion rings",
+      ],
+    },
+    "title": "Theatre Station",
+  },
+  Object {
+    "body": Array [
+      "Vegan slow roast tomato and oregano",
+      "chicken noodle",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Dark chocolate delice with chocolate sauce and orange cream",
+    ],
+    "color": "#cc3399",
+    "subsections": Object {},
+    "title": "Dessert",
+  },
+]
+`;

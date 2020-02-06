@@ -54,6 +54,11 @@ module.exports = {
       color: '#ffbf00',
     },
     {
+      matcher: /^\s*DESSERT\s*$/i,
+      displayName: 'Dessert',
+      color: '#cc3399',
+    },
+    {
       // On a bank holiday the cafe appeared as a main canteen section...
       matcher: /Terrace\s+Caf[eé]/i,
       displayName: 'Terrace Café',
