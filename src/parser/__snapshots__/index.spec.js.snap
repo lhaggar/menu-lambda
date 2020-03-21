@@ -1629,23 +1629,24 @@ exports[`parser/index.js mainMenuParser should parse the html snippet 29`] = `
 Array [
   Object {
     "body": Array [
+      "SERVICE WILL BE RUNNING FROM TERRACE CAFE.",
       "Beef and mushroom pie served with creamy mash potato and garden peas",
     ],
-    "color": "#3126A2",
+    "color": "#CCCCCC",
     "subsections": Object {
       "sides": Array [
         "PAPRIKA FRIES, STEAMED CABBAGE AND KALE",
       ],
     },
-    "title": "Terrace Café",
+    "title": "",
   },
   Object {
     "body": Array [
       "Mushroom carbonara served with penne pasta and a mix leaf salad",
     ],
-    "color": "#3126A2",
+    "color": "#CCCCCC",
     "subsections": Object {},
-    "title": "Terrace Café",
+    "title": "",
   },
   Object {
     "body": Array [
@@ -1663,6 +1664,7 @@ Array [
   Object {
     "body": Array [
       "canteen closed.",
+      "service will be running from terrace cafe.",
     ],
     "color": "#CCCCCC",
     "subsections": Object {},
@@ -1833,6 +1835,48 @@ Array [
     "color": "#cc3399",
     "subsections": Object {},
     "title": "Dessert",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 34`] = `
+Array [
+  Object {
+    "body": Array [
+      "CANTEEN",
+      "PLEASE NOTE THAT THE MAIN CANTEEN WILL BE CLOSED. A REDUCED SERVICE WILL BE AVAILABLE IN THE TERRACE CAFE",
+    ],
+    "color": "#CCCCCC",
+    "subsections": Object {},
+    "title": "",
+  },
+  Object {
+    "body": Array [
+      "TERRACE CAFE HOT COUNTER - BACON BAP, SAUSAGE BAP, FRIED EGG BAPS",
+      "BREAKFAST HOT CUPBOARD - DAIRY AND NON-DAIRY PORRIDGE",
+      "BREAKFAST - GRAB & GO FRIDGE - FRUIT SALAD POTS, YOGHURT POTS, SELECTION OF TOASTIES, PANINIS, WRAPS, BAGUETTES, SANDWICHES AND BOX SALADS",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Terrace Café Breakfast",
+  },
+  Object {
+    "body": Array [
+      "Fish pie served with buttered peas and kale",
+      "Five bean chilly with steamed rice and tortilla chips salsa and sour cream (V)",
+      "GRAB & GO FRIDGE - FRUIT SALAD POTS, YOGHURT POTS, SELECTION OF TOASTIES, PANINIS, WRAPS, BAGUETTES, SANDWICHES AND BOX SALADS",
+    ],
+    "color": "#3126A2",
+    "subsections": Object {},
+    "title": "Terrace Café Lunch",
+  },
+  Object {
+    "body": Array [
+      "Vegan red pepper and lentil (V)",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
   },
 ]
 `;

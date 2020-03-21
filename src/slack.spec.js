@@ -1,8 +1,9 @@
-const fixture = require('../fixtures/parsed-menu-content');
+const fixture1 = require('../fixtures/parsed-menu-content-1');
+const fixture2 = require('../fixtures/parsed-menu-content-2');
 
 describe('src/slack.js', () => {
   describe('buildPayload', () => {
-    const setup = ({ day } = {}) => {
+    const setup = ({ day, fixture = fixture1 } = {}) => {
       const data = {
         date: new Date('2019-02-01'),
         menuContent: fixture,
@@ -64,6 +65,20 @@ describe('src/slack.js', () => {
       afterAll(() => jest.resetModules());
 
       it('should return a snapshot match', () => {
+        expect(result).toMatchSnapshot();
+      });
+    });
+
+    describe('with cafe content in canteen', () => {
+      let result;
+
+      beforeAll(() => {
+        ({ result } = setup({ day: 'friday', fixture: fixture2 }));
+      });
+
+      afterAll(() => jest.resetModules());
+
+      it('should return a snapshot match excluding the cafe content', () => {
         expect(result).toMatchSnapshot();
       });
     });

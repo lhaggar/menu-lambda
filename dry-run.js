@@ -2,8 +2,6 @@
 
 const { test } = require('./src');
 
-debugger;
-
 setTimeout(() => {
   test();
 }, 10000);

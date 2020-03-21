@@ -1,5 +1,26 @@
 const { CAFE_COLOUR } = require('./cafe-menu');
 
+const cafeSections = [
+  {
+    // During coronavirus closure, cafe breakfast appeared as a main canteen section.
+    matcher: /^\s*Terrace\s+Caf[eé]\s+Breakfast/i,
+    displayName: 'Terrace Café Breakfast',
+    color: '#ffbf00',
+  },
+  {
+    // During coronavirus closure, cafe lunch appeared as a main canteen section.
+    matcher: /^\s*Terrace\s+Caf[eé]\s+Lunch/i,
+    displayName: 'Terrace Café Lunch',
+    color: CAFE_COLOUR,
+  },
+  {
+    // On a bank holiday the cafe appeared as a main canteen section.
+    matcher: /^\s*Terrace\s+Caf[eé]\s*$/i,
+    displayName: 'Terrace Café',
+    color: CAFE_COLOUR,
+  },
+];
+
 module.exports = {
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
@@ -58,12 +79,7 @@ module.exports = {
       displayName: 'Dessert',
       color: '#cc3399',
     },
-    {
-      // On a bank holiday the cafe appeared as a main canteen section...
-      matcher: /Terrace\s+Caf[eé]/i,
-      displayName: 'Terrace Café',
-      color: CAFE_COLOUR,
-    },
+    ...cafeSections,
     {
       matcher: false,
       displayName: '',
@@ -84,4 +100,6 @@ module.exports = {
     [/^\s*EXTRA(S)?:/i, 'extras'],
     [/^Made to order pizza bar:/i, 'made to order pizza bar'],
   ],
+
+  CAFE_SECTION_TITLES: cafeSections.map(({ displayName }) => displayName),
 };

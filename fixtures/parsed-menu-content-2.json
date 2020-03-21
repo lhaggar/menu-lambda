@@ -1,0 +1,52 @@
+{
+  "mainMenuContent": [
+    {
+      "title": "",
+      "body": [
+        "CANTEEN",
+        "PLEASE NOTE THAT THE MAIN CANTEEN WILL BE CLOSED. A REDUCED SERVICE WILL BE AVAILABLE IN THE TERRACE CAFE"
+      ],
+      "subsections": {},
+      "color": "#CCCCCC"
+    },
+    {
+      "title": "Terrace Café Breakfast",
+      "subsections": {},
+      "color": "#ffbf00",
+      "body": [
+        "TERRACE CAFE HOT COUNTER - BACON BAP, SAUSAGE BAP, FRIED EGG BAPS",
+        "BREAKFAST HOT CUPBOARD - DAIRY AND NON-DAIRY PORRIDGE",
+        "BREAKFAST - GRAB & GO FRIDGE - FRUIT SALAD POTS, YOGHURT POTS, SELECTION OF TOASTIES, PANINIS, WRAPS, BAGUETTES, SANDWICHES AND BOX SALADS"
+      ]
+    },
+    {
+      "title": "Terrace Café Lunch",
+      "subsections": {},
+      "color": "#3126A2",
+      "body": [
+        "Fish pie served with buttered peas and kale",
+        "Five bean chilly with steamed rice and tortilla chips salsa and sour cream (V)",
+        "GRAB & GO FRIDGE - FRUIT SALAD POTS, YOGHURT POTS, SELECTION OF TOASTIES, PANINIS, WRAPS, BAGUETTES, SANDWICHES AND BOX SALADS"
+      ]
+    },
+    {
+      "title": "Soup",
+      "subsections": {},
+      "color": "#e6e600",
+      "body": ["Vegan red pepper and lentil (V)"]
+    }
+  ],
+  "cafeMenuContent": [
+    {
+      "title": "friday",
+      "subsections": {},
+      "color": "#3126A2",
+      "body": [
+        "Fish pie served with buttered peas and kale",
+        "Five bean chilly with steamed rice and tortilla chips salsa and sour cream (V)",
+        "SOUP",
+        "Vegan red pepper and lentil soup (V)"
+      ]
+    }
+  ]
+}

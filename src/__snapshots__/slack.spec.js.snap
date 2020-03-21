@@ -1,5 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`src/slack.js buildPayload with cafe content in canteen should return a snapshot match excluding the cafe content 1`] = `
+Object {
+  "attachments": Array [
+    Object {
+      "color": "#CCCCCC",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Canteen
+Please note that the main canteen will be closed. a reduced service will be available in the terrace cafe",
+      "title": "",
+    },
+    Object {
+      "color": "#ffbf00",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Terrace cafe hot counter - bacon bap, sausage bap, fried egg baps
+Breakfast hot cupboard - dairy and non-dairy porridge
+Breakfast - grab & go fridge - fruit salad pots, yoghurt pots, selection of toasties, paninis, wraps, baguettes, sandwiches and box salads",
+      "title": "Terrace Café Breakfast",
+    },
+    Object {
+      "color": "#3126A2",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Fish pie served with buttered peas and kale
+Five bean chilly with steamed rice and tortilla chips salsa and sour cream (v)
+Grab & go fridge - fruit salad pots, yoghurt pots, selection of toasties, paninis, wraps, baguettes, sandwiches and box salads",
+      "title": "Terrace Café Lunch",
+    },
+    Object {
+      "color": "#e6e600",
+      "mrkdwn_in": Array [
+        "text",
+      ],
+      "text": "Vegan red pepper and lentil (v)",
+      "title": "Soup",
+    },
+    Object {
+      "text": "Menu taken from <https://the-canteen-url.com#canteen|Canteen on 14 website>.
+Menu Lambda 1.33.7. Any issues or suggestions? <https://the-bugs-url.com|Post on the GitHub!>",
+    },
+  ],
+  "icon_emoji": ":hamburger:",
+  "text": "Menu for Friday, February 1, 2019",
+  "username": "Canteen on 14",
+}
+`;
+
 exports[`src/slack.js buildPayload with canteen and cafe data should return a snapshot match 1`] = `
 Object {
   "attachments": Array [

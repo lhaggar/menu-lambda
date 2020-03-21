@@ -2,6 +2,7 @@ const { version, bugs } = require('../package.json');
 
 const { CANTEEN_URL } = require('./config');
 const { getDay } = require('./utils');
+const { CAFE_SECTION_TITLES } = require('./parser/options/main-menu');
 
 const sentenceCase = line => {
   const trimmed = line
@@ -19,13 +20,20 @@ const buildPayload = (date, { mainMenuContent, cafeMenuContent }) => {
   const day = getDay(date);
   const todaysCafeMenuContent = cafeMenuContent.find(x => x.title === day);
 
+  // During certain periods of canteen closure, the main canteen section will contain the cafe menu.
+  // If this occurs, we want to ignore the cafe content to avoid showing duplicate information.
+  const mainMenuHasCafeMenu = mainMenuContent.some(({ title }) =>
+    CAFE_SECTION_TITLES.includes(title),
+  );
+
   const payloadContent = [
     ...mainMenuContent,
-    todaysCafeMenuContent && {
-      // Don't want the day as the title, so override it.
-      ...todaysCafeMenuContent,
-      title: 'Café',
-    },
+    todaysCafeMenuContent &&
+      !mainMenuHasCafeMenu && {
+        // Don't want the day as the title, so override it.
+        ...todaysCafeMenuContent,
+        title: 'Café',
+      },
   ]
     .filter(Boolean)
     .map(section => {
