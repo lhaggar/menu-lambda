@@ -1880,3 +1880,37 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 35`] = `
+Array [
+  Object {
+    "body": Array [
+      "Sandwich lunch delivered to floors 12-12.30",
+      "hot meals serviced to floors at 6-6.30",
+    ],
+    "color": "#CCCCCC",
+    "subsections": Object {},
+    "title": "",
+  },
+  Object {
+    "body": Array [
+      "Tuna cucumber sliced",
+      "Free range egg mayonnaise & crispy bacon baguette",
+      "Chana masala onion bhaji wrap(V)",
+      "Falafel wrap (vegan)",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Sandwich Selection",
+  },
+  Object {
+    "body": Array [
+      "Beef goulash served with creamy mash potato and steamed greens",
+      "falafel box with cous cous, minted slaw, hummus and pitta (VEGAN)",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner Menu",
+  },
+]
+`;

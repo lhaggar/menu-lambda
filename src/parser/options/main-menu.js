@@ -79,6 +79,18 @@ module.exports = {
       displayName: 'Dessert',
       color: '#cc3399',
     },
+    // Coronavirus lockdown options!
+    {
+      matcher: /^\s*LUNCH\s+SANDWICH\s+SELECTION\s*/i,
+      displayName: 'Lunch Menu - Sandwich Selection',
+      color: '#19b7b4',
+    },
+    {
+      matcher: /^\s*DINNER\s+MENU\s*/i,
+      displayName: 'Dinner Menu',
+      color: '#c24040',
+    },
+    // These are separate so duplications can be filtered out of Cafe menu
     ...cafeSections,
     {
       matcher: false,
