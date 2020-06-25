@@ -86,6 +86,16 @@ module.exports = {
       color: '#19b7b4',
     },
     {
+      matcher: /^\s*Pret\s+sandwich\s+&\s+salad\s+selection\s*/i,
+      displayName: 'Lunch Menu - Pret Sandwich & Salad Selection',
+      color: '#19b7b4',
+    },
+    {
+      matcher: /^\s*Pret\s+salad\s+boxes\s*/i,
+      displayName: 'Lunch Menu - Pret Salad Boxes',
+      color: '#19b7b4',
+    },
+    {
       matcher: /^\s*DINNER\s+MENU\s*/i,
       displayName: 'Dinner Menu',
       color: '#c24040',

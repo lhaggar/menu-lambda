@@ -1914,3 +1914,44 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 36`] = `
+Array [
+  Object {
+    "body": Array [
+      "Chicken, Avocado & Basil - £3.69",
+      "Classic Super Club - £3.69",
+      "Free-Range Egg Mayo - £1.89",
+      "Ham & Cheese - £2.69",
+      "Scottish Smoked Salmon - £3.79",
+      "Avo, Olives & Toms - £3.75",
+      "Pole & Line Caught Tuna Mayo & Cucumber - £2.99",
+      "Posh Cheddar & Pickle - £3.75",
+      "Chicken Caesar & Bacon - £3.99",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Sandwich & Salad Selection",
+  },
+  Object {
+    "body": Array [
+      "Smoked Salmon Protein Box - £4.99",
+      "Humous & Falafel Mezze - £4.99",
+      "Chef's Italian Chicken Salad - £4.99",
+      "Tuna Niçoise Salad - £4.25",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Salad Boxes",
+  },
+  Object {
+    "body": Array [
+      "Jerk spiced chicken breast with rice and peas and sweet corn slaw",
+      "Jerk spiced roast sweet potato served with rice and peas and sweet corn slaw (v)",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner Menu",
+  },
+]
+`;

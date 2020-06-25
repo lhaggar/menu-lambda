@@ -1,6 +1,6 @@
 {
   "name": "menu-lambda",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "description": "Lambda to post the News UK building canteen menu, daily, to Slack",
   "main": "index.js",
   "private": true,
