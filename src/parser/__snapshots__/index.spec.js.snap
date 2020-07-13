@@ -1931,7 +1931,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Sandwich & Salad Selection",
+    "title": "Lunch Menu - Pret Sandwiches",
   },
   Object {
     "body": Array [
@@ -1948,6 +1948,108 @@ Array [
     "body": Array [
       "Jerk spiced chicken breast with rice and peas and sweet corn slaw",
       "Jerk spiced roast sweet potato served with rice and peas and sweet corn slaw (v)",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner Menu",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 37`] = `
+Array [
+  Object {
+    "body": Array [
+      "Chicken, Avocado & Basil - £3.69",
+      "Classic Super Club - £3.69",
+      "Free-Range Egg Mayo - £1.89",
+      "Ham & Cheese - £2.69",
+      "Scottish Smoked Salmon - £3.79",
+      "Avo, Olives & Toms - £3.75",
+      "Italian Prosciutto - £4.15",
+      "Pole & Line Caught Tuna Mayo & Cucumber - £2.99",
+      "Posh Cheddar & Pickle - £3.75",
+      "Chicken Caesar & Bacon - £3.99",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Sandwiches",
+  },
+  Object {
+    "body": Array [
+      "Beef lasagne served with steamed broccoli",
+      "Spinach and ricotta lasagne served with steamed broccoli (V)",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner Menu",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 38`] = `
+Array [
+  Object {
+    "body": Array [
+      "Chicken, Avocado & Basil - £3.69",
+      "Classic Super Club - £3.69",
+      "Free-Range Egg Mayo - £1.89",
+      "Ham & Cheese - £2.69",
+      "Scottish Smoked Salmon - £3.79",
+      "Avo, Olives & Toms - £3.75",
+      "Italian Prosciutto - £4.15",
+      "Pole & Line Caught Tuna Mayo & Cucumber - £2.99",
+      "Posh Cheddar & Pickle - £3.75",
+      "Chicken Caesar & Bacon - £3.99",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Sandwiches",
+  },
+  Object {
+    "body": Array [
+      "Beef lasagne served with steamed broccoli",
+      "Spinach and ricotta lasagne served with steamed broccoli (V)",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner Menu",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 39`] = `
+Array [
+  Object {
+    "body": Array [
+      "Ham & Cheese - £2.69",
+      "Free-Range Egg Mayo - £1.89",
+      "Chicken, Avocado & Basil - £3.69",
+      "Scottish Smoked Salmon - £3.79",
+      "Classic Super Club - £3.69",
+      "Avo, Olives & Toms Baguette - £3.75",
+      "Wiltshire-Cured Ham & Greve Baguette - £3.45",
+      "Pole & Line Caught Tuna Mayo & Cucumber Baguette - £2.99",
+      "Chicken Caesar & Bacon baguette - £3.99",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Sandwiches",
+  },
+  Object {
+    "body": Array [
+      "Smoked Salmon Protein Box - £4.99",
+      "Humous & Falafel Mezze - £4.99",
+      "Tuna Niçoise Salad - £4.25",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Salad Boxes",
+  },
+  Object {
+    "body": Array [
+      "Bacon grilled onion and cheese gnocchi served with herbed garlic bread",
+      "Two cheese and grilled onion gnocchi served with herbed garlic bread (V)",
     ],
     "color": "#c24040",
     "subsections": Object {},
