@@ -81,18 +81,28 @@ module.exports = {
     },
     // Coronavirus lockdown options!
     {
-      matcher: /^\s*LUNCH\s+SANDWICH\s+SELECTION\s*/i,
+      matcher: /^\s*LUNCH\s+(SANDWICH|SANDWICHES)\s+SELECTION\s*/i,
       displayName: 'Lunch Menu - Sandwich Selection',
       color: '#19b7b4',
     },
     {
-      matcher: /^\s*Pret\s+sandwich\s+&\s+salad\s+selection\s*/i,
-      displayName: 'Lunch Menu - Pret Sandwich & Salad Selection',
+      matcher: /^\s*PRET\s+(SANDWICH|SANDWICHES)\s*/i,
+      displayName: 'Lunch Menu - Pret Sandwiches',
       color: '#19b7b4',
     },
     {
-      matcher: /^\s*Pret\s+salad\s+boxes\s*/i,
+      matcher: /^\s*PRET\s+SALAD(\s+BOXES)?\s*/i,
       displayName: 'Lunch Menu - Pret Salad Boxes',
+      color: '#19b7b4',
+    },
+    {
+      matcher: /^\s*(LUNCH\s+)?(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION(\s+:)?\s*/i,
+      displayName: 'Lunch Menu - Sandwich & Salad Selection',
+      color: '#19b7b4',
+    },
+    {
+      matcher: /^\s*(LUNCH\s+)?PRET\s+(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION\s*/i,
+      displayName: 'Lunch Menu - Pret Sandwich & Salad Selection',
       color: '#19b7b4',
     },
     {
