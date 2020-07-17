@@ -107,6 +107,11 @@ module.exports = {
       color: '#19b7b4',
     },
     {
+      matcher: /^\s*PRET\s+(SNACKS)\s*/i,
+      displayName: 'Lunch Menu - Pret Snacks',
+      color: '#19b7b4',
+    },
+    {
       matcher: /^\s*DINNER\s+MENU\s*/i,
       displayName: 'Dinner Menu',
       color: '#c24040',

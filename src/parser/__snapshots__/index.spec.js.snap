@@ -2057,3 +2057,62 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 40`] = `
+Array [
+  Object {
+    "body": Array [
+      "Pret LUNCH SELECTION:",
+    ],
+    "color": "#CCCCCC",
+    "subsections": Object {},
+    "title": "",
+  },
+  Object {
+    "body": Array [
+      "Chicken Caesar & Bacon - £3.99",
+      "Posh Cheddar & Pickle Baguette - £3.75",
+      "Pole & Line Caught Tuna Mayo & Cucumber Baguette -£2.99",
+      "Wiltshire-Cured Ham & Greve Baguette - £3.45",
+      "Brie, Tomato & Basil Baguette - £3.45",
+      "Chicken, Avocado & Basil - £3.69",
+      "Scottish Smoked Salmon - £3.79",
+      "Classic Super Club - £3.69",
+      "Free-Range Egg Mayo - £1.89",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Sandwiches",
+  },
+  Object {
+    "body": Array [
+      "Chipotle Sweet Potato Salad Bowl (vegan) - £6.50",
+      "Tamari & Ginger Chicken Salad Bowl - £6.50",
+      "Humous & Falafel Mezze (vegan) - £4.99",
+      "Salmon and Mango Salad Bowl - £6.50",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Salad Boxes",
+  },
+  Object {
+    "body": Array [
+      "Pret Bar - £1.75",
+      "Pret Love Bar - £1.75",
+      "Pret chocolate brownie bar - £1.75",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch Menu - Pret Snacks",
+  },
+  Object {
+    "body": Array [
+      "Breaded cod served with fried potatoes, mushy peas and tartar sauce",
+      "Potato and cheese chimi changa with fried potatoes and sweet corn salsa (V)",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner Menu",
+  },
+]
+`;
