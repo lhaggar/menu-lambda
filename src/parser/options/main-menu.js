@@ -75,6 +75,11 @@ module.exports = {
       color: '#ffbf00',
     },
     {
+      matcher: /^\s*BREAKFAST\s*$/i,
+      displayName: 'Breakfast',
+      color: '#ffbf00',
+    },
+    {
       matcher: /^\s*DESSERT\s*$/i,
       displayName: 'Dessert',
       color: '#cc3399',
@@ -83,37 +88,42 @@ module.exports = {
     // Coronavirus lockdown options!
     {
       matcher: /^\s*LUNCH\s+(SANDWICH|SANDWICHES)\s+SELECTION\s*/i,
-      displayName: 'Lunch Menu - Sandwich Selection',
+      displayName: 'Lunch - Sandwich Selection',
       color: '#19b7b4',
     },
     {
       matcher: /^\s*PRET\s+(SANDWICH|SANDWICHES)\s*/i,
-      displayName: 'Lunch Menu - Pret Sandwiches',
+      displayName: 'Lunch - Pret Sandwiches',
       color: '#19b7b4',
     },
     {
       matcher: /^\s*PRET\s+SALAD(\s+BOXES)?\s*/i,
-      displayName: 'Lunch Menu - Pret Salad Boxes',
+      displayName: 'Lunch - Pret Salad Boxes',
       color: '#19b7b4',
     },
     {
       matcher: /^\s*(LUNCH\s+)?(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION(\s+:)?\s*/i,
-      displayName: 'Lunch Menu - Sandwich & Salad Selection',
+      displayName: 'Lunch - Sandwich & Salad Selection',
       color: '#19b7b4',
     },
     {
       matcher: /^\s*(LUNCH\s+)?PRET\s+(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION\s*/i,
-      displayName: 'Lunch Menu - Pret Sandwich & Salad Selection',
+      displayName: 'Lunch - Pret Sandwich & Salad Selection',
       color: '#19b7b4',
     },
     {
       matcher: /^\s*PRET\s+(SNACKS)\s*/i,
-      displayName: 'Lunch Menu - Pret Snacks',
+      displayName: 'Lunch - Pret Snacks',
       color: '#19b7b4',
     },
     {
-      matcher: /^\s*DINNER\s+MENU\s*/i,
-      displayName: 'Dinner Menu',
+      matcher: /^\s*LUNCH(\s+MENU)?\s*/i,
+      displayName: 'Lunch',
+      color: '#19b7b4',
+    },
+    {
+      matcher: /^\s*DINNER(\s+MENU)?\s*/i,
+      displayName: 'Dinner',
       color: '#c24040',
     },
 

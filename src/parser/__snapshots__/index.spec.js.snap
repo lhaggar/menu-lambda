@@ -1901,7 +1901,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Sandwich Selection",
+    "title": "Lunch - Sandwich Selection",
   },
   Object {
     "body": Array [
@@ -1910,7 +1910,7 @@ Array [
     ],
     "color": "#c24040",
     "subsections": Object {},
-    "title": "Dinner Menu",
+    "title": "Dinner",
   },
 ]
 `;
@@ -1931,7 +1931,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Sandwiches",
+    "title": "Lunch - Pret Sandwiches",
   },
   Object {
     "body": Array [
@@ -1942,7 +1942,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Salad Boxes",
+    "title": "Lunch - Pret Salad Boxes",
   },
   Object {
     "body": Array [
@@ -1951,7 +1951,7 @@ Array [
     ],
     "color": "#c24040",
     "subsections": Object {},
-    "title": "Dinner Menu",
+    "title": "Dinner",
   },
 ]
 `;
@@ -1973,7 +1973,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Sandwiches",
+    "title": "Lunch - Pret Sandwiches",
   },
   Object {
     "body": Array [
@@ -1982,7 +1982,7 @@ Array [
     ],
     "color": "#c24040",
     "subsections": Object {},
-    "title": "Dinner Menu",
+    "title": "Dinner",
   },
 ]
 `;
@@ -2004,7 +2004,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Sandwiches",
+    "title": "Lunch - Pret Sandwiches",
   },
   Object {
     "body": Array [
@@ -2013,7 +2013,7 @@ Array [
     ],
     "color": "#c24040",
     "subsections": Object {},
-    "title": "Dinner Menu",
+    "title": "Dinner",
   },
 ]
 `;
@@ -2034,7 +2034,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Sandwiches",
+    "title": "Lunch - Pret Sandwiches",
   },
   Object {
     "body": Array [
@@ -2044,7 +2044,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Salad Boxes",
+    "title": "Lunch - Pret Salad Boxes",
   },
   Object {
     "body": Array [
@@ -2053,7 +2053,7 @@ Array [
     ],
     "color": "#c24040",
     "subsections": Object {},
-    "title": "Dinner Menu",
+    "title": "Dinner",
   },
 ]
 `;
@@ -2082,7 +2082,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Sandwiches",
+    "title": "Lunch - Pret Sandwiches",
   },
   Object {
     "body": Array [
@@ -2093,7 +2093,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Salad Boxes",
+    "title": "Lunch - Pret Salad Boxes",
   },
   Object {
     "body": Array [
@@ -2103,7 +2103,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {},
-    "title": "Lunch Menu - Pret Snacks",
+    "title": "Lunch - Pret Snacks",
   },
   Object {
     "body": Array [
@@ -2112,7 +2112,94 @@ Array [
     ],
     "color": "#c24040",
     "subsections": Object {},
-    "title": "Dinner Menu",
+    "title": "Dinner",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 41`] = `
+Array [
+  Object {
+    "body": Array [
+      "Full English breakfast box - one sausage, two bacon, scrambled egg, mushrooms, two hash browns - £2.75",
+      "Veggie full English breakfast box - two veg sausage, scrambled egg, mushrooms, two hash browns & grilled tomato - £2.50",
+      "Breakfast baps - bacon baps, sausage baps, egg baps - £1.75",
+      "Genuine muffins - sausage and egg muffin with American cheese and two hash brown or egg and American cheese muffin and two hash browns £2.20",
+      "Breakfast pastries - croissant, pain au chocolate, pain au raisins, almond croissant & muffins",
+      "Breakfast cereal selection - box cereals, porridge pots & Alpen muesli sachets",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "Lebanese shawarma chicken, garlic, lemon, Israeli couscous, pickled veggies - £2.95",
+      "Celeriac shawarma, Israeli couscous, pickled veggies (V) - £2.75",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {
+      "add on": Array [
+        "char grilled pitta £0.40 or made to order chips £0.60",
+      ],
+    },
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Chicken Caesar & bacon - £3.99",
+      "Posh cheddar & pickle baguette - £3.75",
+      "Pole & line caught tuna mayo & cucumber baguette - £2.99",
+      "Wiltshire-cured ham & greve baguette - £3.45",
+      "Brie, tomato & basil baguette - £3.45",
+      "Chicken, avocado & basil - £3.69",
+      "Scottish smoked salmon - £3.79",
+      "Classic super club - £3.69",
+      "Free-range egg mayo - £1.89",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch - Pret Sandwiches",
+  },
+  Object {
+    "body": Array [
+      "Chipotle sweet potato salad bowl (vegan) - £6.50",
+      "Tamari & ginger chicken salad bowl - £6.50",
+      "Humous & falafel mezze (vegan) - £4.99",
+      "Salmon and mango salad bowl - £6.50",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch - Pret Salad Boxes",
+  },
+  Object {
+    "body": Array [
+      "Bang Bang chicken, pickled vegetables, soy, satay sauce - £2.95",
+      "Indonesian pack choy, soy, coriander, spiced cabbage with a sweet soy dressing (V) - £2.75",
+    ],
+    "color": "#c24040",
+    "subsections": Object {
+      "add on": Array [
+        "sesame soy slaw £0.40 or made to order chips £0.60",
+      ],
+    },
+    "title": "Dinner",
+  },
+  Object {
+    "body": Array [
+      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner",
   },
 ]
 `;
