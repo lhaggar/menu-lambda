@@ -2203,3 +2203,65 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 42`] = `
+Array [
+  Object {
+    "body": Array [
+      "Breakfast pastries - croissant, pain au chocolate, pain au raisins, almond croissant & muffins",
+      "Breakfast cereal selection - box cereals, porridge pots & Alpen muesli sachets",
+      "Hot breakfast - hot breakfast boxes, hot muffins, breakfast baps",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "Louisiana fried chicken skillet: buttermilk fried chicken pieces, ranch dressed coleslaw, seasoned skinny fries and an optional firecracker hot sauce - £4.15",
+      "Cauliflower buffalo wings, savoury rice, buttered greens and a chive vegan mayonnaise with an optional firecracker hot sauce (V) - £3.50",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {
+      "add on": Array [
+        "Boston beans £0.50 or made to order chips £0.80",
+      ],
+    },
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup: Cream of mushroom (V) £0.65",
+      "Hot snack: Mac and cheese bake £1.50",
+      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
+      "SELECTION OF SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Louisiana fried chicken skillet: buttermilk fried chicken pieces, ranch dressed coleslaw, seasoned skinny fries and an optional firecracker hot sauce - £4.15",
+      "Cauliflower buffalo wings, savoury rice, buttered greens and a chive vegan mayonnaise with an optional firecracker hot sauce (V) - £3.50",
+    ],
+    "color": "#c24040",
+    "subsections": Object {
+      "add on": Array [
+        "Boston beans £0.50 or made to order chips £0.80",
+      ],
+    },
+    "title": "Dinner",
+  },
+  Object {
+    "body": Array [
+      "Soup: Cream of mushroom (V) £0.65",
+      "Hot snack: Mac and cheese bake £1.50",
+      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
+    ],
+    "color": "#c24040",
+    "subsections": Object {},
+    "title": "Dinner",
+  },
+]
+`;

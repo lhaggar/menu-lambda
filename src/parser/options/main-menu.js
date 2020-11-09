@@ -70,17 +70,17 @@ module.exports = {
       color: '#008554',
     },
     {
-      matcher: /^\s*BREAKFAST\s+SPECIAL\s*$/i,
+      matcher: /^\s*BREAKFAST\s+SPECIAL:?\s*$/i,
       displayName: 'Breakfast Special',
       color: '#ffbf00',
     },
     {
-      matcher: /^\s*BREAKFAST\s*$/i,
+      matcher: /^\s*BREAKFAST:?\s*$/i,
       displayName: 'Breakfast',
       color: '#ffbf00',
     },
     {
-      matcher: /^\s*DESSERT\s*$/i,
+      matcher: /^\s*DESSERT:?\s*$/i,
       displayName: 'Dessert',
       color: '#cc3399',
     },
