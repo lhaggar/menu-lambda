@@ -30,6 +30,7 @@ const duplicateSection = ({ title, color }) => ({
 });
 
 const createParser = ({
+  PREPROCESS_SECTIONS,
   SECTIONS,
   IGNORE_LIST,
   END_SECTIONS_MATCHERS,
@@ -69,15 +70,33 @@ const createParser = ({
   const getContents = menuHtml => {
     const $ = cheerio.load(sanitiseHtml(menuHtml));
     const arr = [];
-    $('*').each((i, element) => {
+    const elements = $('*');
+    elements.each((i, element) => {
       // Go through each element, if it has no children (i.e. only text)...
       const el = $(element);
       if (!el.children().length) {
-        // Get the text, trim it and make it lowercase.
+        // Get the text and trim it.
         // If not empty and is not in ignore list then keep it.
         const txt = el.text().trim();
         if (txt !== '' && !isIgnored(txt)) {
-          arr.push(txt);
+          // Pre-process sections (split sections which are one-liners)
+          const preprocess = PREPROCESS_SECTIONS.find(({ matcher }) =>
+            matcher.test(txt),
+          );
+          if (preprocess) {
+            if (preprocess.splitOn) {
+              arr.push(...txt.split(preprocess.splitOn));
+            } else if (preprocess.customBehaviour) {
+              preprocess.customBehaviour({
+                i,
+                arr,
+                elements,
+                line: txt,
+              });
+            }
+          } else {
+            arr.push(txt);
+          }
         }
       }
     });

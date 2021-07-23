@@ -910,7 +910,7 @@ Array [
       "Come and meet our farmer & Checkout the theatre bar for lunch & Purchase some RSPCA Assured eggs",
       "pop-up dish: wild garlic risotto with poached Kent hens egg",
     ],
-    "color": "#9933FF",
+    "color": "#3360ff",
     "subsections": Object {},
     "title": "Theatre Bar",
   },
@@ -1860,24 +1860,6 @@ Array [
     "subsections": Object {},
     "title": "Terrace Café Breakfast",
   },
-  Object {
-    "body": Array [
-      "Fish pie served with buttered peas and kale",
-      "Five bean chilly with steamed rice and tortilla chips salsa and sour cream (V)",
-      "GRAB & GO FRIDGE - FRUIT SALAD POTS, YOGHURT POTS, SELECTION OF TOASTIES, PANINIS, WRAPS, BAGUETTES, SANDWICHES AND BOX SALADS",
-    ],
-    "color": "#3126A2",
-    "subsections": Object {},
-    "title": "Terrace Café Lunch",
-  },
-  Object {
-    "body": Array [
-      "Vegan red pepper and lentil (V)",
-    ],
-    "color": "#e6e600",
-    "subsections": Object {},
-    "title": "Soup",
-  },
 ]
 `;
 
@@ -1902,15 +1884,6 @@ Array [
     "color": "#19b7b4",
     "subsections": Object {},
     "title": "Lunch - Sandwich Selection",
-  },
-  Object {
-    "body": Array [
-      "Beef goulash served with creamy mash potato and steamed greens",
-      "falafel box with cous cous, minted slaw, hummus and pitta (VEGAN)",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
   },
 ]
 `;
@@ -1944,15 +1917,6 @@ Array [
     "subsections": Object {},
     "title": "Lunch - Pret Salad Boxes",
   },
-  Object {
-    "body": Array [
-      "Jerk spiced chicken breast with rice and peas and sweet corn slaw",
-      "Jerk spiced roast sweet potato served with rice and peas and sweet corn slaw (v)",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
-  },
 ]
 `;
 
@@ -1975,15 +1939,6 @@ Array [
     "subsections": Object {},
     "title": "Lunch - Pret Sandwiches",
   },
-  Object {
-    "body": Array [
-      "Beef lasagne served with steamed broccoli",
-      "Spinach and ricotta lasagne served with steamed broccoli (V)",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
-  },
 ]
 `;
 
@@ -2005,15 +1960,6 @@ Array [
     "color": "#19b7b4",
     "subsections": Object {},
     "title": "Lunch - Pret Sandwiches",
-  },
-  Object {
-    "body": Array [
-      "Beef lasagne served with steamed broccoli",
-      "Spinach and ricotta lasagne served with steamed broccoli (V)",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
   },
 ]
 `;
@@ -2045,15 +1991,6 @@ Array [
     "color": "#19b7b4",
     "subsections": Object {},
     "title": "Lunch - Pret Salad Boxes",
-  },
-  Object {
-    "body": Array [
-      "Bacon grilled onion and cheese gnocchi served with herbed garlic bread",
-      "Two cheese and grilled onion gnocchi served with herbed garlic bread (V)",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
   },
 ]
 `;
@@ -2104,15 +2041,6 @@ Array [
     "color": "#19b7b4",
     "subsections": Object {},
     "title": "Lunch - Pret Snacks",
-  },
-  Object {
-    "body": Array [
-      "Breaded cod served with fried potatoes, mushy peas and tartar sauce",
-      "Potato and cheese chimi changa with fried potatoes and sweet corn salsa (V)",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
   },
 ]
 `;
@@ -2180,27 +2108,6 @@ Array [
     "subsections": Object {},
     "title": "Lunch - Pret Salad Boxes",
   },
-  Object {
-    "body": Array [
-      "Bang Bang chicken, pickled vegetables, soy, satay sauce - £2.95",
-      "Indonesian pack choy, soy, coriander, spiced cabbage with a sweet soy dressing (V) - £2.75",
-    ],
-    "color": "#c24040",
-    "subsections": Object {
-      "add on": Array [
-        "sesame soy slaw £0.40 or made to order chips £0.60",
-      ],
-    },
-    "title": "Dinner",
-  },
-  Object {
-    "body": Array [
-      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
-    ],
-    "color": "#c24040",
-    "subsections": Object {},
-    "title": "Dinner",
-  },
 ]
 `;
 
@@ -2211,6 +2118,48 @@ Array [
       "Breakfast pastries - croissant, pain au chocolate, pain au raisins, almond croissant & muffins",
       "Breakfast cereal selection - box cereals, porridge pots & Alpen muesli sachets",
       "Hot breakfast - hot breakfast boxes, hot muffins, breakfast baps",
+      "Lunch:",
+      "Louisiana fried chicken skillet: buttermilk fried chicken pieces, ranch dressed coleslaw, seasoned skinny fries and an optional firecracker hot sauce - £4.15",
+      "Cauliflower buffalo wings, savoury rice, buttered greens and a chive vegan mayonnaise with an optional firecracker hot sauce (V) - £3.50",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {
+      "add on": Array [
+        "Boston beans £0.50 or made to order chips £0.80",
+      ],
+    },
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "Cream of mushroom (V) £0.65",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Mac and cheese bake £1.50",
+      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
+      "SELECTION OF SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#990099",
+    "subsections": Object {},
+    "title": "Hot Snack",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 43`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30AM",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Genuine muffin, bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from theatre bar",
+      "Self service toast area",
     ],
     "color": "#ffbf00",
     "subsections": Object {},
@@ -2218,23 +2167,7 @@ Array [
   },
   Object {
     "body": Array [
-      "Louisiana fried chicken skillet: buttermilk fried chicken pieces, ranch dressed coleslaw, seasoned skinny fries and an optional firecracker hot sauce - £4.15",
-      "Cauliflower buffalo wings, savoury rice, buttered greens and a chive vegan mayonnaise with an optional firecracker hot sauce (V) - £3.50",
-    ],
-    "color": "#19b7b4",
-    "subsections": Object {
-      "add on": Array [
-        "Boston beans £0.50 or made to order chips £0.80",
-      ],
-    },
-    "title": "Lunch",
-  },
-  Object {
-    "body": Array [
-      "Soup: Cream of mushroom (V) £0.65",
-      "Hot snack: Mac and cheese bake £1.50",
-      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
-      "SELECTION OF SANDWICHES, BAGUETTES AND WRAPS",
+      "12:00 - 14:30PM",
     ],
     "color": "#19b7b4",
     "subsections": Object {},
@@ -2242,26 +2175,120 @@ Array [
   },
   Object {
     "body": Array [
-      "Louisiana fried chicken skillet: buttermilk fried chicken pieces, ranch dressed coleslaw, seasoned skinny fries and an optional firecracker hot sauce - £4.15",
-      "Cauliflower buffalo wings, savoury rice, buttered greens and a chive vegan mayonnaise with an optional firecracker hot sauce (V) - £3.50",
+      "Potato and Hampshire watercress",
     ],
-    "color": "#c24040",
-    "subsections": Object {
-      "add on": Array [
-        "Boston beans £0.50 or made to order chips £0.80",
-      ],
-    },
-    "title": "Dinner",
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
   },
   Object {
     "body": Array [
-      "Soup: Cream of mushroom (V) £0.65",
-      "Hot snack: Mac and cheese bake £1.50",
-      "Jacket potato or sweet potato with baked beans or a hot filling of the day",
+      "The Genuine Meatball Marinara Sub - Homemade Italian Spiced Beef & Pork Meatballs topped with Smokey Tomato Ragu, Mozzarella & Caramelized Onion Chutney - £4.25",
     ],
-    "color": "#c24040",
+    "color": "#00BFFF",
+    "subsections": Object {
+      "add on": Array [
+        "Skinny Fries - £1.00",
+      ],
+    },
+    "title": "Street Food",
+  },
+  Object {
+    "body": Array [
+      "Baked Halloumi and Vegetable Kebab, Jeweled Cous Cous, Rainbow Slaw (v) - £4.25",
+    ],
+    "color": "#C41017",
     "subsections": Object {},
-    "title": "Dinner",
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Sticky chilli miso cauliflower wings £2.10",
+    ],
+    "color": "#990099",
+    "subsections": Object {},
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 44`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30AM",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Genuine muffin, bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from theatre bar",
+      "Self service toast area",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30PM",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Vegan red pepper and tomato",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "The Ultimate Fish finger Butty - Lemon & Dill Crusted Fish, Iceberg Lettuce, Pickled Cucumber & Tartar Sauce - £4.25",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {
+      "add on": Array [
+        "Chunky chips - £1.00",
+      ],
+    },
+    "title": "Street Food",
+  },
+  Object {
+    "body": Array [
+      "Hunter's cauliflower with sautéed Savoy cabbage (v) - £4.25",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "add on": Array [
+        "Oven Roasted Wedges - £1.10",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Sticky chilli miso cauliflower wings £2.10",
+    ],
+    "color": "#990099",
+    "subsections": Object {},
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
   },
 ]
 `;

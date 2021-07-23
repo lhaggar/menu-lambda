@@ -8,7 +8,7 @@ const sentenceCase = line => {
   const trimmed = line
     .trim()
     .toLowerCase()
-    .replace(/[a-zA-z]/, substr => substr.toUpperCase());
+    .replace(/^['"]?[a-zA-z]/, substr => substr.toUpperCase());
   return trimmed;
 };
 

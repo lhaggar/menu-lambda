@@ -2,6 +2,9 @@ const CAFE_COLOUR = '#3126A2';
 
 module.exports = {
   CAFE_COLOUR,
+  // These matchers will trigger a split of the line by the splitOn string,
+  // used where section title and content is on one line
+  PREPROCESS_SECTIONS: [],
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
     {

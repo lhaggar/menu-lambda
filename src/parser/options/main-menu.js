@@ -22,6 +22,26 @@ const cafeSections = [
 ];
 
 module.exports = {
+  // These matchers will trigger a split of the line by the splitOn string,
+  // used where section title and content is on one line
+  PREPROCESS_SECTIONS: [
+    {
+      matcher: /^\s*Soup:\s*/i,
+      splitOn: ':',
+    },
+    {
+      matcher: /^\s*Hot\s*snack:\s*/i,
+      splitOn: ':',
+    },
+    {
+      matcher: /^\s*Selection\s*of\s*salads,\s*sandwiches,\s*baguettes\s*and\s*wraps\s*/i,
+      customBehaviour: ({ line, arr }) => {
+        arr.push('sandwiches and salads');
+        arr.push(line);
+      },
+    },
+  ],
+
   // Titles which will form each object. Add titles to this as appropriate.
   SECTIONS: [
     {
@@ -30,14 +50,24 @@ module.exports = {
       color: '#C41017',
     },
     {
+      matcher: /^\s*HOT\s+SNACK\s*$/i,
+      displayName: 'Hot Snack',
+      color: '#990099',
+    },
+    {
       matcher: /^\s*CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE\s*$/i,
       displayName: 'Chefs Theatre',
       color: '#00BFFF',
     },
     {
+      matcher: /^\s*Street\s+Food\s*$/i,
+      displayName: 'Street Food',
+      color: '#00BFFF',
+    },
+    {
       matcher: /^\s*THEATRE\s+BAR\s*$/i,
       displayName: 'Theatre Bar',
-      color: '#9933FF',
+      color: '#3360ff',
     },
     {
       matcher: /^\s*THEATRE(\s+(STATION|COUNTER))?\s*$/i,
@@ -70,6 +100,11 @@ module.exports = {
       color: '#008554',
     },
     {
+      matcher: /^\s*SANDWICHES\s+AND\s+SALADS\s*/i,
+      displayName: 'Sandwiches and Salads',
+      color: '#19b7b4',
+    },
+    {
       matcher: /^\s*BREAKFAST\s+SPECIAL:?\s*$/i,
       displayName: 'Breakfast Special',
       color: '#ffbf00',
@@ -78,6 +113,16 @@ module.exports = {
       matcher: /^\s*BREAKFAST:?\s*$/i,
       displayName: 'Breakfast',
       color: '#ffbf00',
+    },
+    {
+      matcher: /^\s*LUNCH(\s+MENU)?\s*$/i,
+      displayName: 'Lunch',
+      color: '#19b7b4',
+    },
+    {
+      matcher: /^\s*DINNER(\s+MENU)?\s*/i,
+      displayName: 'Dinner',
+      color: '#9933FF',
     },
     {
       matcher: /^\s*DESSERT:?\s*$/i,
@@ -116,16 +161,6 @@ module.exports = {
       displayName: 'Lunch - Pret Snacks',
       color: '#19b7b4',
     },
-    {
-      matcher: /^\s*LUNCH(\s+MENU)?\s*/i,
-      displayName: 'Lunch',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*DINNER(\s+MENU)?\s*/i,
-      displayName: 'Dinner',
-      color: '#c24040',
-    },
 
     // These are separate so duplications can be filtered out of Cafe menu
     ...cafeSections,
@@ -140,7 +175,11 @@ module.exports = {
   IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /daily\s+canteen\s+menu/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
-  END_SECTIONS_MATCHERS: [/CANTEEN\s+DINNER/i, /terrace\s+caf[eé]\s+dinner/i],
+  END_SECTIONS_MATCHERS: [
+    /CANTEEN\s+DINNER/i,
+    /DINNER/i,
+    /terrace\s+caf[eé]\s+dinner/i,
+  ],
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
   SUBSECTION_MATCHERS: [
