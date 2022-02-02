@@ -27,7 +27,9 @@ module.exports = {
   PREPROCESS_SECTIONS: [
     {
       matcher: /^\s*Soup:\s*/i,
-      splitOn: ':',
+      customBehaviour: ({ line, arr }) => {
+        arr.push(...line.split(':'), 'Mains');
+      },
     },
     {
       matcher: /^\s*Hot\s*snack:\s*/i,
@@ -50,6 +52,11 @@ module.exports = {
       color: '#C41017',
     },
     {
+      matcher: /^Mains$/i,
+      displayName: 'Mains',
+      color: '#C41017',
+    },
+    {
       matcher: /^\s*HOT\s+SNACK\s*$/i,
       displayName: 'Hot Snack',
       color: '#990099',
@@ -62,6 +69,11 @@ module.exports = {
     {
       matcher: /^\s*Street\s+Food\s*$/i,
       displayName: 'Street Food',
+      color: '#00BFFF',
+    },
+    {
+      matcher: /^\s*Street\s+Food\s+(Pop-up|Pop\s+up)\s*$/i,
+      displayName: 'Street Food Pop-up',
       color: '#00BFFF',
     },
     {

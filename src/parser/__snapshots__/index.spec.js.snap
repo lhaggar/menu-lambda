@@ -2292,3 +2292,193 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 45`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30AM",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Genuine muffin, bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from theatre bar",
+      "Self service toast area",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30PM",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Spiced Squash",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Fry Me London BURGER - 24hr seasoned thigh chicken, with a base of coleslaw, hot chilli mayo, in a shiny bun - £5.50",
+      "Fry Me London TWO PIECE - Pieces of 24hr seasoned chicken thigh, with a scoop of coleslaw - £5.50",
+    ],
+    "color": "#00BFFF",
+    "subsections": Object {},
+    "title": "Street Food Pop-up",
+  },
+  Object {
+    "body": Array [
+      "Woodfire roasted peppers stuffed with courgette and quinoa served with pesto orzo and steamed fine beans - £4.25",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "add on": Array [
+        "Ciabatta garlic bread - £0.85",
+      ],
+    },
+    "title": "From the Oven",
+  },
+  Object {
+    "body": Array [
+      "Chicken, cheese and salsa nachos topped smashed avocado - £2.10",
+    ],
+    "color": "#990099",
+    "subsections": Object {},
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 46`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Genuine muffin, bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from terrace café",
+      "Self service toast area",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Vegan Miso and vegetable broth",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Buttermilk southern fried chicken tenders - Double dredged in seasoned flour and deep fried, served with skin on fries, southern gravy and chive sour cream",
+      "£4.50",
+      "Buttermilk Tofu tenders - Double dredged in seasoned flour and deep fried, served with skin on fries, southern gravy and chive sour cream",
+      "£4.25",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "add on": Array [
+        "Red cabbage slaw £0.80",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 47`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Genuine muffin, bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from terrace café",
+      "Self service toast area",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Courgette, pea and pesto",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Warm Chicken Caesar Salad - warm grilled chicken breast and crispy streaky bacon served with shredded cos lettuce, cherry tomatoes, anchovies, croutons, boiled egg, shaved parmesan and a homemade Caesar dressing",
+      "£4.50",
+      "Taleggio and roasted vegetable lasagne - courgette, pesto, goats cheese and roasted peppers layered between egg pasta sheets with a taleggio, parmesan and herb sauce. (V)",
+      "£4.25",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "add on": Array [
+        "Garlic and herb ciabatta - £1.10",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Korean cauliflower wings- £2.10",
+    ],
+    "color": "#990099",
+    "subsections": Object {},
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
