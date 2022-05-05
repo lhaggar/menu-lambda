@@ -305,7 +305,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "SMASHED SWEDE, BRAISED RED CABBAGE, PICKLED VEG SALAD OR GLAZED PAK CHOY",
       ],
     },
@@ -317,7 +317,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "GREEN BEAN WITH SESAME AND CHARD BROCCOLI",
       ],
     },
@@ -343,7 +343,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Glazed Carrot/ mange tout/ crusty bread",
       ],
     },
@@ -355,7 +355,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "warm seasonal salads",
       ],
     },
@@ -367,7 +367,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Rainbow slaw/fries",
       ],
     },
@@ -393,7 +393,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Green panache, green beans and pea",
       ],
     },
@@ -405,7 +405,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "warm seasonal salads",
       ],
     },
@@ -417,7 +417,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Rainbow slaw or fries",
       ],
     },
@@ -443,7 +443,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas & mushy peas",
       ],
     },
@@ -455,7 +455,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Steamed brocolli",
       ],
     },
@@ -467,7 +467,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Wedges",
       ],
     },
@@ -493,7 +493,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Green panache, green beans and pea",
       ],
     },
@@ -505,7 +505,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "warm seasonal salads",
       ],
     },
@@ -517,7 +517,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Rainbow slaw or fries",
       ],
     },
@@ -543,7 +543,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chickpea and roast garlic salad",
       ],
     },
@@ -555,7 +555,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chilli, roast red onion and preserved lemon salad",
       ],
     },
@@ -567,7 +567,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Spring roll, Asian slaw, sweet chilli, prawn crackers",
       ],
     },
@@ -593,7 +593,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chickpea and roast garlic salad",
       ],
     },
@@ -605,7 +605,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chilli, roast red onion and preserved lemon salad",
       ],
     },
@@ -617,7 +617,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Spring roll, Asian slaw, sweet chilli, prawn crackers",
       ],
     },
@@ -644,7 +644,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas & mushy peas",
       ],
     },
@@ -656,7 +656,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Steamed broccoli",
       ],
     },
@@ -669,7 +669,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Wedges",
       ],
     },
@@ -695,7 +695,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas & mushy peas",
       ],
     },
@@ -717,7 +717,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Glazed sugar snaps and broccoli",
       ],
     },
@@ -743,7 +743,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "VEGETABLE SPRING ROLL OR EDAMAME BEANS, CHILLI OIL PONZU (V)",
       ],
     },
@@ -756,7 +756,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "NACHOS, SPICED POTATO WEDGE, SOUR CREAM AND CHIVES (V)",
       ],
     },
@@ -770,7 +770,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "CHUNKY STEAK CHIPS",
       ],
     },
@@ -796,7 +796,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Warm beetroot and apple salad or crusty farm house loaf (V)",
       ],
     },
@@ -808,7 +808,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Buttered cabbage and roasted Kentish root vegetables (v)",
       ],
     },
@@ -839,7 +839,7 @@ Array [
   Object {
     "color": "#C41017",
     "subsections": Object {
-      "made to order pizza bar": Array [
+      "Made to order pizza bar: ": Array [
         "live cooking at its best with a fresh khobez base and a selection of delicious toppings",
       ],
     },
@@ -851,7 +851,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Nachos, spiced potato wedge or sour cream and chives (V)",
       ],
     },
@@ -864,7 +864,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Onion rings or spiced wedges (V)",
       ],
     },
@@ -890,7 +890,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas, mushy peas, pickled eggs, pickled onions, gherkins",
       ],
     },
@@ -934,7 +934,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Green bean, kale and cabbage and garden salad",
       ],
     },
@@ -948,7 +948,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Vegetable samosa, onion bhaji, poppadum, mango sauce, lime pickle",
       ],
     },
@@ -960,7 +960,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "red onion and potato salad",
       ],
     },
@@ -989,7 +989,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Dirty Creole rice or sweet potato and apple salad (V)",
       ],
     },
@@ -1001,7 +1001,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Smoked bacon jam, chunky steak chips, onion rings or red cabbage and pomegranate slaw (V)",
       ],
     },
@@ -1027,7 +1027,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Steamed and buttered spring greens (V)",
       ],
     },
@@ -1039,7 +1039,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Rosemary focaccia or garden salad (V)",
       ],
     },
@@ -1051,7 +1051,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Zaatar roasted squash with spiced yoghurt and pickled chillies, flat bread, vegetable samosa (V)",
       ],
     },
@@ -1077,7 +1077,7 @@ Array [
     ],
     "color": "#CCCCCC",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Haricots vert, baguette, lyonnaise potatoes (V)",
       ],
     },
@@ -1089,7 +1089,7 @@ Array [
     ],
     "color": "#CCCCCC",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Blue cheese, celery and chard salad (V)",
       ],
     },
@@ -1101,7 +1101,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Crushed Jersey royals or warm beetroot and apple salad (V)",
       ],
     },
@@ -1127,7 +1127,7 @@ Array [
     ],
     "color": "#3126A2",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas, mushy peas, pickled eggs, pickled onions and gherkins",
       ],
     },
@@ -1141,7 +1141,7 @@ Array [
     ],
     "color": "#3126A2",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Steamed and buttered kale and cabbage",
       ],
     },
@@ -1166,7 +1166,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Buttered greens (V)",
       ],
     },
@@ -1178,7 +1178,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Ginger and garlic bok choy (V)",
       ],
     },
@@ -1209,10 +1209,10 @@ Array [
   Object {
     "color": "#C41017",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "Sticky chicken wings, celery and blue cheese sauce",
       ],
-      "made to order pizza bar": Array [
+      "Made to order pizza bar: ": Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
     },
@@ -1224,7 +1224,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Rainbow slaw or garlic and herb courgettes and broad beans (V)",
       ],
     },
@@ -1236,7 +1236,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Tavada (Turkish spiced potato), pitta, hummus, tzatziki, flat bread (V)",
       ],
     },
@@ -1262,7 +1262,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Nacho chips and salsa, tomato spring onion salad (v)",
       ],
     },
@@ -1274,7 +1274,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Spiced potato wedges (V)",
       ],
     },
@@ -1286,7 +1286,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Kent new season crushed potato, crispy caper and baby gem salad (V)",
       ],
     },
@@ -1311,7 +1311,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas and mushy peas (V)",
       ],
     },
@@ -1323,7 +1323,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Herb and garlic bread (V)",
       ],
     },
@@ -1335,7 +1335,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Cajun spiced potatoes, fried spring greens with onion and garlic seasoning (V)",
       ],
     },
@@ -1357,7 +1357,7 @@ Array [
   Object {
     "color": "#C41017",
     "subsections": Object {
-      "made to order pizza bar": Array [
+      "Made to order pizza bar: ": Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
     },
@@ -1369,7 +1369,7 @@ Array [
     ],
     "color": "#008554",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "harissa green beans (V)",
       ],
     },
@@ -1402,7 +1402,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas and mushy peas (V)",
       ],
     },
@@ -1414,7 +1414,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Cajun spiced potato wedges (V)",
       ],
     },
@@ -1426,7 +1426,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "spring roll, prawn crackers, steamed bun (V)",
       ],
     },
@@ -1448,10 +1448,10 @@ Array [
   Object {
     "color": "#C41017",
     "subsections": Object {
-      "extras": Array [
+      "Extras: ": Array [
         "Limited home made calzones",
       ],
-      "made to order pizza bar": Array [
+      "Made to order pizza bar: ": Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
     },
@@ -1463,7 +1463,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Spiced potato wedges (v)",
       ],
     },
@@ -1475,7 +1475,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Wasabi fries, Chilli braised cabbage and kale",
       ],
     },
@@ -1509,7 +1509,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "broccoli and green beans, tomato fococcia",
       ],
     },
@@ -1534,7 +1534,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Caramelised carrots, buttered sprouts and roast potatoes",
       ],
     },
@@ -1546,7 +1546,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Caramelised carrots, buttered sprouts and roast potatoes",
       ],
     },
@@ -1558,7 +1558,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Caramelised carrots, buttered sprouts and roast potatoes",
       ],
     },
@@ -1583,7 +1583,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Chips, peas, mushy peas, pickled eggs, pickled onions, gherkins (V)",
       ],
     },
@@ -1595,7 +1595,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "leaf salad",
       ],
     },
@@ -1607,7 +1607,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Sautéed spiced white cabbage, Spiced green beans",
       ],
     },
@@ -1634,7 +1634,7 @@ Array [
     ],
     "color": "#CCCCCC",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "PAPRIKA FRIES, STEAMED CABBAGE AND KALE",
       ],
     },
@@ -1681,7 +1681,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "caramelised carrots, onion rings",
       ],
     },
@@ -1693,7 +1693,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "potato wedges (v)",
       ],
     },
@@ -1726,7 +1726,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Herbed garlic bread, Panzanella salad",
       ],
     },
@@ -1738,7 +1738,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Nachos topped with salsa, cheese and sour cream",
       ],
     },
@@ -1750,7 +1750,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Fries, Israeli cous cous",
       ],
     },
@@ -1781,7 +1781,7 @@ Array [
   Object {
     "color": "#C41017",
     "subsections": Object {
-      "made to order pizza bar": Array [
+      "Made to order pizza bar: ": Array [
         "live cooking at its best with a fresh Khobez base and a selection of delicious toppings",
       ],
     },
@@ -1801,7 +1801,7 @@ Array [
     ],
     "color": "#008575",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Spring onion and sweet soy glazed crumbed mushrooms (v)",
       ],
     },
@@ -1813,7 +1813,7 @@ Array [
     ],
     "color": "#3360ff",
     "subsections": Object {
-      "sides": Array [
+      "Sides: ": Array [
         "Caramelised carrots, Onion rings",
       ],
     },
@@ -2067,7 +2067,7 @@ Array [
     ],
     "color": "#19b7b4",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "char grilled pitta £0.40 or made to order chips £0.60",
       ],
     },
@@ -2124,7 +2124,7 @@ Array [
     ],
     "color": "#ffbf00",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "Boston beans £0.50 or made to order chips £0.80",
       ],
     },
@@ -2187,7 +2187,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "Skinny Fries - £1.00",
       ],
     },
@@ -2256,7 +2256,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "Chunky chips - £1.00",
       ],
     },
@@ -2268,7 +2268,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "Oven Roasted Wedges - £1.10",
       ],
     },
@@ -2338,7 +2338,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "add on": Array [
+      "Add on: ": Array [
         "Ciabatta garlic bread - £0.85",
       ],
     },
@@ -2396,14 +2396,26 @@ Array [
   Object {
     "body": Array [
       "Buttermilk southern fried chicken tenders - Double dredged in seasoned flour and deep fried, served with skin on fries, southern gravy and chive sour cream",
-      "£4.50",
-      "Buttermilk Tofu tenders - Double dredged in seasoned flour and deep fried, served with skin on fries, southern gravy and chive sour cream",
-      "£4.25",
     ],
     "color": "#C41017",
     "subsections": Object {
-      "add on": Array [
+      "£": Array [
+        "4.50",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Buttermilk Tofu tenders - Double dredged in seasoned flour and deep fried, served with skin on fries, southern gravy and chive sour cream",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
         "Red cabbage slaw £0.80",
+      ],
+      "£": Array [
+        "4.25",
       ],
     },
     "title": "Mains",
@@ -2452,14 +2464,26 @@ Array [
   Object {
     "body": Array [
       "Warm Chicken Caesar Salad - warm grilled chicken breast and crispy streaky bacon served with shredded cos lettuce, cherry tomatoes, anchovies, croutons, boiled egg, shaved parmesan and a homemade Caesar dressing",
-      "£4.50",
-      "Taleggio and roasted vegetable lasagne - courgette, pesto, goats cheese and roasted peppers layered between egg pasta sheets with a taleggio, parmesan and herb sauce. (V)",
-      "£4.25",
     ],
     "color": "#C41017",
     "subsections": Object {
-      "add on": Array [
+      "£": Array [
+        "4.50",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Taleggio and roasted vegetable lasagne - courgette, pesto, goats cheese and roasted peppers layered between egg pasta sheets with a taleggio, parmesan and herb sauce. (V)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
         "Garlic and herb ciabatta - £1.10",
+      ],
+      "£": Array [
+        "4.25",
       ],
     },
     "title": "Mains",
@@ -2467,6 +2491,97 @@ Array [
   Object {
     "body": Array [
       "Korean cauliflower wings- £2.10",
+    ],
+    "color": "#990099",
+    "subsections": Object {},
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 48`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from terrace café",
+      "Self service toast area",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Pea and crème fraiche",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {},
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Rib and wing shack - Slow roasted baby back ribs smothered with BBQ sauce and buffalo wings served with house fries, American slaw and blue cheese dip.",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Charred corn on the cob £0.80",
+      ],
+      "£": Array [
+        "4.50",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Maple smoked salmon Caesar - Maple hot smoked salmon served with cos lettuce, cherry tomatoes, sourdough croutons, boiled egg, anchovies, shaved parmesan and homemade Caesar dressing",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "£": Array [
+        "4.50",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Naan Wrap - Tandoori marinated paneer charred on the charcoal grill served in a fresh buttered garlic naan with mango chutney, minted yogurt, Bombay potatoes, poppadum's and Indian chopped salad",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Onion bhaji £0.80",
+      ],
+      "£": Array [
+        "4.25",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Pork, apple and sage sausage roll £2.10",
     ],
     "color": "#990099",
     "subsections": Object {},

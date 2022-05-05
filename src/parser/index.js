@@ -2,6 +2,7 @@ const cheerio = require('cheerio');
 
 const { sanitiseHtml, sanitiseLine } = require('./sanitiser');
 const { addSectionEffects } = require('./section-effects');
+const { getSubsection } = require('./get-subsection');
 
 const mainMenuOptions = require('./options/main-menu');
 const cafeMenuOptions = require('./options/cafe-menu');
@@ -17,9 +18,6 @@ const push = (obj, key, data) => {
     obj[key].push(data);
   }
 };
-
-const getSubsection = (SUBSECTION_MATCHERS, line) =>
-  SUBSECTION_MATCHERS.find(([matcher]) => matcher.test(line));
 
 // Create a new section from existing one - this is when we have two meal options under one
 // section heading, e.g. two choices "From the Oven" with their own respective sides e.t.c.

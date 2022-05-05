@@ -38,16 +38,16 @@
   "cafeMenuContent": [
     {
       "subsections": {
-        "breakfast": ["Smoked bacon frittata"],
-        "lunch": ["Roasted aubergine and Parma ham on focaccia"]
+        "Breakfast: ": ["Smoked bacon frittata"],
+        "Lunch: ": ["Roasted aubergine and Parma ham on focaccia"]
       },
       "title": "monday",
       "color": "#3126A2"
     },
     {
       "subsections": {
-        "breakfast": ["Pork and Beans"],
-        "lunch": ["Fried egg and instant noodles"]
+        "Breakfast: ": ["Pork and Beans"],
+        "Lunch: ": ["Fried egg and instant noodles"]
       },
       "title": "tuesday",
       "color": "#3126A2"
