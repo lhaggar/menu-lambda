@@ -1,4 +1,5 @@
 const { CAFE_COLOUR } = require('./cafe-menu');
+const { getSubsection } = require('../get-subsection');
 
 const cafeSections = [
   {
@@ -195,10 +196,11 @@ module.exports = {
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
   SUBSECTION_MATCHERS: [
-    [/^\s*SIDE(S)?:/i, 'sides'],
-    [/^\s*add\s+on:/i, 'add on'],
-    [/^\s*EXTRA(S)?:/i, 'extras'],
-    [/^Made to order pizza bar:/i, 'made to order pizza bar'],
+    [/^\s*SIDE(S)?:/i, 'Sides: '],
+    [/^\s*add\s+on:/i, 'Add on: '],
+    [/^\s*EXTRA(S)?:/i, 'Extras: '],
+    [/^Made to order pizza bar:/i, 'Made to order pizza bar: '],
+    [/^\s*£/, '£'], // If we have a price on a new line it's end of that item and we need to trigger a section duplication
   ],
 
   CAFE_SECTION_TITLES: cafeSections.map(({ displayName }) => displayName),

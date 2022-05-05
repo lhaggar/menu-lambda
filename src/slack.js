@@ -12,7 +12,7 @@ const sentenceCase = line => {
   return trimmed;
 };
 
-const formatSubsection = (key, content) => `${sentenceCase(key)}: ${content}`;
+const formatSubsection = (key, content) => `${key}${content}`;
 
 // Format the menu content as a Slack web hook post payload.
 const buildPayload = (date, { mainMenuContent, cafeMenuContent }) => {
