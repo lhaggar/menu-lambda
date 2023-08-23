@@ -1,4 +1,5 @@
 const { CAFE_COLOUR } = require('./cafe-menu');
+const { getElementText } = require('../utils');
 
 const cafeSections = [
   {
@@ -27,8 +28,15 @@ module.exports = {
   PREPROCESS_SECTIONS: [
     {
       matcher: /^\s*Soup:\s*/i,
-      customBehaviour: ({ line, arr }) => {
-        arr.push(...line.split(':'), 'Mains');
+      customBehaviour: ({ line, arr, i, $, elements }) => {
+        const nextElement = elements[i + 1];
+        const nextLine = getElementText($, nextElement);
+        if (nextLine && nextLine.startsWith('£')) {
+          nextElement.skip = true;
+          arr.push(...line.split(':'), nextLine, 'Mains');
+        } else {
+          arr.push(...line.split(':'), 'Mains');
+        }
       },
     },
     {
@@ -40,6 +48,19 @@ module.exports = {
       customBehaviour: ({ line, arr }) => {
         arr.push('sandwiches and salads');
         arr.push(line);
+      },
+    },
+    {
+      matcher: /^\s*Add on:\s*/i,
+      customBehaviour: ({ line, arr, i, $, elements }) => {
+        const nextElement = elements[i + 1];
+        const nextLine = getElementText($, nextElement);
+        if (nextLine && nextLine.startsWith('£')) {
+          nextElement.skip = true;
+          arr.push(`${line} (${nextLine})`);
+        } else {
+          arr.push(line);
+        }
       },
     },
   ],

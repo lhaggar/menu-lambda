@@ -1,6 +1,6 @@
 {
   "name": "menu-lambda",
-  "version": "1.23.0",
+  "version": "1.24.0",
   "description": "Lambda to post the News UK building canteen menu, daily, to Slack",
   "main": "index.js",
   "private": true,
@@ -32,7 +32,7 @@
     "eslint-plugin-prettier": "3.0.1",
     "jest": "23.6.0",
     "prettier": "1.15.3",
-    "serverless": "1.36.3"
+    "serverless": "^2.72.4"
   },
   "dependencies": {
     "cheerio": "1.0.0-rc.2",

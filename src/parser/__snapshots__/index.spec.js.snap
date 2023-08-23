@@ -2597,3 +2597,103 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 49`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries, boxed cereals, porridge pots & muesli sachets",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from terrace café",
+      "Self service toast area",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Roasted cauliflower and turmeric",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.00",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Moroccan chicken tagine - Ras el hanout and yoghurt marinated chicken thigh, served in an authentic tagine sauce with mujadara rice, warm dressed tomato salad, and salsa verde",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Roasted carrot (£1.00)",
+      ],
+      "£": Array [
+        "4.85",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Genuine salad bar",
+      "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "£": Array [
+        "4.85",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Sticky chilli and herb paneer - Paneer cheese marinated in Indian spices, herbs, and chilli, served on a freshly baked naan, with a kachumber salad and lime pickle (V)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Onion bhaji (£1.00)",
+      ],
+      "£": Array [
+        "4.65",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Smoky pepper and black bean quesadillas",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.50",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;

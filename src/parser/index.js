@@ -2,7 +2,7 @@ const cheerio = require('cheerio');
 
 const { sanitiseHtml, sanitiseLine } = require('./sanitiser');
 const { addSectionEffects } = require('./section-effects');
-const { getSubsection } = require('./get-subsection');
+const { getSubsection, getElementText } = require('./utils');
 
 const mainMenuOptions = require('./options/main-menu');
 const cafeMenuOptions = require('./options/cafe-menu');
@@ -70,31 +70,31 @@ const createParser = ({
     const arr = [];
     const elements = $('*');
     elements.each((i, element) => {
+      if (element.skip) {
+        return;
+      }
       // Go through each element, if it has no children (i.e. only text)...
-      const el = $(element);
-      if (!el.children().length) {
-        // Get the text and trim it.
-        // If not empty and is not in ignore list then keep it.
-        const txt = el.text().trim();
-        if (txt !== '' && !isIgnored(txt)) {
-          // Pre-process sections (split sections which are one-liners)
-          const preprocess = PREPROCESS_SECTIONS.find(({ matcher }) =>
-            matcher.test(txt),
-          );
-          if (preprocess) {
-            if (preprocess.splitOn) {
-              arr.push(...txt.split(preprocess.splitOn));
-            } else if (preprocess.customBehaviour) {
-              preprocess.customBehaviour({
-                i,
-                arr,
-                elements,
-                line: txt,
-              });
-            }
-          } else {
-            arr.push(txt);
+      const txt = getElementText($, element);
+      // If not empty and is not in ignore list then keep it.
+      if (txt && !isIgnored(txt)) {
+        // Pre-process sections (split sections which are one-liners)
+        const preprocess = PREPROCESS_SECTIONS.find(({ matcher }) =>
+          matcher.test(txt),
+        );
+        if (preprocess) {
+          if (preprocess.splitOn) {
+            arr.push(...txt.split(preprocess.splitOn));
+          } else if (preprocess.customBehaviour) {
+            preprocess.customBehaviour({
+              i,
+              arr,
+              $,
+              elements,
+              line: txt,
+            });
           }
+        } else {
+          arr.push(txt);
         }
       }
     });
