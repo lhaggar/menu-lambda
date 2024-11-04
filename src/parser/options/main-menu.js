@@ -210,8 +210,9 @@ module.exports = {
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
   END_SECTIONS_MATCHERS: [
     /CANTEEN\s+DINNER/i,
-    /DINNER/i,
+    /^\s*DINNER\s*$/i,
     /terrace\s+caf[eé]\s+dinner/i,
+    /DINNER\s+MENU/,
   ],
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.

@@ -1,11 +1,12 @@
 {
   "name": "menu-lambda",
-  "version": "1.24.1",
+  "version": "1.24.2",
   "description": "Lambda to post the News UK building canteen menu, daily, to Slack",
   "main": "index.js",
   "private": true,
   "scripts": {
     "test": "jest",
+    "test-inspect": "node --inspect-brk node_modules/.bin/jest",
     "lint": "eslint . --report-unused-disable-directives",
     "start": "node --inspect dry-run",
     "invoke": "./scripts/invoke-local.sh",
