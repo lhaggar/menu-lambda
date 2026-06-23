@@ -210,6 +210,7 @@ module.exports = {
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
   END_SECTIONS_MATCHERS: [
     /CANTEEN\s+DINNER/i,
+    /18:00\s+-\s+20:00/i,
     /^\s*DINNER\s*$/i,
     /terrace\s+caf[eé]\s+dinner/i,
     /DINNER\s+MENU/,
