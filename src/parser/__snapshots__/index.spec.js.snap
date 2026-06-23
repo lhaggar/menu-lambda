@@ -2937,3 +2937,105 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 52`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.50 / £1.75",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "BAO & BEYOND",
+      "Slow cooked sticky soy pork belly, shaved cucumber and carrot in a soft bao bun served with rice noodles and a sesame & sriracha mayonnaise",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Mini spring roll (£1.40)",
+      ],
+      "£": Array [
+        "6.00",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "SALAD BAR CHICKEN CAESAR",
+      "Chesterfield chicken, bacon lardons, iceberg lettuce, cucumber, cherry tomatoes, red onions, kale topped with a Caesar dressing",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "PIZZA ON 14​",
+      "24-hour fermented hand-stretched dough base, house tomato sauce or pesto with a choice of",
+      "Roasted vine tomato & mozzarella £5.25",
+      "Double pepperoni £5.50",
+      "Red onion & goats cheese £5.25",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Sweet potato fries (£1.40)",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Lamb kofta",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.75",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
