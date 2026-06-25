@@ -1209,9 +1209,6 @@ Array [
   Object {
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Sticky chicken wings, celery and blue cheese sauce",
-      ],
       "Made to order pizza bar: ": Array [
         "fresh Khobez base served with a selection of delicious toppings",
       ],
@@ -1220,6 +1217,7 @@ Array [
   },
   Object {
     "body": Array [
+      "Add on: Sticky chicken wings, celery and blue cheese sauce",
       "Vegan slow roasted rosemary and thyme rubbed butternut with a freekeh and cured rainbow salad topped with a fresh tomato salsa (V)",
     ],
     "color": "#C41017",
@@ -2082,17 +2080,7 @@ Array [
     "body": Array [
       "Lebanese shawarma chicken, garlic, lemon, Israeli couscous, pickled veggies - £2.95",
       "Celeriac shawarma, Israeli couscous, pickled veggies (V) - £2.75",
-    ],
-    "color": "#19b7b4",
-    "subsections": Object {
-      "Add on: ": Array [
-        "char grilled pitta £0.40 or made to order chips £0.60",
-      ],
-    },
-    "title": "Lunch",
-  },
-  Object {
-    "body": Array [
+      "Add on: char grilled pitta £0.40 or made to order chips £0.60",
       "Jacket potato or sweet potato with baked beans or a hot filling of the day",
     ],
     "color": "#19b7b4",
@@ -2139,13 +2127,10 @@ Array [
       "Lunch:",
       "Louisiana fried chicken skillet: buttermilk fried chicken pieces, ranch dressed coleslaw, seasoned skinny fries and an optional firecracker hot sauce - £4.15",
       "Cauliflower buffalo wings, savoury rice, buttered greens and a chive vegan mayonnaise with an optional firecracker hot sauce (V) - £3.50",
+      "Add on: Boston beans £0.50 or made to order chips £0.80",
     ],
     "color": "#ffbf00",
-    "subsections": Object {
-      "Add on: ": Array [
-        "Boston beans £0.50 or made to order chips £0.80",
-      ],
-    },
+    "subsections": Object {},
     "title": "Breakfast",
   },
   Object {
@@ -2202,13 +2187,10 @@ Array [
   Object {
     "body": Array [
       "The Genuine Meatball Marinara Sub - Homemade Italian Spiced Beef & Pork Meatballs topped with Smokey Tomato Ragu, Mozzarella & Caramelized Onion Chutney - £4.25",
+      "Add on: Skinny Fries - £1.00",
     ],
     "color": "#00BFFF",
-    "subsections": Object {
-      "Add on: ": Array [
-        "Skinny Fries - £1.00",
-      ],
-    },
+    "subsections": Object {},
     "title": "Street Food",
   },
   Object {
@@ -2271,25 +2253,19 @@ Array [
   Object {
     "body": Array [
       "The Ultimate Fish finger Butty - Lemon & Dill Crusted Fish, Iceberg Lettuce, Pickled Cucumber & Tartar Sauce - £4.25",
+      "Add on: Chunky chips - £1.00",
     ],
     "color": "#00BFFF",
-    "subsections": Object {
-      "Add on: ": Array [
-        "Chunky chips - £1.00",
-      ],
-    },
+    "subsections": Object {},
     "title": "Street Food",
   },
   Object {
     "body": Array [
       "Hunter's cauliflower with sautéed Savoy cabbage (v) - £4.25",
+      "Add on: Oven Roasted Wedges - £1.10",
     ],
     "color": "#C41017",
-    "subsections": Object {
-      "Add on: ": Array [
-        "Oven Roasted Wedges - £1.10",
-      ],
-    },
+    "subsections": Object {},
     "title": "From the Oven",
   },
   Object {
@@ -2353,13 +2329,10 @@ Array [
   Object {
     "body": Array [
       "Woodfire roasted peppers stuffed with courgette and quinoa served with pesto orzo and steamed fine beans - £4.25",
+      "Add on: Ciabatta garlic bread - £0.85",
     ],
     "color": "#C41017",
-    "subsections": Object {
-      "Add on: ": Array [
-        "Ciabatta garlic bread - £0.85",
-      ],
-    },
+    "subsections": Object {},
     "title": "From the Oven",
   },
   Object {
@@ -2429,13 +2402,18 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Red cabbage slaw £0.80",
-      ],
       "£": Array [
         "4.25",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Add on: Red cabbage slaw £0.80",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
@@ -2497,13 +2475,18 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Garlic and herb ciabatta - £1.10",
-      ],
       "£": Array [
         "4.25",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Add on: Garlic and herb ciabatta - £1.10",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
@@ -2561,9 +2544,6 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Charred corn on the cob £0.80",
-      ],
       "£": Array [
         "4.50",
       ],
@@ -2572,6 +2552,7 @@ Array [
   },
   Object {
     "body": Array [
+      "Add on: Charred corn on the cob £0.80",
       "Maple smoked salmon Caesar - Maple hot smoked salmon served with cos lettuce, cherry tomatoes, sourdough croutons, boiled egg, anchovies, shaved parmesan and homemade Caesar dressing",
     ],
     "color": "#C41017",
@@ -2588,13 +2569,18 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Onion bhaji £0.80",
-      ],
       "£": Array [
         "4.25",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Add on: Onion bhaji £0.80",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
@@ -2656,9 +2642,6 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Roasted carrot (£1.00)",
-      ],
       "£": Array [
         "4.85",
       ],
@@ -2667,6 +2650,7 @@ Array [
   },
   Object {
     "body": Array [
+      "Add on: Roasted carrot (£1.00)",
       "Genuine salad bar",
       "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
     ],
@@ -2684,13 +2668,18 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Onion bhaji (£1.00)",
-      ],
       "£": Array [
         "4.65",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Add on: Onion bhaji (£1.00)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
@@ -2766,9 +2755,6 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Pitta bread with cacik (£1.90)",
-      ],
       "£": Array [
         "5.00",
       ],
@@ -2777,6 +2763,7 @@ Array [
   },
   Object {
     "body": Array [
+      "Add on: Pitta bread with cacik (£1.90)",
       "Genuine salad bar",
       "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
     ],
@@ -2795,13 +2782,18 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Dressed rocket salad (£1.30)",
-      ],
       "£": Array [
         "4.85",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Add on: Dressed rocket salad (£1.30)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
@@ -2877,9 +2869,6 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Tomato, pink onion and coriander salad (£1.30)",
-      ],
       "£": Array [
         "4.85",
       ],
@@ -2888,6 +2877,7 @@ Array [
   },
   Object {
     "body": Array [
+      "Add on: Tomato, pink onion and coriander salad (£1.30)",
       "Genuine salad bar",
       "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
     ],
@@ -2906,13 +2896,18 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Mini spring rolls (£1.30)",
-      ],
       "£": Array [
         "5.00",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Add on: Mini spring rolls (£1.30)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
@@ -2979,9 +2974,6 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {
-      "Add on: ": Array [
-        "Mini spring roll (£1.40)",
-      ],
       "£": Array [
         "6.00",
       ],
@@ -2990,6 +2982,7 @@ Array [
   },
   Object {
     "body": Array [
+      "Add on: Mini spring roll (£1.40)",
       "SALAD BAR CHICKEN CAESAR",
       "Chesterfield chicken, bacon lardons, iceberg lettuce, cucumber, cherry tomatoes, red onions, kale topped with a Caesar dressing",
     ],
@@ -3008,13 +3001,108 @@ Array [
       "Roasted vine tomato & mozzarella £5.25",
       "Double pepperoni £5.50",
       "Red onion & goats cheese £5.25",
+      "Add on: Sweet potato fries (£1.40)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Lamb kofta",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.75",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 53`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.50 / £1.75",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "WOK THIS WAY",
+      "Stir-fried beef Choy Sum with garlic, bean shoots, water chestnuts & soy served with chop suey noodles & prawn crackers",
     ],
     "color": "#C41017",
     "subsections": Object {
       "Add on: ": Array [
-        "Sweet potato fries (£1.40)",
+        "Vegetable gyoza",
+      ],
+      "£": Array [
+        "5.50",
+        "2.00",
       ],
     },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "OTTOLENGI STYLE SALAD BAR",
+      "Sumac roast aubergine, chargrilled broccoli with chili & garlic, carrot, kale, flaked barley with harissa, parsley with whipped feta",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "PIZZA ON 14",
+      "Stoned baked focaccia topped with tomato sauce & pesto with a choice of:",
+      "Buffalo mozzarella & Sundried tomato £5.25",
+      "Add on: Caprese salad (£2.00)",
+    ],
+    "color": "#C41017",
+    "subsections": Object {},
     "title": "Mains",
   },
   Object {
