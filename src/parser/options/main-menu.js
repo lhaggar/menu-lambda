@@ -1,5 +1,5 @@
 const { CAFE_COLOUR } = require('./cafe-menu');
-const { getElementText } = require('../utils');
+const { getElementText, getSubsection, getSection } = require('../utils');
 
 const cafeSections = [
   {
@@ -22,6 +22,170 @@ const cafeSections = [
   },
 ];
 
+// Titles which will form each object. Add titles to this as appropriate.
+const SECTIONS = [
+  {
+    matcher: /^\s*FROM\s+THE\s+OVEN\s*$/i,
+    displayName: 'From the Oven',
+    color: '#C41017',
+  },
+  {
+    matcher: /^Mains$/i,
+    displayName: 'Mains',
+    color: '#C41017',
+  },
+  {
+    matcher: /^\s*HOT\s+SNACK\s*$/i,
+    displayName: 'Hot Snack',
+    color: '#990099',
+  },
+  {
+    matcher: /^\s*CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE\s*$/i,
+    displayName: 'Chefs Theatre',
+    color: '#00BFFF',
+  },
+  {
+    matcher: /^\s*Street\s+Food\s*$/i,
+    displayName: 'Street Food',
+    color: '#00BFFF',
+  },
+  {
+    matcher: /^\s*Street\s+Food\s+(Pop-up|Pop\s+up)\s*$/i,
+    displayName: 'Street Food Pop-up',
+    color: '#00BFFF',
+  },
+  {
+    matcher: /^\s*THEATRE\s+BAR\s*$/i,
+    displayName: 'Theatre Bar',
+    color: '#3360ff',
+  },
+  {
+    matcher: /^\s*THEATRE(\s+(STATION|COUNTER))?\s*$/i,
+    displayName: 'Theatre Station',
+    color: '#3360ff',
+  },
+  {
+    matcher: /^\s*Genuine\s+Chip\s+Shop\s*$/i,
+    displayName: 'Genuine Chip Shop',
+    color: '#2F80C1',
+  },
+  {
+    matcher: /^\s*CHIP\s+SHOP\s*$/i,
+    displayName: 'Chip Shop',
+    color: '#2F80C1',
+  },
+  {
+    matcher: /^\s*PIZZA\s+ON\s+14\s*$/i,
+    displayName: 'Pizza on 14',
+    color: '#D94F1F',
+  },
+  {
+    matcher: /^\s*SOUP\s*$/i,
+    displayName: 'Soup',
+    color: '#e6e600',
+  },
+  {
+    matcher: /^\s*HEALTHY\s+BAR\s*$/i,
+    displayName: 'The Healthy Bar',
+    color: '#2f8500',
+  },
+  {
+    matcher: /^\s*(THE\s+)SALAD\s+BAR\s*$/i,
+    displayName: 'The Salad Bar',
+    color: '#2f8500',
+  },
+  {
+    matcher: /^\s*HEALTHY(\s+(STATION|COUNTER))?\s*$/i,
+    displayName: 'Healthy Station',
+    color: '#2f8500',
+  },
+  {
+    matcher: /^\s*VEGETARIAN(\s+(STATION|COUNTER))?\s*$/i,
+    displayName: 'Vegetarian Station',
+    color: '#008575',
+  },
+  {
+    matcher: /^\s*VEGETARIAN\s+DELIGHT\s*$/i,
+    displayName: 'Vegetarian Delight',
+    color: '#008575',
+  },
+  {
+    matcher: /^\s*VEGAN\s+(STATION|COUNTER)\s*$/i,
+    displayName: 'Vegan Station',
+    color: '#008554',
+  },
+  {
+    matcher: /^\s*SANDWICHES\s+AND\s+SALADS\s*/i,
+    displayName: 'Sandwiches and Salads',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*BREAKFAST\s+SPECIAL:?\s*$/i,
+    displayName: 'Breakfast Special',
+    color: '#ffbf00',
+  },
+  {
+    matcher: /^\s*BREAKFAST:?\s*$/i,
+    displayName: 'Breakfast',
+    color: '#ffbf00',
+  },
+  {
+    matcher: /^\s*LUNCH(\s+MENU)?(\s*:)?\s*$/i,
+    displayName: 'Lunch',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*DINNER(\s+MENU)?\s*/i,
+    displayName: 'Dinner',
+    color: '#9933FF',
+  },
+  {
+    matcher: /^\s*DESSERT:?\s*$/i,
+    displayName: 'Dessert',
+    color: '#cc3399',
+  },
+
+  // Coronavirus lockdown options!
+  {
+    matcher: /^\s*LUNCH\s+(SANDWICH|SANDWICHES)\s+SELECTION\s*/i,
+    displayName: 'Lunch - Sandwich Selection',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*PRET\s+(SANDWICH|SANDWICHES)\s*/i,
+    displayName: 'Lunch - Pret Sandwiches',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*PRET\s+SALAD(\s+BOXES)?\s*/i,
+    displayName: 'Lunch - Pret Salad Boxes',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*(LUNCH\s+)?(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION(\s+:)?\s*/i,
+    displayName: 'Lunch - Sandwich & Salad Selection',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*(LUNCH\s+)?PRET\s+(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION\s*/i,
+    displayName: 'Lunch - Pret Sandwich & Salad Selection',
+    color: '#19b7b4',
+  },
+  {
+    matcher: /^\s*PRET\s+(SNACKS)\s*/i,
+    displayName: 'Lunch - Pret Snacks',
+    color: '#19b7b4',
+  },
+
+  // These are separate so duplications can be filtered out of Cafe menu
+  ...cafeSections,
+  {
+    matcher: false,
+    displayName: '',
+    color: '#CCCCCC',
+  },
+];
+
 module.exports = {
   // These matchers will trigger a split of the line by the splitOn string,
   // used where section title and content is on one line
@@ -29,13 +193,25 @@ module.exports = {
     {
       matcher: /^\s*Soup:\s*/i,
       customBehaviour: ({ line, arr, i, $, elements }) => {
+        // Split Soup to own line for section matcher later.
+        arr.push(...line.split(':'));
+
         const nextElement = elements[i + 1];
+        if (!nextElement) {
+          return;
+        }
+
         const nextLine = getElementText($, nextElement);
         if (nextLine && nextLine.startsWith('£')) {
           nextElement.skip = true;
-          arr.push(...line.split(':'), nextLine, 'Mains');
-        } else {
-          arr.push(...line.split(':'), 'Mains');
+          arr.push(nextLine);
+        }
+
+        const nextElementPlus1 = elements[i + 2];
+        const nextLinePlus1 =
+          nextElementPlus1 && getElementText($, nextElementPlus1);
+        if (!getSection(SECTIONS, nextLinePlus1)) {
+          arr.push('Mains');
         }
       },
     },
@@ -53,6 +229,9 @@ module.exports = {
     {
       matcher: /^\s*Add on:\s*/i,
       customBehaviour: ({ line, arr, i, $, elements }) => {
+        if (elements.length <= i) {
+          return;
+        }
         const nextElement = elements[i + 1];
         const nextLine = getElementText($, nextElement);
         if (nextLine && nextLine.startsWith('£')) {
@@ -65,147 +244,10 @@ module.exports = {
     },
   ],
 
-  // Titles which will form each object. Add titles to this as appropriate.
-  SECTIONS: [
-    {
-      matcher: /^\s*FROM\s+THE\s+OVEN\s*$/i,
-      displayName: 'From the Oven',
-      color: '#C41017',
-    },
-    {
-      matcher: /^Mains$/i,
-      displayName: 'Mains',
-      color: '#C41017',
-    },
-    {
-      matcher: /^\s*HOT\s+SNACK\s*$/i,
-      displayName: 'Hot Snack',
-      color: '#990099',
-    },
-    {
-      matcher: /^\s*CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE\s*$/i,
-      displayName: 'Chefs Theatre',
-      color: '#00BFFF',
-    },
-    {
-      matcher: /^\s*Street\s+Food\s*$/i,
-      displayName: 'Street Food',
-      color: '#00BFFF',
-    },
-    {
-      matcher: /^\s*Street\s+Food\s+(Pop-up|Pop\s+up)\s*$/i,
-      displayName: 'Street Food Pop-up',
-      color: '#00BFFF',
-    },
-    {
-      matcher: /^\s*THEATRE\s+BAR\s*$/i,
-      displayName: 'Theatre Bar',
-      color: '#3360ff',
-    },
-    {
-      matcher: /^\s*THEATRE(\s+(STATION|COUNTER))?\s*$/i,
-      displayName: 'Theatre Station',
-      color: '#3360ff',
-    },
-    {
-      matcher: /^\s*SOUP\s*$/i,
-      displayName: 'Soup',
-      color: '#e6e600',
-    },
-    {
-      matcher: /^\s*HEALTHY\s+BAR\s*$/i,
-      displayName: 'Healthy Bar',
-      color: '#2f8500',
-    },
-    {
-      matcher: /^\s*HEALTHY(\s+(STATION|COUNTER))?\s*$/i,
-      displayName: 'Healthy Station',
-      color: '#2f8500',
-    },
-    {
-      matcher: /^\s*VEGETARIAN(\s+(STATION|COUNTER))?\s*$/i,
-      displayName: 'Vegetarian Station',
-      color: '#008575',
-    },
-    {
-      matcher: /^\s*VEGAN\s+(STATION|COUNTER)\s*$/i,
-      displayName: 'Vegan Station',
-      color: '#008554',
-    },
-    {
-      matcher: /^\s*SANDWICHES\s+AND\s+SALADS\s*/i,
-      displayName: 'Sandwiches and Salads',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*BREAKFAST\s+SPECIAL:?\s*$/i,
-      displayName: 'Breakfast Special',
-      color: '#ffbf00',
-    },
-    {
-      matcher: /^\s*BREAKFAST:?\s*$/i,
-      displayName: 'Breakfast',
-      color: '#ffbf00',
-    },
-    {
-      matcher: /^\s*LUNCH(\s+MENU)?\s*$/i,
-      displayName: 'Lunch',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*DINNER(\s+MENU)?\s*/i,
-      displayName: 'Dinner',
-      color: '#9933FF',
-    },
-    {
-      matcher: /^\s*DESSERT:?\s*$/i,
-      displayName: 'Dessert',
-      color: '#cc3399',
-    },
-
-    // Coronavirus lockdown options!
-    {
-      matcher: /^\s*LUNCH\s+(SANDWICH|SANDWICHES)\s+SELECTION\s*/i,
-      displayName: 'Lunch - Sandwich Selection',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*PRET\s+(SANDWICH|SANDWICHES)\s*/i,
-      displayName: 'Lunch - Pret Sandwiches',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*PRET\s+SALAD(\s+BOXES)?\s*/i,
-      displayName: 'Lunch - Pret Salad Boxes',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*(LUNCH\s+)?(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION(\s+:)?\s*/i,
-      displayName: 'Lunch - Sandwich & Salad Selection',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*(LUNCH\s+)?PRET\s+(SANDWICH|SANDWICHES)\s+(&|AND)\s+SALAD\s+SELECTION\s*/i,
-      displayName: 'Lunch - Pret Sandwich & Salad Selection',
-      color: '#19b7b4',
-    },
-    {
-      matcher: /^\s*PRET\s+(SNACKS)\s*/i,
-      displayName: 'Lunch - Pret Snacks',
-      color: '#19b7b4',
-    },
-
-    // These are separate so duplications can be filtered out of Cafe menu
-    ...cafeSections,
-    {
-      matcher: false,
-      displayName: '',
-      color: '#CCCCCC',
-    },
-  ],
+  SECTIONS,
 
   // Any lines that match these will be excluded from the contents.
-  IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /daily\s+canteen\s+menu/i],
+  IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /daily\s+canteen\s+menu/i, /^Mains$/i],
 
   // Anything after this matcher (including the matching line itself) will be trimmed from the end.
   END_SECTIONS_MATCHERS: [
@@ -218,10 +260,10 @@ module.exports = {
 
   // Matchers to determine if a line is specifying a subsection, e.g. sides, and the name of the subsection.
   SUBSECTION_MATCHERS: [
-    [/^\s*SIDE(S)?\s+:/i, 'Sides: '],
-    [/^\s*add\s+on(s)?\s+:/i, 'Add on: '],
-    [/^\s*EXTRA(S)?\s+:/i, 'Extras: '],
-    [/^Made\s+to\s+order\s+pizza\s+bar\s+:/i, 'Made to order pizza bar: '],
+    [/^\s*SIDE(S)?\s*:/i, 'Sides: '],
+    [/^\s*add\s+on(s)?\s*:/i, 'Add on: '],
+    [/^\s*EXTRA(S)?\s*:/i, 'Extras: '],
+    [/^\s*Made\s+to\s+order\s+pizza\s+bar\s*:/i, 'Made to order pizza bar: '],
     [/^\s*£/, '£'], // If we have a price on a new line it's end of that item and we need to trigger a section duplication
   ],
 

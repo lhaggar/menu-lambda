@@ -2,7 +2,7 @@ const cheerio = require('cheerio');
 
 const { sanitiseHtml, sanitiseLine } = require('./sanitiser');
 const { addSectionEffects } = require('./section-effects');
-const { getSubsection, getElementText } = require('./utils');
+const { getSection, getSubsection, getElementText } = require('./utils');
 
 const mainMenuOptions = require('./options/main-menu');
 const cafeMenuOptions = require('./options/cafe-menu');
@@ -41,9 +41,7 @@ const createParser = ({
   // Either create a section object based on the line being an expected title,
   // or return null (i.e. if a content line).
   const createSection = (line, firstLine) => {
-    const SECTION = SECTIONS.find(
-      ({ matcher }) => matcher && matcher.test(line),
-    );
+    const SECTION = getSection(SECTIONS, line);
     if (SECTION) {
       return {
         title: SECTION.displayName,

@@ -1,10 +1,12 @@
 // Clean up bad tags which will break things before we run through cheerio
 // e.g. <strong>sides</strong> (see test fixtures).
 const sanitiseHtml = html =>
-  html.replace(
-    /<(\/?)strong>|<(\/?)b>|<noscript>.*<\/noscript>|<br\s*\/?>|<(\/?)em>/g,
-    '',
-  );
+  html
+    .replace(
+      /<\/?(?:strong|b|em)>|<noscript\b[^>]*>.*?<\/noscript>|<br\s*\/?>/gis,
+      '',
+    )
+    .replace(/[\u200B-\u200D\uFEFF]/g, '');
 
 // Formatters are run through in order on each line, [0] is search, [1] is replace value.
 const LINE_SANITISERS = [
