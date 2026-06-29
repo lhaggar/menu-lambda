@@ -1,5 +1,5 @@
 const { CAFE_COLOUR } = require('./cafe-menu');
-const { getElementText, getSubsection, getSection } = require('../utils');
+const { getElementText, getSection } = require('../utils');
 
 const cafeSections = [
   {
