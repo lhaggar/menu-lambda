@@ -32,10 +32,20 @@ const titleCaseMatchedTitle = line =>
   line
     .trim()
     .replace(/\s+/g, ' ')
+    .replace(/\s*:$/, '')
     .toLowerCase()
-    .replace(/(^|[\s-/])([a-z])/g, (match, prefix, letter) =>
-      [prefix, letter.toUpperCase()].join(''),
+    .replace(
+      /(^|[\s/])([a-z])/g,
+      (_, prefix, letter) => `${prefix}${letter.toUpperCase()}`,
     );
+
+const dynamicTitleSection = (matcher, displayName, color) => ({
+  matcher,
+  // Parser prefers formatTitle(line); displayName remains fallback/label metadata.
+  displayName,
+  formatTitle: titleCaseMatchedTitle,
+  color,
+});
 
 // Titles which will form each object. Add titles to this as appropriate.
 const SECTIONS = [
@@ -52,100 +62,131 @@ const SECTIONS = [
   },
   {
     matcher: /^\s*CHEF(\\u2019|\\u2018|\\u201B|\\u2032|'|’|`|‘)?S\s+THEATRE\s*$/i,
-    displayName: 'Chefs Theatre',
+    displayName: "Chef's Theatre",
     color: '#00BFFF',
   },
+  dynamicTitleSection(
+    /^\s*Street\s+Food(?:\s+(?:Pop-up|Pop\s+up))?\s*$/i,
+    'Street Food',
+    '#00BFFF',
+  ),
+  dynamicTitleSection(
+    /^\s*THEATRE(?:\s+(?:BAR|STATION|COUNTER))?\s*$/i,
+    'Theatre Station',
+    '#3360ff',
+  ),
+  dynamicTitleSection(
+    /^\s*(?:Genuine\s+)?Chip\s+Shop\s*$/i,
+    'Chip Shop',
+    '#2F80C1',
+  ),
+  dynamicTitleSection(/^\s*TANDOORI\s+GRILL\s*$/i, 'Tandoori Grill', '#7E57C2'),
+  dynamicTitleSection(
+    /^\s*TANABATA\s+JAPANESE\s+SUMMER\s+FESTIVAL\s*$/i,
+    'Tanabata Japanese Summer Festival',
+    '#C2185B',
+  ),
+  dynamicTitleSection(
+    /^\s*P[EI]RI\s+P[EI]RI(?:\s+[A-Z]+)?\s*$/i,
+    'Piri Piri',
+    '#F57C00',
+  ),
+  dynamicTitleSection(
+    /^\s*BIG\s+BOY\s+BURRITO\s*$/i,
+    'Big Boy Burrito',
+    '#795548',
+  ),
+  dynamicTitleSection(
+    /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
+    'Gyros',
+    '#008C95',
+  ),
   {
-    matcher: /^\s*Street\s+Food\s*$/i,
-    displayName: 'Street Food',
-    color: '#00BFFF',
+    matcher: /^\s*KFTB\s*$/i,
+    displayName: 'KFTB',
+    color: '#26A69A',
   },
-  {
-    matcher: /^\s*Street\s+Food\s+(Pop-up|Pop\s+up)\s*$/i,
-    displayName: 'Street Food Pop-up',
-    color: '#00BFFF',
-  },
-  {
-    matcher: /^\s*THEATRE\s+BAR\s*$/i,
-    displayName: 'Theatre Bar',
-    color: '#3360ff',
-  },
-  {
-    matcher: /^\s*THEATRE(\s+(STATION|COUNTER))?\s*$/i,
-    displayName: 'Theatre Station',
-    color: '#3360ff',
-  },
-  {
-    matcher: /^\s*Genuine\s+Chip\s+Shop\s*$/i,
-    displayName: 'Genuine Chip Shop',
-    color: '#2F80C1',
-  },
-  {
-    matcher: /^\s*CHIP\s+SHOP\s*$/i,
-    displayName: 'Chip Shop',
-    color: '#2F80C1',
-  },
+  dynamicTitleSection(
+    /^\s*BRUSCHETTA\s+ON\s+14\s*$/i,
+    'Bruschetta On 14',
+    '#8E7CC3',
+  ),
   {
     matcher: /^\s*PIZZA\s+ON\s+14\s*$/i,
     displayName: 'Pizza on 14',
     color: '#D94F1F',
   },
-  {
-    matcher: /^\s*(chef(?:'|’)?s\s+)?(live\s+)?pasta\s+bar\s*$/i,
-    displayName: 'Pasta Bar',
-    formatTitle: titleCaseMatchedTitle,
-    color: '#c7990f',
-  },
+  dynamicTitleSection(
+    /^\s*(chef(?:'|’)?s\s+)?(live\s+)?pasta\s+bar\s*$/i,
+    'Pasta Bar',
+    '#c7990f',
+  ),
   {
     matcher: /^\s*SOUP\s*$/i,
     displayName: 'Soup',
     color: '#e6e600',
   },
-  {
-    matcher: /^\s*HEALTHY\s+BAR\s*$/i,
-    displayName: 'The Healthy Bar',
-    color: '#2f8500',
-  },
-  {
-    matcher: /^\s*(THE\s+)SALAD\s+BAR\s*$/i,
-    displayName: 'The Salad Bar',
-    color: '#2f8500',
-  },
-  {
-    matcher: /^\s*HEALTHY(\s+(STATION|COUNTER))?\s*$/i,
-    displayName: 'Healthy Station',
-    color: '#2f8500',
-  },
-  {
-    matcher: /^\s*VEGETARIAN(\s+(STATION|COUNTER))?\s*$/i,
-    displayName: 'Vegetarian Station',
-    color: '#008575',
-  },
-  {
-    matcher: /^\s*VEGETARIAN\s+DELIGHT\s*$/i,
-    displayName: 'Vegetarian Delight',
-    color: '#008575',
-  },
-  {
-    matcher: /^\s*VEGAN\s+(STATION|COUNTER)\s*$/i,
-    displayName: 'Vegan Station',
-    color: '#008554',
-  },
+  dynamicTitleSection(
+    /^\s*HEALTHY(?:\s+(?:BAR|STATION|COUNTER))?\s*$/i,
+    'Healthy Station',
+    '#2f8500',
+  ),
+  dynamicTitleSection(/^\s*LEBANESE\s+SALAD\s*$/i, 'Lebanese Salad', '#43A047'),
+  dynamicTitleSection(
+    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R\s+SALAD(?:\s+BAR)?|SALAD\s+BAR\s+(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R)\s*$/i,
+    'Caesar Salad',
+    '#558B2F',
+  ),
+  dynamicTitleSection(
+    /^\s*(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR\s*$/i,
+    'The Salad Bar',
+    '#2f8500',
+  ),
+  dynamicTitleSection(
+    /^\s*WARM\s+CAULIFLOWER\s+CAESAR\s*$/i,
+    'Warm Cauliflower Caesar',
+    '#607D8B',
+  ),
+  dynamicTitleSection(
+    /^\s*ASIAN(?:\s+STYLE)?\s+NOODLE\s+SALAD\s*$/i,
+    'Asian Style Noodle Salad',
+    '#009688',
+  ),
+  dynamicTitleSection(
+    /^\s*VEGETARIAN(?:\s+(?:STATION|COUNTER|DELIGHT))?\s*$/i,
+    'Vegetarian Station',
+    '#008575',
+  ),
+  dynamicTitleSection(
+    /^\s*VEGANUARY(?:\s+(?:STATION|COUNTER))?\s*$/i,
+    'Veganuary',
+    '#008554',
+  ),
+  dynamicTitleSection(
+    /^\s*VEGAN\s+(?:STATION|COUNTER)\s*$/i,
+    'Vegan Station',
+    '#008554',
+  ),
+  dynamicTitleSection(
+    /^\s*(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)\s+PIE\s*$/i,
+    "Shepherd's Pie",
+    '#5C6BC0',
+  ),
+  dynamicTitleSection(
+    /^\s*[a-z0-9&'’.-][a-z0-9&'’.\-\s]*BURGERS?\s*$/i,
+    'Burger',
+    '#6C8EBF',
+  ),
   {
     matcher: /^\s*SANDWICHES\s+AND\s+SALADS\s*/i,
     displayName: 'Sandwiches and Salads',
     color: '#19b7b4',
   },
-  {
-    matcher: /^\s*BREAKFAST\s+SPECIAL:?\s*$/i,
-    displayName: 'Breakfast Special',
-    color: '#ffbf00',
-  },
-  {
-    matcher: /^\s*BREAKFAST:?\s*$/i,
-    displayName: 'Breakfast',
-    color: '#ffbf00',
-  },
+  dynamicTitleSection(
+    /^\s*BREAKFAST(?:\s+SPECIAL)?\s*:?\s*$/i,
+    'Breakfast',
+    '#ffbf00',
+  ),
   {
     matcher: /^\s*LUNCH(\s+MENU)?(\s*:)?\s*$/i,
     displayName: 'Lunch',
