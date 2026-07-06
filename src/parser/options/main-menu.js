@@ -22,6 +22,12 @@ const cafeSections = [
   },
 ];
 
+const MAINS_SECTION = {
+  matcher: /^Mains$/i,
+  displayName: 'Mains',
+  color: '#C41017',
+};
+
 // Titles which will form each object. Add titles to this as appropriate.
 const SECTIONS = [
   {
@@ -29,11 +35,7 @@ const SECTIONS = [
     displayName: 'From the Oven',
     color: '#C41017',
   },
-  {
-    matcher: /^Mains$/i,
-    displayName: 'Mains',
-    color: '#C41017',
-  },
+  MAINS_SECTION,
   {
     matcher: /^\s*HOT\s+SNACK\s*$/i,
     displayName: 'Hot Snack',
@@ -245,6 +247,8 @@ module.exports = {
   ],
 
   SECTIONS,
+
+  FALLBACK_SECTION: MAINS_SECTION,
 
   // Any lines that match these will be excluded from the contents.
   IGNORE_LIST: [/CANTEEN\s+LUNCH/i, /daily\s+canteen\s+menu/i, /^Mains$/i],

@@ -19,6 +19,12 @@ const push = (obj, key, data) => {
   }
 };
 
+const createSectionFromConfig = ({ displayName, color }) => ({
+  title: displayName,
+  subsections: {},
+  color,
+});
+
 // Create a new section from existing one - this is when we have two meal options under one
 // section heading, e.g. two choices "From the Oven" with their own respective sides e.t.c.
 const duplicateSection = ({ title, color }) => ({
@@ -30,6 +36,7 @@ const duplicateSection = ({ title, color }) => ({
 const createParser = ({
   PREPROCESS_SECTIONS,
   SECTIONS,
+  FALLBACK_SECTION,
   IGNORE_LIST,
   END_SECTIONS_MATCHERS,
   SUBSECTION_MATCHERS = [],
@@ -43,11 +50,7 @@ const createParser = ({
   const createSection = (line, firstLine) => {
     const SECTION = getSection(SECTIONS, line);
     if (SECTION) {
-      return {
-        title: SECTION.displayName,
-        subsections: {},
-        color: SECTION.color,
-      };
+      return createSectionFromConfig(SECTION);
     }
     const unnamedSection = SECTIONS.find(x => !x.matcher);
     if (firstLine && unnamedSection) {
@@ -126,7 +129,9 @@ const createParser = ({
             // We have a current section, previous line was a subsection, and current line isn't a subsection.
             // Means we've hit a duplicate section, so reassign currentSection.
             // (i.e. prev line is "SIDES: xyz" and a new section was not created; two "From the Oven" options for example).
-            currentSection = duplicateSection(currentSection);
+            currentSection = FALLBACK_SECTION
+              ? createSectionFromConfig(FALLBACK_SECTION)
+              : duplicateSection(currentSection);
             acc.push(currentSection);
           }
 

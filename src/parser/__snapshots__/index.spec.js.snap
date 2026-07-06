@@ -759,7 +759,7 @@ Array [
         "NACHOS, SPICED POTATO WEDGE, SOUR CREAM AND CHIVES (V)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -811,7 +811,7 @@ Array [
         "Buttered cabbage and roasted Kentish root vegetables (v)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -854,7 +854,7 @@ Array [
         "Nachos, spiced potato wedge or sour cream and chives (V)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -901,7 +901,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {},
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -951,7 +951,7 @@ Array [
         "Vegetable samosa, onion bhaji, poppadum, mango sauce, lime pickle",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1042,7 +1042,7 @@ Array [
         "Rosemary focaccia or garden salad (V)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1086,13 +1086,13 @@ Array [
     "body": Array [
       "Kentish farmer's market roasted broccoli and toasted almond risotto with a Kent.co poached egg",
     ],
-    "color": "#CCCCCC",
+    "color": "#C41017",
     "subsections": Object {
       "Sides: ": Array [
         "Blue cheese, celery and chard salad (V)",
       ],
     },
-    "title": "",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1138,13 +1138,13 @@ Array [
       "Kentish farmers market vegetable pie (V)",
       "served with buttered mashed potato",
     ],
-    "color": "#3126A2",
+    "color": "#C41017",
     "subsections": Object {
       "Sides: ": Array [
         "Steamed and buttered kale and cabbage",
       ],
     },
-    "title": "Terrace Café",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1181,7 +1181,7 @@ Array [
         "Ginger and garlic bok choy (V)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1227,7 +1227,7 @@ Array [
         "Rainbow slaw or garlic and herb courgettes and broad beans (V)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1417,7 +1417,7 @@ Array [
         "Cajun spiced potato wedges (V)",
       ],
     },
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1643,9 +1643,9 @@ Array [
     "body": Array [
       "Mushroom carbonara served with penne pasta and a mix leaf salad",
     ],
-    "color": "#CCCCCC",
+    "color": "#C41017",
     "subsections": Object {},
-    "title": "",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -1792,7 +1792,7 @@ Array [
     ],
     "color": "#C41017",
     "subsections": Object {},
-    "title": "From the Oven",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -2094,9 +2094,9 @@ Array [
     "body": Array [
       "Jacket potato or sweet potato with baked beans or a hot filling of the day",
     ],
-    "color": "#19b7b4",
+    "color": "#C41017",
     "subsections": Object {},
-    "title": "Lunch",
+    "title": "Mains",
   },
   Object {
     "body": Array [
@@ -3233,6 +3233,107 @@ Array [
     "subsections": Object {
       "£": Array [
         "2.75",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 55`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "TANDOORI GRILL",
+      "Tandoori marinated Chesterfield chicken thigh in a creamy masala sauce with buttered pilaf rice, kachumber salad & mango chutney",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Spinach & onion pakoras (£1.40)",
+      ],
+      "£": Array [
+        "5.65",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "PASTA BAR",
+      "Tagliatelle served in a wild mushroom and spinach ragù, with aged parmesan and topped with pinenes",
+    ],
+    "color": "#C41017",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Sundried tomato & pesto focaccia (£1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Mains",
+  },
+  Object {
+    "body": Array [
+      "Sesame coated chicken wings",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
       ],
     },
     "title": "Hot Snack",
