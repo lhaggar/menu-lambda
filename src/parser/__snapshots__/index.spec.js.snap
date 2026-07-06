@@ -3312,10 +3312,9 @@ Array [
   },
   Object {
     "body": Array [
-      "PASTA BAR",
       "Tagliatelle served in a wild mushroom and spinach ragù, with aged parmesan and topped with pinenes",
     ],
-    "color": "#C41017",
+    "color": "#c7990f",
     "subsections": Object {
       "Add on: ": Array [
         "Sundried tomato & pesto focaccia (£1.40)",
@@ -3324,7 +3323,7 @@ Array [
         "5.45",
       ],
     },
-    "title": "Mains",
+    "title": "Pasta Bar",
   },
   Object {
     "body": Array [

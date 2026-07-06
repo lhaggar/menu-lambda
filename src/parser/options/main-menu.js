@@ -28,6 +28,15 @@ const MAINS_SECTION = {
   color: '#C41017',
 };
 
+const titleCaseMatchedTitle = line =>
+  line
+    .trim()
+    .replace(/\s+/g, ' ')
+    .toLowerCase()
+    .replace(/(^|[\s-/])([a-z])/g, (match, prefix, letter) =>
+      [prefix, letter.toUpperCase()].join(''),
+    );
+
 // Titles which will form each object. Add titles to this as appropriate.
 const SECTIONS = [
   {
@@ -80,6 +89,12 @@ const SECTIONS = [
     matcher: /^\s*PIZZA\s+ON\s+14\s*$/i,
     displayName: 'Pizza on 14',
     color: '#D94F1F',
+  },
+  {
+    matcher: /^\s*(chef(?:'|’)?s\s+)?(live\s+)?pasta\s+bar\s*$/i,
+    displayName: 'Pasta Bar',
+    formatTitle: titleCaseMatchedTitle,
+    color: '#c7990f',
   },
   {
     matcher: /^\s*SOUP\s*$/i,
