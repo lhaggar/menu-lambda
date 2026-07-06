@@ -2,10 +2,15 @@
   "mainMenuContent": [
     {
       "body": [
-        "'Genuine' Chip Shop - battered Pollock & battered sausages, savaloys"
+        "'Genuine' Chip Shop - battered Pollock & battered sausages, savaloys",
+        "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+        "Tandoori marinated Chesterfield chicken thigh",
+        "Add on: HP sauce"
       ],
       "subsections": {
-        "sides": ["Chips, peas & mushy peas"]
+        "sides": ["Chips, peas & mushy peas"],
+        "Sides: ": ["CHUNKY STEAK CHIPS"],
+        "Add on: ": ["HP sauce"]
       },
       "title": "From the Oven",
       "color": "#C41017"

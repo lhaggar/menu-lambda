@@ -28,7 +28,7 @@ Breakfast - grab & go fridge - fruit salad pots, yoghurt pots, selection of toas
         "text",
       ],
       "text": "Fish pie served with buttered peas and kale
-Five bean chilly with steamed rice and tortilla chips salsa and sour cream (v)
+Five bean chilly with steamed rice and tortilla chips salsa and sour cream (V)
 Grab & go fridge - fruit salad pots, yoghurt pots, selection of toasties, paninis, wraps, baguettes, sandwiches and box salads",
       "title": "Terrace Café Lunch",
     },
@@ -37,7 +37,7 @@ Grab & go fridge - fruit salad pots, yoghurt pots, selection of toasties, panini
       "mrkdwn_in": Array [
         "text",
       ],
-      "text": "Vegan red pepper and lentil (v)",
+      "text": "Vegan red pepper and lentil (V)",
       "title": "Soup",
     },
     Object {
@@ -59,8 +59,13 @@ Object {
       "mrkdwn_in": Array [
         "text",
       ],
-      "text": "'Genuine' chip shop - battered pollock & battered sausages, savaloys
-Sideschips, peas & mushy peas",
+      "text": "'Genuine' Chip Shop - battered Pollock & battered sausages, savaloys
+Selection of salads, sandwiches, baguettes and wraps
+Tandoori marinated Chesterfield chicken thigh
+Add on: HP sauce
+SidesChips, peas & mushy peas
+Sides: Chunky steak chips
+Add on: HP sauce",
       "title": "From the Oven",
     },
     Object {
@@ -79,7 +84,7 @@ Served with red onion freekeh, toasted hazelnut and lemon dressing",
         "text",
       ],
       "text": "Chilli glazed chicken, wild rice and red pepper
-Sidesglazed sugar snaps and broccoli",
+SidesGlazed sugar snaps and broccoli",
       "title": "Chefs Theatre",
     },
     Object {
@@ -96,8 +101,8 @@ Curried cauliflower and bacon",
       "mrkdwn_in": Array [
         "text",
       ],
-      "text": "Breakfast: smoked bacon frittata
-Lunch: roasted aubergine and parma ham on focaccia",
+      "text": "Breakfast: Smoked bacon frittata
+Lunch: Roasted aubergine and Parma ham on focaccia",
       "title": "Café",
     },
     Object {
@@ -119,8 +124,13 @@ Object {
       "mrkdwn_in": Array [
         "text",
       ],
-      "text": "'Genuine' chip shop - battered pollock & battered sausages, savaloys
-Sideschips, peas & mushy peas",
+      "text": "'Genuine' Chip Shop - battered Pollock & battered sausages, savaloys
+Selection of salads, sandwiches, baguettes and wraps
+Tandoori marinated Chesterfield chicken thigh
+Add on: HP sauce
+SidesChips, peas & mushy peas
+Sides: Chunky steak chips
+Add on: HP sauce",
       "title": "From the Oven",
     },
     Object {
@@ -139,7 +149,7 @@ Served with red onion freekeh, toasted hazelnut and lemon dressing",
         "text",
       ],
       "text": "Chilli glazed chicken, wild rice and red pepper
-Sidesglazed sugar snaps and broccoli",
+SidesGlazed sugar snaps and broccoli",
       "title": "Chefs Theatre",
     },
     Object {

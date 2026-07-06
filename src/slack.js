@@ -4,12 +4,32 @@ const { CANTEEN_URL } = require('./config');
 const { getDay } = require('./utils');
 const { CAFE_SECTION_TITLES } = require('./parser/options/main-menu');
 
-const sentenceCase = line => {
-  const trimmed = line
-    .trim()
-    .toLowerCase()
-    .replace(/^['"]?[a-zA-z]/, substr => substr.toUpperCase());
-  return trimmed;
+const capitaliseFirstLetter = line =>
+  line.replace(/^['"]?[a-zA-Z]/, substr => substr.toUpperCase());
+
+const sentenceCase = line => capitaliseFirstLetter(line.trim().toLowerCase());
+
+const isMostlyUpperCase = line => {
+  const letters = line.match(/[a-z]/gi) || [];
+  const upperCaseLetters = line.match(/[A-Z]/g) || [];
+
+  return letters.length >= 5 && upperCaseLetters.length / letters.length >= 0.8;
+};
+
+const formatLine = line => {
+  const trimmed = line.trim();
+  const subsectionMatch = trimmed.match(/^([^:]+:\s*)(.*)$/);
+
+  if (subsectionMatch) {
+    const [, prefix, content] = subsectionMatch;
+    return isMostlyUpperCase(content)
+      ? `${capitaliseFirstLetter(prefix)}${sentenceCase(content)}`
+      : capitaliseFirstLetter(trimmed);
+  }
+
+  return isMostlyUpperCase(trimmed)
+    ? sentenceCase(trimmed)
+    : capitaliseFirstLetter(trimmed);
 };
 
 const formatSubsection = (key, content) => `${key}${content}`;
@@ -54,7 +74,7 @@ const buildPayload = (date, { mainMenuContent, cafeMenuContent }) => {
       return {
         title: section.title,
         color: section.color,
-        text: lines.map(line => sentenceCase(line)).join('\n'),
+        text: lines.map(line => formatLine(line)).join('\n'),
         mrkdwn_in: ['text'],
       };
     });
