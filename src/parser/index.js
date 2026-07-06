@@ -19,8 +19,11 @@ const push = (obj, key, data) => {
   }
 };
 
-const createSectionFromConfig = ({ displayName, color }) => ({
-  title: displayName,
+const createSectionFromConfig = (
+  { displayName, formatTitle, color },
+  line,
+) => ({
+  title: formatTitle && line ? formatTitle(line) : displayName,
   subsections: {},
   color,
 });
@@ -50,7 +53,7 @@ const createParser = ({
   const createSection = (line, firstLine) => {
     const SECTION = getSection(SECTIONS, line);
     if (SECTION) {
-      return createSectionFromConfig(SECTION);
+      return createSectionFromConfig(SECTION, line);
     }
     const unnamedSection = SECTIONS.find(x => !x.matcher);
     if (firstLine && unnamedSection) {

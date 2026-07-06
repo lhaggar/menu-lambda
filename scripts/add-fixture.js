@@ -21,8 +21,12 @@ const pushAndWrite = (fixture, content, fixturePath) => {
 
 (async () => {
   const html = await getContent(new Date(), false);
-  await pushAndWrite(cafeFixture, html.cafeMenuContent, cafeFixturePath);
-  await pushAndWrite(mainFixture, html.mainMenuContent, mainFixturePath);
+  if (html.cafeMenuContent) {
+    await pushAndWrite(cafeFixture, html.cafeMenuContent, cafeFixturePath);
+  }
+  if (html.mainMenuContent) {
+    await pushAndWrite(mainFixture, html.mainMenuContent, mainFixturePath);
+  }
 })().then(
   () => {
     console.log('DONE!');

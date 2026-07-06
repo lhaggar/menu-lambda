@@ -321,7 +321,7 @@ Array [
         "GREEN BEAN WITH SESAME AND CHARD BROCCOLI",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -359,19 +359,16 @@ Array [
         "warm seasonal salads",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
-    "body": Array [
-      "PHAT BOUY BURGER",
-    ],
-    "color": "#00BFFF",
+    "color": "#6C8EBF",
     "subsections": Object {
       "Sides: ": Array [
         "Rainbow slaw/fries",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Phat Bouy Burger",
   },
   Object {
     "body": Array [
@@ -409,7 +406,7 @@ Array [
         "warm seasonal salads",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -421,7 +418,7 @@ Array [
         "Rainbow slaw or fries",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -459,7 +456,7 @@ Array [
         "Steamed brocolli",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -471,7 +468,7 @@ Array [
         "Wedges",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -509,7 +506,7 @@ Array [
         "warm seasonal salads",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -521,7 +518,7 @@ Array [
         "Rainbow slaw or fries",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -559,7 +556,7 @@ Array [
         "Chilli, roast red onion and preserved lemon salad",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -571,7 +568,7 @@ Array [
         "Spring roll, Asian slaw, sweet chilli, prawn crackers",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -609,7 +606,7 @@ Array [
         "Chilli, roast red onion and preserved lemon salad",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -621,7 +618,7 @@ Array [
         "Spring roll, Asian slaw, sweet chilli, prawn crackers",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -659,7 +656,7 @@ Array [
         "Steamed broccoli",
       ],
     },
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -672,7 +669,7 @@ Array [
         "Wedges",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -708,7 +705,7 @@ Array [
     ],
     "color": "#2f8500",
     "subsections": Object {},
-    "title": "The Healthy Bar",
+    "title": "Healthy Bar",
   },
   Object {
     "body": Array [
@@ -720,7 +717,7 @@ Array [
         "Glazed sugar snaps and broccoli",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -773,7 +770,7 @@ Array [
         "CHUNKY STEAK CHIPS",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -819,7 +816,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {},
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -867,7 +864,7 @@ Array [
         "Onion rings or spiced wedges (V)",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -1054,7 +1051,7 @@ Array [
         "Zaatar roasted squash with spiced yoghurt and pickled chillies, flat bread, vegetable samosa (V)",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -1104,7 +1101,7 @@ Array [
         "Crushed Jersey royals or warm beetroot and apple salad (V)",
       ],
     },
-    "title": "Chefs Theatre",
+    "title": "Chef's Theatre",
   },
   Object {
     "body": Array [
@@ -1326,7 +1323,7 @@ Array [
         "Herb and garlic bread (V)",
       ],
     },
-    "title": "Vegetarian Station",
+    "title": "Vegetarian Counter",
   },
   Object {
     "body": Array [
@@ -1684,7 +1681,7 @@ Array [
         "caramelised carrots, onion rings",
       ],
     },
-    "title": "Theatre Station",
+    "title": "Theatre",
   },
   Object {
     "body": Array [
@@ -1696,7 +1693,7 @@ Array [
         "potato wedges (v)",
       ],
     },
-    "title": "Vegetarian Station",
+    "title": "Vegetarian",
   },
   Object {
     "body": Array [
@@ -1741,7 +1738,7 @@ Array [
         "Nachos topped with salsa, cheese and sour cream",
       ],
     },
-    "title": "Vegetarian Station",
+    "title": "Vegetarian",
   },
   Object {
     "body": Array [
@@ -1753,7 +1750,7 @@ Array [
         "Fries, Israeli cous cous",
       ],
     },
-    "title": "Theatre Station",
+    "title": "Theatre",
   },
   Object {
     "body": Array [
@@ -1804,7 +1801,7 @@ Array [
         "Spring onion and sweet soy glazed crumbed mushrooms (v)",
       ],
     },
-    "title": "Vegetarian Station",
+    "title": "Vegetarian",
   },
   Object {
     "body": Array [
@@ -1816,7 +1813,7 @@ Array [
         "Caramelised carrots, Onion rings",
       ],
     },
-    "title": "Theatre Station",
+    "title": "Theatre",
   },
   Object {
     "body": Array [
@@ -2353,7 +2350,7 @@ Array [
     ],
     "color": "#00BFFF",
     "subsections": Object {},
-    "title": "Street Food Pop-up",
+    "title": "Street Food Pop Up",
   },
   Object {
     "body": Array [
@@ -2672,16 +2669,15 @@ Array [
   },
   Object {
     "body": Array [
-      "Genuine salad bar",
       "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
     ],
-    "color": "#C41017",
+    "color": "#2f8500",
     "subsections": Object {
       "£": Array [
         "4.85",
       ],
     },
-    "title": "Mains",
+    "title": "Genuine Salad Bar",
   },
   Object {
     "body": Array [
@@ -2782,16 +2778,15 @@ Array [
   },
   Object {
     "body": Array [
-      "Genuine salad bar",
       "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
     ],
-    "color": "#C41017",
+    "color": "#2f8500",
     "subsections": Object {
       "£": Array [
         "4.95",
       ],
     },
-    "title": "Mains",
+    "title": "Genuine Salad Bar",
   },
   Object {
     "body": Array [
@@ -2893,16 +2888,15 @@ Array [
   },
   Object {
     "body": Array [
-      "Genuine salad bar",
       "Build your own salad with a selection of fresh seasonal vegetables, leaves, dressings, toppings and proteins",
     ],
-    "color": "#C41017",
+    "color": "#2f8500",
     "subsections": Object {
       "£": Array [
         "4.95",
       ],
     },
-    "title": "Mains",
+    "title": "Genuine Salad Bar",
   },
   Object {
     "body": Array [
@@ -2995,16 +2989,15 @@ Array [
   },
   Object {
     "body": Array [
-      "SALAD BAR CHICKEN CAESAR",
       "Chesterfield chicken, bacon lardons, iceberg lettuce, cucumber, cherry tomatoes, red onions, kale topped with a Caesar dressing",
     ],
-    "color": "#C41017",
+    "color": "#558B2F",
     "subsections": Object {
       "£": Array [
         "5.50",
       ],
     },
-    "title": "Mains",
+    "title": "Salad Bar Chicken Caesar",
   },
   Object {
     "body": Array [
@@ -3284,10 +3277,9 @@ Array [
   },
   Object {
     "body": Array [
-      "TANDOORI GRILL",
       "Tandoori marinated Chesterfield chicken thigh in a creamy masala sauce with buttered pilaf rice, kachumber salad & mango chutney",
     ],
-    "color": "#C41017",
+    "color": "#7E57C2",
     "subsections": Object {
       "Add on: ": Array [
         "Spinach & onion pakoras (£1.40)",
@@ -3296,7 +3288,7 @@ Array [
         "5.65",
       ],
     },
-    "title": "Mains",
+    "title": "Tandoori Grill",
   },
   Object {
     "body": Array [
@@ -3312,10 +3304,9 @@ Array [
   },
   Object {
     "body": Array [
-      "PASTA BAR",
       "Tagliatelle served in a wild mushroom and spinach ragù, with aged parmesan and topped with pinenes",
     ],
-    "color": "#C41017",
+    "color": "#c7990f",
     "subsections": Object {
       "Add on: ": Array [
         "Sundried tomato & pesto focaccia (£1.40)",
@@ -3324,11 +3315,412 @@ Array [
         "5.45",
       ],
     },
-    "title": "Mains",
+    "title": "Pasta Bar",
   },
   Object {
     "body": Array [
       "Sesame coated chicken wings",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 56`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Tantamount tempura prawns with rice noodles, sesame, wilted pack choi, crispy onions, chillies, daikon, pickled ginger slaw & soy egg",
+    ],
+    "color": "#C2185B",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Spicy vegetable gyoza (£1.40)",
+      ],
+      "£": Array [
+        "6.25",
+      ],
+    },
+    "title": "Tanabata Japanese Summer Festival",
+  },
+  Object {
+    "body": Array [
+      "Watermelon, feta & mint Mujadara salad, Fattoush salad, carrot, vine leaves, red pepper houmous, cucumber & pickled red cabbage",
+    ],
+    "color": "#43A047",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "Lebanese Salad",
+  },
+  Object {
+    "body": Array [
+      "24 hour fermented hand-stretched dough, house tomato sauce or pesto with a choice of:",
+      "Meat Feast - £5.65",
+      "Mozzarella, sun dried tomato & wilted spinach - £5.45",
+    ],
+    "color": "#D94F1F",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Cherry tomato, olive & mozzarella salad (£1.40)",
+      ],
+    },
+    "title": "Pizza on 14",
+  },
+  Object {
+    "body": Array [
+      "Buffalo mac & cheese bites",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 57`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Piri Piri spiced chicken leg with macho peas, rainbow slaw, piri piri fries and herb & lemon sauce",
+    ],
+    "color": "#F57C00",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Honey & chilii halloumi fries (£1.40)",
+      ],
+      "£": Array [
+        "6.00",
+      ],
+    },
+    "title": "Piri Piri",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "Sticky gochujang tofu in a seeded charcoal bun with kimchi, sriracha mayonnaise, pickled ginger, crispy onions & nori salted fries",
+    ],
+    "color": "#26A69A",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Vegetable gyoza (£1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "KFTB",
+  },
+  Object {
+    "body": Array [
+      "Sesame coated chicken wings",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 58`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Cajun spiced beef burrito, dirty rice, Pico de Gallo salsa, shredded cheese and jalapeno mayonnaise served with rainbow slaw",
+    ],
+    "color": "#795548",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Breaded jalapeño stuffed with cream cheese",
+      ],
+      "£": Array [
+        "6.25",
+        "2.00",
+      ],
+    },
+    "title": "Big Boy Burrito",
+  },
+  Object {
+    "body": Array [
+      "Crisp baby gem lettuce, soft boiled St Eves egg, shaved parmesan, garlic roast ciabatta crouton, anchovies & Caesar dressing",
+    ],
+    "color": "#558B2F",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "Caesar Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "Italian style sun dried tomato focaccia with basil pesto, vine tomatoes, buffalo mozzarella, toasted pine nuts served with a dressed rocket, olive and oregano marinated artichoke salad",
+    ],
+    "color": "#8E7CC3",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Caprese salad (£1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Bruschetta On 14",
+  },
+  Object {
+    "body": Array [
+      "Buffalo mac & cheese bites",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 59`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Battered haddock or Meat / Veg pie of the day",
+      "Chip shop chips",
+      "Tartare sauce",
+      "Garden peas / Mushy peas",
+      "Curry sauce / Gravy",
+      "Picked onions, Gherkins",
+    ],
+    "color": "#2F80C1",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Battered jumbo sausage (£1.40)",
+      ],
+      "£": Array [
+        "5.65",
+      ],
+    },
+    "title": "Chip Shop",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "Baked Kentish cauliflower topped with flaked parmesan, slow roasted tomato, grilled baby gem lettuce served with a garlic ciabatta",
+    ],
+    "color": "#607D8B",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Chilli & garlic tender stem broccoli (£.1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Warm Cauliflower Caesar",
+  },
+  Object {
+    "body": Array [
+      "Cumberland & cheddar sausage roll",
     ],
     "color": "#990099",
     "subsections": Object {
