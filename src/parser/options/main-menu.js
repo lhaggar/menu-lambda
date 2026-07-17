@@ -76,7 +76,7 @@ const SECTIONS = [
     '#3360ff',
   ),
   dynamicTitleSection(
-    /^\s*(?:Genuine\s+)?Chip\s+Shop\s*$/i,
+    /^\s*(?:(?:Genuine\s+)?Chip\s+Shop|Chippie)\s*$/i,
     'Chip Shop',
     '#2F80C1',
   ),
@@ -96,6 +96,32 @@ const SECTIONS = [
     'Big Boy Burrito',
     '#795548',
   ),
+  dynamicTitleSection(/^\s*LASAGNE\s*$/i, 'Lasagne', '#B85C38'),
+  dynamicTitleSection(/^\s*VEGGIE\s+TART\s*$/i, 'Veggie Tart', '#008575'),
+  dynamicTitleSection(/^\s*POKE\s+HOUSE\s*$/i, 'Poke House', '#26286f'),
+  dynamicTitleSection(
+    /^\s*MEX\s+ON\s+THE\s+BEACH\s*$/i,
+    'Mex on the Beach',
+    '#E67E22',
+  ),
+  dynamicTitleSection(/^\s*JUST\s+JERK\s*$/i, 'Just Jerk', '#9C4A1A'),
+  dynamicTitleSection(/^\s*GNOCCHI\s+BAR\s*$/i, 'Gnocchi Bar', '#C7990F'),
+  dynamicTitleSection(
+    /^\s*DUCKING\s+DELICIOUS\s*$/i,
+    'Ducking Delicious',
+    '#7E57C2',
+  ),
+  dynamicTitleSection(
+    /^\s*RAW\s+RAINBOW\s+BOWL\s*$/i,
+    'Raw Rainbow Bowl',
+    '#43A047',
+  ),
+  dynamicTitleSection(
+    /^\s*FISH\s+FINGER\s+WRAP\s*$/i,
+    'Fish Finger Wrap',
+    '#2F80C1',
+  ),
+  dynamicTitleSection(/^\s*CAPONATA\s*$/i, 'Caponata', '#804167'),
   dynamicTitleSection(
     /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
     'Gyros',
