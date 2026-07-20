@@ -123,13 +123,46 @@ const SECTIONS = [
   ),
   dynamicTitleSection(/^\s*CAPONATA\s*$/i, 'Caponata', '#804167'),
   dynamicTitleSection(
+    /^\s*CHICKEN\s+GRAINS\s*&\s*GREENS\s*$/i,
+    'Chicken Grains & Greens',
+    '#e48656',
+  ),
+  dynamicTitleSection(
+    /^\s*SMOKY\s+CAULIFLOWER\s+BOWL\s*$/i,
+    'Smoky Cauliflower Bowl',
+    '#046051',
+  ),
+  dynamicTitleSection(
+    /^\s*FOR\s+GREEK\s+SAKE\s*$/i,
+    'For Greek Sake',
+    '#3360ff',
+  ),
+  dynamicTitleSection(/^\s*THE\s+NICOISE\s*$/i, 'The Nicoise', '#558B2F'),
+  dynamicTitleSection(/^\s*CHEEKY\s+CHILLI\s*$/i, 'Cheeky Chilli', '#ca650c'),
+  dynamicTitleSection(
+    /^\s*VEGGIE\s+NOODLE\s+BOWL\s*$/i,
+    'Veggie Noodle Bowl',
+    '#008575',
+  ),
+  dynamicTitleSection(
+    /^\s*BRITISH\s+PICK-NIC\s*$/i,
+    'British Pick-nic',
+    '#9C4A1A',
+  ),
+  dynamicTitleSection(
+    /^\s*TURKISH\s+LAHMA(?:CUN|UNAN)\s*$/i,
+    'Turkish Lahmacun',
+    '#7E57C2',
+  ),
+  dynamicTitleSection(
     /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
     'Gyros',
     '#008C95',
   ),
   {
-    matcher: /^\s*KFTB\s*$/i,
+    matcher: /^\s*(?:KFTB|TKFB)\s*$/i,
     displayName: 'KFTB',
+    formatTitle: line => line.trim().toUpperCase(),
     color: '#26A69A',
   },
   dynamicTitleSection(
