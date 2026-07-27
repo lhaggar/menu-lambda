@@ -96,7 +96,7 @@ const SECTIONS = [
     'Big Boy Burrito',
     '#795548',
   ),
-  dynamicTitleSection(/^\s*LASAGNE\s*$/i, 'Lasagne', '#B85C38'),
+  dynamicTitleSection(/^\s*(?:VEGGIE\s+)?LASAGNE\s*$/i, 'Lasagne', '#B85C38'),
   dynamicTitleSection(/^\s*VEGGIE\s+TART\s*$/i, 'Veggie Tart', '#008575'),
   dynamicTitleSection(/^\s*POKE\s+HOUSE\s*$/i, 'Poke House', '#26286f'),
   dynamicTitleSection(
@@ -154,6 +154,24 @@ const SECTIONS = [
     'Turkish Lahmacun',
     '#7E57C2',
   ),
+  dynamicTitleSection(/^\s*ITALIAN\s*$/i, 'Italian', '#B85C38'),
+  dynamicTitleSection(
+    /^\s*FRIES\s+GONE\s+WILD\s*-\s*LOADED\s+FRIES\s*$/i,
+    'Fries Gone Wild - Loaded Fries',
+    '#6C8EBF',
+  ),
+  dynamicTitleSection(
+    /^\s*CANTONESE\s+BEEF\s+CHOW\s+FUN\s*$/i,
+    'Cantonese Beef Chow Fun',
+    '#C2185B',
+  ),
+  {
+    matcher: /^\s*TNB\s+BOSS\s+MAN\s+CHICKEN\s+SHOP\s*$/i,
+    displayName: 'TNB Boss Man Chicken Shop',
+    formatTitle: line => titleCaseMatchedTitle(line).replace(/^Tnb\b/, 'TNB'),
+    color: '#26A69A',
+  },
+  dynamicTitleSection(/^\s*FUNGI\s+FRIDAY\s*$/i, 'Fungi Friday', '#804167'),
   dynamicTitleSection(
     /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
     'Gyros',
@@ -197,7 +215,7 @@ const SECTIONS = [
     '#558B2F',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR\s*$/i,
+    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|OTTOLENGHI\s+STYLE\s+SALAD\s+BAR)\s*$/i,
     'The Salad Bar',
     '#2f8500',
   ),
