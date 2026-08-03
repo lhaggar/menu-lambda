@@ -98,7 +98,7 @@ const SECTIONS = [
   ),
   dynamicTitleSection(/^\s*(?:VEGGIE\s+)?LASAGNE\s*$/i, 'Lasagne', '#B85C38'),
   dynamicTitleSection(/^\s*VEGGIE\s+TART\s*$/i, 'Veggie Tart', '#008575'),
-  dynamicTitleSection(/^\s*POKE\s+HOUSE\s*$/i, 'Poke House', '#26286f'),
+  dynamicTitleSection(/^\s*POKE\s+(?:HOUSE|BOWL)\s*$/i, 'Poke', '#26286f'),
   dynamicTitleSection(
     /^\s*MEX\s+ON\s+THE\s+BEACH\s*$/i,
     'Mex on the Beach',
@@ -172,6 +172,15 @@ const SECTIONS = [
     color: '#26A69A',
   },
   dynamicTitleSection(/^\s*FUNGI\s+FRIDAY\s*$/i, 'Fungi Friday', '#804167'),
+  dynamicTitleSection(/^\s*LEBANESE\s*$/i, 'Lebanese', '#7E57C2'),
+  {
+    matcher: /^\s*SUMMER\s+BBQ\s+SALAD\s*$/i,
+    displayName: 'Summer BBQ Salad',
+    formatTitle: line => titleCaseMatchedTitle(line).replace(/\bBbq\b/, 'BBQ'),
+    color: '#43A047',
+  },
+  dynamicTitleSection(/^\s*KATSU\s+TIME\s*$/i, 'Katsu Time', '#C2185B'),
+  dynamicTitleSection(/^\s*QUESADILLA\s*$/i, 'Quesadilla', '#E67E22'),
   dynamicTitleSection(
     /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
     'Gyros',
@@ -215,7 +224,7 @@ const SECTIONS = [
     '#558B2F',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|OTTOLENGHI\s+STYLE\s+SALAD\s+BAR)\s*$/i,
+    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|(?:OTTOLENGHI|ASIAN)\s+STYLE\s+SALAD\s+BAR)\s*$/i,
     'The Salad Bar',
     '#2f8500',
   ),
@@ -230,7 +239,7 @@ const SECTIONS = [
     '#009688',
   ),
   dynamicTitleSection(
-    /^\s*VEGETARIAN(?:\s+(?:STATION|COUNTER|DELIGHT))?\s*$/i,
+    /^\s*VEGETARIAN(?:\s+(?:STATION|COUNTER|DELIGHT|ON\s+14))?\s*$/i,
     'Vegetarian Station',
     '#008575',
   ),
