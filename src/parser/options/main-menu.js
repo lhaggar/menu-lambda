@@ -182,6 +182,27 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*KATSU\s+TIME\s*$/i, 'Katsu Time', '#C2185B'),
   dynamicTitleSection(/^\s*QUESADILLA\s*$/i, 'Quesadilla', '#E67E22'),
   dynamicTitleSection(
+    /^\s*JAPANESE\s+RICE\s+BOWL\s*$/i,
+    'Japanese Rice Bowl',
+    '#C2185B',
+  ),
+  dynamicTitleSection(
+    /^\s*SIZZ(?:I)?LING\s+FAJITA\s*$/i,
+    'Sizzling Fajita',
+    '#E67E22',
+  ),
+  dynamicTitleSection(
+    /^\s*CHRISTIAN\s+FAULKNER\s+POP\s+UP\s*$/i,
+    'Christian Faulkner Pop Up',
+    '#3360ff',
+  ),
+  dynamicTitleSection(
+    /^\s*FALAFEL\s+MEZZE\s+BOWL\s*$/i,
+    'Falafel Mezze Bowl',
+    '#008575',
+  ),
+  dynamicTitleSection(/^\s*PAELLA\s*$/i, 'Paella', '#C7990F'),
+  dynamicTitleSection(
     /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
     'Gyros',
     '#008C95',
@@ -224,12 +245,12 @@ const SECTIONS = [
     '#558B2F',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|(?:OTTOLENGHI|ASIAN)\s+STYLE\s+SALAD\s+BAR)\s*$/i,
+    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|(?:OTTOLENGHI|ASIAN)\s+STYLE\s+SALAD\s+BAR|TAPAS\s+SALAD\s+BAR)\s*$/i,
     'The Salad Bar',
     '#2f8500',
   ),
   dynamicTitleSection(
-    /^\s*WARM\s+CAULIFLOWER\s+CAESAR\s*$/i,
+    /^\s*WARM\s+CAULIFLOWER\s+C(?:AE|EA)S[AE]R\s*$/i,
     'Warm Cauliflower Caesar',
     '#607D8B',
   ),
