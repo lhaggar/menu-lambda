@@ -140,8 +140,8 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*THE\s+NICOISE\s*$/i, 'The Nicoise', '#558B2F'),
   dynamicTitleSection(/^\s*CHEEKY\s+CHILLI\s*$/i, 'Cheeky Chilli', '#ca650c'),
   dynamicTitleSection(
-    /^\s*VEGGIE\s+NOODLE\s+BOWL\s*$/i,
-    'Veggie Noodle Bowl',
+    /^\s*(?:VEGGIE|ASIAN)\s+NOODLE\s+BOWL\s*$/i,
+    'Noodle Bowl',
     '#008575',
   ),
   dynamicTitleSection(
@@ -202,6 +202,19 @@ const SECTIONS = [
     '#008575',
   ),
   dynamicTitleSection(/^\s*PAELLA\s*$/i, 'Paella', '#C7990F'),
+  dynamicTitleSection(/^\s*NORTH\s+AFRICAN\s*$/i, 'North African', '#7E57C2'),
+  dynamicTitleSection(/^\s*BIG\s+DOG\s*$/i, 'Big Dog', '#5a8ed5'),
+  dynamicTitleSection(
+    /^\s*THE\s+BIG\s+(?:PHIILY|PHILLY)\s+MELT\s*$/i,
+    'The Big Philly Melt',
+    '#9C4A1A',
+  ),
+  dynamicTitleSection(
+    /^\s*SUMMER\s+PLOUGHMAN(?:'|’)?S\s*$/i,
+    'Summer Ploughmans',
+    '#558B2F',
+  ),
+  dynamicTitleSection(/^\s*TARKA\s+DAL\s*$/i, 'Tarka Dal', '#edb715'),
   dynamicTitleSection(
     /^\s*(?:(?:street[-\s]+style|[a-z]+)\s+)?gyros\s*$/i,
     'Gyros',
@@ -238,7 +251,11 @@ const SECTIONS = [
     'Healthy Station',
     '#2f8500',
   ),
-  dynamicTitleSection(/^\s*LEBANESE\s+SALAD\s*$/i, 'Lebanese Salad', '#43A047'),
+  dynamicTitleSection(
+    /^\s*LEBANESE(?:\s+HABIBI)?\s+SALAD\s*$/i,
+    'Lebanese Salad',
+    '#43A047',
+  ),
   dynamicTitleSection(
     /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R\s+SALAD(?:\s+BAR)?|SALAD\s+BAR\s+(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R)\s*$/i,
     'Caesar Salad',
