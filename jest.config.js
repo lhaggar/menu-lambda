@@ -17,6 +17,12 @@ module.exports = {
   // Automatically clear mock calls and instances between every test
   clearMocks: true,
 
+  // Preserve existing snapshot formatting across the Jest 23 -> 30 upgrade.
+  snapshotFormat: {
+    escapeString: true,
+    printBasicPrototype: true,
+  },
+
   // Indicates whether the coverage information should be collected while executing the test
   // collectCoverage: false,
 

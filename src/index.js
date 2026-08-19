@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
-const got = require('got');
-
 const { isWeekend } = require('./utils');
 const { getContent } = require('./get-content');
 const { buildPayload } = require('./slack');
+
+const MAX_ERROR_BODY_LENGTH = 500;
 
 const getPayload = date => {
   if (isWeekend(date)) {
@@ -17,9 +17,25 @@ const getPayload = date => {
 };
 
 const run = (slackUrl, date = new Date()) =>
-  getPayload(date).then(payload => {
+  getPayload(date).then(async payload => {
     console.log('Posting payload:', JSON.stringify(payload, null, 2));
-    return got(slackUrl, { method: 'POST', body: JSON.stringify(payload) });
+    const response = await global.fetch(slackUrl, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const responseBody = await response.text();
+
+    if (!response.ok) {
+      const detail = responseBody
+        ? `: ${responseBody.slice(0, MAX_ERROR_BODY_LENGTH)}`
+        : '';
+      throw new Error(
+        `Slack request failed with HTTP ${response.status}${detail}`,
+      );
+    }
+
+    return response;
   });
 
 const test = (date = new Date()) =>

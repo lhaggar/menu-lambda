@@ -1,24 +1,117 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
+version: 2.1
+
 jobs:
-  build:
+  test:
     docker:
-      - image: circleci/node:16
+      - image: cimg/node:22.22
     working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-      - run: npm i
+            - v2-dependencies-{{ checksum "package-lock.json" }}
+            - v2-dependencies-
+      - run: npm ci
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies-{{ checksum "package-lock.json" }}
       - run: npm run lint
-      - run: npm t
-      - run: if [ $CIRCLE_BRANCH = master ] ; then npm run deploy ; fi
+      - run: npm test -- --runInBand
+      - run: npm run package
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build/menu-lambda.zip
+
+  terraform-check:
+    docker:
+      - image: hashicorp/terraform:1.10.4
+    steps:
+      - checkout
+      - run: terraform fmt -check -recursive
+      - run: terraform -chdir=infra init -backend=false
+      - run: terraform -chdir=infra validate
+
+  terraform-plan:
+    docker:
+      - image: hashicorp/terraform:1.10.4
+    environment:
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_REGION: eu-west-1
+      TF_IN_AUTOMATION: "true"
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Terraform dry-run plan
+          command: |
+            if [ -z "${CIRCLE_OIDC_TOKEN_V2:-}" ]; then
+              echo "AWS plan skipped: OIDC is unavailable to fork builds."
+              exit 0
+            fi
+
+            umask 077
+            printf '%s' "$CIRCLE_OIDC_TOKEN_V2" > /tmp/circleci-oidc-token
+            export AWS_WEB_IDENTITY_TOKEN_FILE=/tmp/circleci-oidc-token
+            export AWS_ROLE_ARN="$AWS_PLAN_ROLE_ARN"
+
+            terraform -chdir=infra init \
+              -backend-config="bucket=${TF_STATE_BUCKET}" \
+              -backend-config="key=menu-lambda/production.tfstate" \
+              -backend-config="region=${AWS_REGION}" \
+              -backend-config="encrypt=true" \
+              -backend-config="use_lockfile=true"
+            terraform -chdir=infra plan
+
+  deploy:
+    docker:
+      - image: hashicorp/terraform:1.10.4
+    environment:
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_REGION: eu-west-1
+      TF_IN_AUTOMATION: "true"
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Terraform plan and apply
+          command: |
+            umask 077
+            printf '%s' "$CIRCLE_OIDC_TOKEN_V2" > /tmp/circleci-oidc-token
+            export AWS_WEB_IDENTITY_TOKEN_FILE=/tmp/circleci-oidc-token
+            export AWS_ROLE_ARN="$AWS_DEPLOY_ROLE_ARN"
+
+            terraform -chdir=infra init \
+              -backend-config="bucket=${TF_STATE_BUCKET}" \
+              -backend-config="key=menu-lambda/production.tfstate" \
+              -backend-config="region=${AWS_REGION}" \
+              -backend-config="encrypt=true" \
+              -backend-config="use_lockfile=true"
+            terraform -chdir=infra plan -out=/tmp/menu-lambda.tfplan
+            terraform -chdir=infra apply /tmp/menu-lambda.tfplan
+
+workflows:
+  build-test-deploy:
+    jobs:
+      - test
+      - terraform-check
+      - terraform-plan:
+          requires:
+            - test
+            - terraform-check
+      - approve-deploy:
+          type: approval
+          requires:
+            - terraform-plan
+          filters:
+            branches:
+              only: master
+      - deploy:
+          requires:
+            - approve-deploy
+          filters:
+            branches:
+              only: master
