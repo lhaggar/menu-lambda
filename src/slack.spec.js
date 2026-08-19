@@ -31,7 +31,7 @@ describe('src/slack.js', () => {
         getDay: mocks.getDay,
       }));
 
-      const { buildPayload } = require.requireActual('./slack');
+      const { buildPayload } = jest.requireActual('./slack');
       const result = buildPayload(data.date, data.menuContent);
 
       return {

@@ -10,10 +10,9 @@
     "lint": "eslint . --report-unused-disable-directives",
     "start": "node --inspect dry-run",
     "invoke": "./scripts/invoke-local.sh",
+    "package": "./scripts/package-lambda.sh",
     "add-fixture": "node ./scripts/add-fixture.js",
-    "add-weekly-fixtures": "node ./scripts/add-weekly-fixtures.js",
-    "deploy": "serverless deploy -v",
-    "destroy": "sleep 3; serverless remove -v"
+    "add-weekly-fixtures": "node ./scripts/add-weekly-fixtures.js"
   },
   "repository": {
     "type": "git",
@@ -32,12 +31,11 @@
     "eslint-config-prettier": "3.5.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-prettier": "3.0.1",
-    "jest": "23.6.0",
-    "prettier": "1.15.3",
-    "serverless": "^2.72.4"
+    "jest": "30.4.2",
+    "prettier": "1.15.3"
   },
   "dependencies": {
-    "cheerio": "1.0.0-rc.2",
-    "got": "9.6.0"
+    "@aws-sdk/client-ssm": "3.1113.0",
+    "cheerio": "1.2.0"
   }
 }
