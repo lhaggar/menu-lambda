@@ -23,9 +23,9 @@ variable "log_retention_days" {
 }
 
 variable "schedules_enabled" {
-  description = "Enable Terraform-managed schedules after migration cutover."
+  description = "Whether Terraform-managed schedules are enabled."
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "service_name" {
