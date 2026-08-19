@@ -21,7 +21,11 @@ mkdir -p "$output_dir"
 rm -f "$output_file"
 (
   cd "$package_dir"
-  zip -q -r "$output_file" handler.js src node_modules package.json package-lock.json
+  zip -q -r "$output_file" handler.js src node_modules package.json package-lock.json \
+    -x 'src/*.spec.js' \
+    -x 'src/*/*.spec.js' \
+    -x 'src/__snapshots__/*' \
+    -x 'src/*/__snapshots__/*'
 )
 
 printf 'Created %s\n' "$output_file"
