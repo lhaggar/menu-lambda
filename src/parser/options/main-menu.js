@@ -76,7 +76,7 @@ const SECTIONS = [
     '#3360ff',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:Genuine\s+)?Chip\s+Shop|Chippie)\s*$/i,
+    /^\s*(?:(?:Genuine\s+)?Chip\s+Shop|(?:L14\s+)?Chippie)\s*$/i,
     'Chip Shop',
     '#2F80C1',
   ),
@@ -96,7 +96,11 @@ const SECTIONS = [
     'Big Boy Burrito',
     '#795548',
   ),
-  dynamicTitleSection(/^\s*(?:VEGGIE\s+)?LASAGNE\s*$/i, 'Lasagne', '#B85C38'),
+  dynamicTitleSection(
+    /^\s*(?:VEGGIE\s+)?LASAGN[AE]\s*$/i,
+    'Lasagne',
+    '#B85C38',
+  ),
   dynamicTitleSection(/^\s*VEGGIE\s+TART\s*$/i, 'Veggie Tart', '#008575'),
   dynamicTitleSection(/^\s*POKE\s+(?:HOUSE|BOWL)\s*$/i, 'Poke', '#26286f'),
   dynamicTitleSection(
@@ -104,7 +108,17 @@ const SECTIONS = [
     'Mex on the Beach',
     '#E67E22',
   ),
+  dynamicTitleSection(
+    /^\s*MONDAY\s+CURRY\s+CLUB\s*$/i,
+    'Monday Curry Club',
+    '#F57C00',
+  ),
   dynamicTitleSection(/^\s*JUST\s+JERK\s*$/i, 'Just Jerk', '#9C4A1A'),
+  dynamicTitleSection(
+    /^\s*ALTHEA\s+QUEEN\s+OF\s+THE\s+CARNIVAL\s*$/i,
+    'Althea Queen of the Carnival',
+    '#9C4A1A',
+  ),
   dynamicTitleSection(/^\s*GNOCCHI\s+BAR\s*$/i, 'Gnocchi Bar', '#C7990F'),
   dynamicTitleSection(
     /^\s*DUCKING\s+DELICIOUS\s*$/i,
@@ -137,7 +151,16 @@ const SECTIONS = [
     'For Greek Sake',
     '#3360ff',
   ),
-  dynamicTitleSection(/^\s*THE\s+NICOISE\s*$/i, 'The Nicoise', '#558B2F'),
+  dynamicTitleSection(
+    /^\s*(?:THE\s+)?NIC(?:OI|OU)SE(?:\s+SALAD)?\s*$/i,
+    'The Nicoise',
+    '#558B2F',
+  ),
+  dynamicTitleSection(
+    /^\s*CLASSIC\s+COB{1,2}\s+SALAD\s*$/i,
+    'Classic Cobb Salad',
+    '#558B2F',
+  ),
   dynamicTitleSection(/^\s*CHEEKY\s+CHILLI\s*$/i, 'Cheeky Chilli', '#ca650c'),
   dynamicTitleSection(
     /^\s*(?:VEGGIE|ASIAN)\s+NOODLE\s+BOWL\s*$/i,
@@ -202,7 +225,9 @@ const SECTIONS = [
     '#008575',
   ),
   dynamicTitleSection(/^\s*PAELLA\s*$/i, 'Paella', '#C7990F'),
+  dynamicTitleSection(/^\s*RIS{1,2}OTTO\s+BAR\s*$/i, 'Risotto Bar', '#C7990F'),
   dynamicTitleSection(/^\s*NORTH\s+AFRICAN\s*$/i, 'North African', '#7E57C2'),
+  dynamicTitleSection(/^\s*WOK\s+IT\s+UP\s*$/i, 'Wok It Up', '#C2185B'),
   dynamicTitleSection(/^\s*BIG\s+DOG\s*$/i, 'Big Dog', '#5a8ed5'),
   dynamicTitleSection(
     /^\s*THE\s+BIG\s+(?:PHIILY|PHILLY)\s+MELT\s*$/i,
