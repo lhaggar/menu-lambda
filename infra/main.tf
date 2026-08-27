@@ -79,6 +79,13 @@ resource "aws_lambda_function" "send" {
     }
   }
 
+  lifecycle {
+    ignore_changes = [
+      filename,
+      source_code_hash,
+    ]
+  }
+
   depends_on = [
     aws_cloudwatch_log_group.lambda,
     aws_iam_role_policy.lambda,
