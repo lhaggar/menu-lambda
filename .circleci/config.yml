@@ -1,5 +1,10 @@
 version: 2.1
 
+parameters:
+  deploy_infrastructure:
+    type: boolean
+    default: false
+
 jobs:
   test:
     docker:
@@ -12,6 +17,16 @@ jobs:
             - v2-dependencies-{{ checksum "package-lock.json" }}
             - v2-dependencies-
       - run: npm ci
+      - run:
+          name: Verify release version
+          command: |
+            if [ -n "${CIRCLE_TAG:-}" ]; then
+              package_tag="v$(node -p "require('./package.json').version")"
+              if [ "$CIRCLE_TAG" != "$package_tag" ]; then
+                echo "Release tag $CIRCLE_TAG does not match package version $package_tag."
+                exit 1
+              fi
+            fi
       - save_cache:
           paths:
             - node_modules
@@ -65,7 +80,41 @@ jobs:
               -backend-config="use_lockfile=true"
             terraform -chdir=infra plan
 
-  deploy:
+  deploy-code:
+    docker:
+      - image: cimg/aws:2025.01
+    working_directory: ~/repo
+    environment:
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_REGION: eu-west-1
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Deploy Lambda code
+          command: |
+            umask 077
+            printf '%s' "$CIRCLE_OIDC_TOKEN_V2" > /tmp/circleci-oidc-token
+            export AWS_WEB_IDENTITY_TOKEN_FILE=/tmp/circleci-oidc-token
+            export AWS_ROLE_ARN="$AWS_CODE_DEPLOY_ROLE_ARN"
+
+            expected_hash=$(openssl dgst -sha256 -binary build/menu-lambda.zip | base64 | tr -d '\n')
+            aws lambda update-function-code \
+              --function-name menu-lambda-production-send-v2 \
+              --zip-file fileb://build/menu-lambda.zip >/dev/null
+            aws lambda wait function-updated-v2 \
+              --function-name menu-lambda-production-send-v2
+            deployed_hash=$(aws lambda get-function-configuration \
+              --function-name menu-lambda-production-send-v2 \
+              --query CodeSha256 \
+              --output text)
+
+            if [ "$deployed_hash" != "$expected_hash" ]; then
+              echo "Deployed Lambda code hash does not match release artifact."
+              exit 1
+            fi
+
+  deploy-infrastructure:
     docker:
       - image: hashicorp/terraform:1.10.4
     environment:
@@ -94,24 +143,89 @@ jobs:
             terraform -chdir=infra apply /tmp/menu-lambda.tfplan
 
 workflows:
-  build-test-deploy:
+  branch-validation:
+    unless: << pipeline.parameters.deploy_infrastructure >>
     jobs:
-      - test
-      - terraform-check
+      - test:
+          filters:
+            tags:
+              ignore: /.*/
+      - terraform-check:
+          filters:
+            tags:
+              ignore: /.*/
       - terraform-plan:
           requires:
             - test
             - terraform-check
-      - approve-deploy:
-          type: approval
+          filters:
+            branches:
+              ignore: master
+            tags:
+              ignore: /.*/
+
+  release:
+    unless: << pipeline.parameters.deploy_infrastructure >>
+    jobs:
+      - test:
+          name: release-test
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v[0-9]+\.[0-9]+\.[0-9]+$/
+      - deploy-code:
+          serial-group: << pipeline.project.slug >>/menu-lambda-deploy
           requires:
-            - terraform-plan
+            - release-test
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^v[0-9]+\.[0-9]+\.[0-9]+$/
+
+  infrastructure:
+    when: << pipeline.parameters.deploy_infrastructure >>
+    jobs:
+      - test:
+          name: infrastructure-test
           filters:
             branches:
               only: master
-      - deploy:
+            tags:
+              ignore: /.*/
+      - terraform-check:
+          name: infrastructure-check
+          filters:
+            branches:
+              only: master
+            tags:
+              ignore: /.*/
+      - terraform-plan:
+          name: infrastructure-plan
+          requires:
+            - infrastructure-test
+            - infrastructure-check
+          filters:
+            branches:
+              only: master
+            tags:
+              ignore: /.*/
+      - approve-deploy:
+          type: approval
+          requires:
+            - infrastructure-plan
+          filters:
+            branches:
+              only: master
+            tags:
+              ignore: /.*/
+      - deploy-infrastructure:
+          serial-group: << pipeline.project.slug >>/menu-lambda-deploy
           requires:
             - approve-deploy
           filters:
             branches:
               only: master
+            tags:
+              ignore: /.*/
