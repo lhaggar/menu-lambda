@@ -87,9 +87,14 @@ const SECTIONS = [
     '#C2185B',
   ),
   dynamicTitleSection(
-    /^\s*P[EI]RI\s+P[EI]RI(?:\s+[A-Z]+)?\s*$/i,
+    /^\s*(?:P[EI]RI\s+P[EI]RI(?:\s+[A-Z]+)?|FERNANDO(?:'|’)?S)\s*$/i,
     'Piri Piri',
     '#F57C00',
+  ),
+  dynamicTitleSection(
+    /^\s*BANGING\s+BANGERS\s+BAR\s*$/i,
+    'Banging Bangers Bar',
+    '#5a8ed5',
   ),
   dynamicTitleSection(
     /^\s*BIG\s+BOY\s+BURRITO\s*$/i,
@@ -101,7 +106,11 @@ const SECTIONS = [
     'Lasagne',
     '#B85C38',
   ),
-  dynamicTitleSection(/^\s*VEGGIE\s+TART\s*$/i, 'Veggie Tart', '#008575'),
+  dynamicTitleSection(
+    /^\s*VEGGIE\s+(?:TART|COBBLER)\s*$/i,
+    'Veggie Tart',
+    '#008575',
+  ),
   dynamicTitleSection(/^\s*POKE\s+(?:HOUSE|BOWL)\s*$/i, 'Poke', '#26286f'),
   dynamicTitleSection(
     /^\s*MEX\s+ON\s+THE\s+BEACH\s*$/i,
@@ -109,7 +118,7 @@ const SECTIONS = [
     '#E67E22',
   ),
   dynamicTitleSection(
-    /^\s*MONDAY\s+CURRY\s+CLUB\s*$/i,
+    /^\s*(?:MONDAY\s+CURRY\s+CLUB|CURRY\s+HOUSE)\s*$/i,
     'Monday Curry Club',
     '#F57C00',
   ),
@@ -147,7 +156,7 @@ const SECTIONS = [
     '#046051',
   ),
   dynamicTitleSection(
-    /^\s*FOR\s+GREEK\s+SAKE\s*$/i,
+    /^\s*(?:FOR\s+GREEK\s+SAKE|GO\s+GREEK)\s*$/i,
     'For Greek Sake',
     '#3360ff',
   ),
@@ -262,7 +271,7 @@ const SECTIONS = [
     color: '#D94F1F',
   },
   dynamicTitleSection(
-    /^\s*(chef(?:'|’)?s\s+)?(live\s+)?pasta\s+bar\s*$/i,
+    /^\s*(?:(?:chef(?:'|’)?s|italian)\s+)?(?:live\s+)?pasta\s+bar\s*$/i,
     'Pasta Bar',
     '#c7990f',
   ),
