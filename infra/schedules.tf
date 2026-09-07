@@ -5,11 +5,11 @@ locals {
       destination = "presend"
     }
     presend-morning-2 = {
-      expression  = "cron(15 8 ? * MON-FRI *)"
+      expression  = "cron(15 9 ? * MON-FRI *)"
       destination = "presend"
     }
     send-morning = {
-      expression  = "cron(30 8 ? * MON-FRI *)"
+      expression  = "cron(30 9 ? * MON-FRI *)"
       destination = "main"
     }
   }
