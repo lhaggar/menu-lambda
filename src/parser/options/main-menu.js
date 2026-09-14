@@ -140,6 +140,11 @@ const SECTIONS = [
     '#43A047',
   ),
   dynamicTitleSection(
+    /^\s*THE\s+ENERGISER\s+BOWL\s*$/i,
+    'The Energiser Bowl',
+    '#046051',
+  ),
+  dynamicTitleSection(
     /^\s*FISH\s+FINGER\s+WRAP\s*$/i,
     'Fish Finger Wrap',
     '#2F80C1',
@@ -206,7 +211,7 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*FUNGI\s+FRIDAY\s*$/i, 'Fungi Friday', '#804167'),
   dynamicTitleSection(/^\s*LEBANESE\s*$/i, 'Lebanese', '#7E57C2'),
   {
-    matcher: /^\s*SUMMER\s+BBQ\s+SALAD\s*$/i,
+    matcher: /^\s*(?:SUMMER|RANCH)\s+BBQ\s+SALAD\s*$/i,
     displayName: 'Summer BBQ Salad',
     formatTitle: line => titleCaseMatchedTitle(line).replace(/\bBbq\b/, 'BBQ'),
     color: '#43A047',
@@ -237,7 +242,9 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*RIS{1,2}OTTO\s+BAR\s*$/i, 'Risotto Bar', '#C7990F'),
   dynamicTitleSection(/^\s*NORTH\s+AFRICAN\s*$/i, 'North African', '#7E57C2'),
   dynamicTitleSection(/^\s*WOK\s+IT\s+UP\s*$/i, 'Wok It Up', '#C2185B'),
+  dynamicTitleSection(/^\s*CHICKEN\s+ADOBO\s*$/i, 'Chicken Adobo', '#C2185B'),
   dynamicTitleSection(/^\s*BIG\s+DOG\s*$/i, 'Big Dog', '#5a8ed5'),
+  dynamicTitleSection(/^\s*HASH\s+HUT\s*$/i, 'Hash Hut', '#795548'),
   dynamicTitleSection(
     /^\s*THE\s+BIG\s+(?:PHIILY|PHILLY)\s+MELT\s*$/i,
     'The Big Philly Melt',
@@ -321,9 +328,14 @@ const SECTIONS = [
     '#008554',
   ),
   dynamicTitleSection(
-    /^\s*VEGAN\s+(?:STATION|COUNTER)\s*$/i,
+    /^\s*VEGAN\s+(?:STATION|COUNTER|FRIENDLY)\s*$/i,
     'Vegan Station',
     '#008554',
+  ),
+  dynamicTitleSection(
+    /^\s*MUSHROOM\s+STROGANOFF\s*$/i,
+    'Mushroom Stroganoff',
+    '#804167',
   ),
   dynamicTitleSection(
     /^\s*(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)\s+PIE\s*$/i,
