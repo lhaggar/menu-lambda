@@ -97,7 +97,7 @@ const SECTIONS = [
     '#5a8ed5',
   ),
   dynamicTitleSection(
-    /^\s*BIG\s+BOY\s+BURRITO\s*$/i,
+    /^\s*(?:BIG\s+BOY|MEXICAN)\s+BURRIT{1,2}O\s*$/i,
     'Big Boy Burrito',
     '#795548',
   ),
@@ -117,6 +117,7 @@ const SECTIONS = [
     'Mex on the Beach',
     '#E67E22',
   ),
+  dynamicTitleSection(/^\s*LOADED\s+NACHOS\s*$/i, 'Loaded Nachos', '#E67E22'),
   dynamicTitleSection(
     /^\s*(?:MONDAY\s+CURRY\s+CLUB|CURRY\s+HOUSE)\s*$/i,
     'Monday Curry Club',
@@ -135,7 +136,7 @@ const SECTIONS = [
     '#7E57C2',
   ),
   dynamicTitleSection(
-    /^\s*RAW\s+RAINBOW\s+BOWL\s*$/i,
+    /^\s*RAW(?:\s+SALAD)?\s+RAINBOW\s+BOWL\s*$/i,
     'Raw Rainbow Bowl',
     '#43A047',
   ),
@@ -181,11 +182,13 @@ const SECTIONS = [
     'Noodle Bowl',
     '#008575',
   ),
+  dynamicTitleSection(/^\s*RAMEN\s+BAR\s*$/i, 'Ramen Bar', '#C2185B'),
   dynamicTitleSection(
     /^\s*BRITISH\s+PICK-NIC\s*$/i,
     'British Pick-nic',
     '#9C4A1A',
   ),
+  dynamicTitleSection(/^\s*BRITISH\s+ROAST\s*$/i, 'British Roast', '#9C4A1A'),
   dynamicTitleSection(
     /^\s*TURKISH\s+LAHMA(?:CUN|UNAN)\s*$/i,
     'Turkish Lahmacun',
@@ -219,7 +222,7 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*KATSU\s+TIME\s*$/i, 'Katsu Time', '#C2185B'),
   dynamicTitleSection(/^\s*QUESADILLA\s*$/i, 'Quesadilla', '#E67E22'),
   dynamicTitleSection(
-    /^\s*JAPANESE\s+RICE\s+BOWL\s*$/i,
+    /^\s*(?:JAPANESE|ASIAN)\s+RICE\s+BOWL\s*$/i,
     'Japanese Rice Bowl',
     '#C2185B',
   ),
@@ -303,7 +306,7 @@ const SECTIONS = [
     '#558B2F',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|(?:OTTOLENGHI|ASIAN)\s+STYLE\s+SALAD\s+BAR|TAPAS\s+SALAD\s+BAR)\s*$/i,
+    /^\s*(?:(?:(?:THE|GENUINE)\s+)?SALAD\s+BAR|(?:OTTOLENGHI|ASIAN)\s+STYLE\s+SALAD\s+BAR|(?:TAPAS|THAI\s+ME\s+UP)\s+SALAD\s+BAR)\s*$/i,
     'The Salad Bar',
     '#2f8500',
   ),
@@ -338,7 +341,7 @@ const SECTIONS = [
     '#804167',
   ),
   dynamicTitleSection(
-    /^\s*(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)\s+PIE\s*$/i,
+    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)|EASY\s+AS)\s+PIE\s*$/i,
     "Shepherd's Pie",
     '#5C6BC0',
   ),
