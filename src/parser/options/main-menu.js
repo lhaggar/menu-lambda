@@ -150,7 +150,11 @@ const SECTIONS = [
     'Fish Finger Wrap',
     '#2F80C1',
   ),
-  dynamicTitleSection(/^\s*CAPONATA\s*$/i, 'Caponata', '#804167'),
+  dynamicTitleSection(
+    /^\s*(?:CAPONATA|VEGETABLE\s+RATA(?:T)?OUILLE)\s*$/i,
+    'Caponata',
+    '#804167',
+  ),
   dynamicTitleSection(
     /^\s*CHICKEN\s+GRAINS\s*&\s*GREENS\s*$/i,
     'Chicken Grains & Greens',
@@ -301,7 +305,7 @@ const SECTIONS = [
     '#43A047',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R\s+SALAD(?:\s+BAR)?|SALAD\s+BAR\s+(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R)\s*$/i,
+    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R\s+SALAD(?:\s+BAR)?|C(?:AE|EA)S[AE]R\s+BAR|SALAD\s+BAR\s+(?:[a-z0-9&'’.-]+\s+){0,4}C(?:AE|EA)S[AE]R)\s*$/i,
     'Caesar Salad',
     '#558B2F',
   ),
@@ -331,7 +335,7 @@ const SECTIONS = [
     '#008554',
   ),
   dynamicTitleSection(
-    /^\s*VEGAN\s+(?:STATION|COUNTER|FRIENDLY)\s*$/i,
+    /^\s*VEGAN\s+(?:STATION|COUNTER|FRIENDLY|MONDAY)\s*$/i,
     'Vegan Station',
     '#008554',
   ),
@@ -341,7 +345,7 @@ const SECTIONS = [
     '#804167',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)|EASY\s+AS)\s+PIE\s*$/i,
+    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)|EASY\s+AS|COTTAGE)\s+PIE\s*$/i,
     "Shepherd's Pie",
     '#5C6BC0',
   ),
@@ -349,6 +353,11 @@ const SECTIONS = [
     /^\s*[a-z0-9&'’.-][a-z0-9&'’.\-\s]*BURGERS?\s*$/i,
     'Burger',
     '#6C8EBF',
+  ),
+  dynamicTitleSection(
+    /^\s*HOT\s+PORK\s+SANDWICH\s*$/i,
+    'Hot Pork Sandwich',
+    '#9C4A1A',
   ),
   {
     matcher: /^\s*SANDWICHES\s+AND\s+SALADS\s*/i,
