@@ -123,6 +123,11 @@ const SECTIONS = [
     'Monday Curry Club',
     '#F57C00',
   ),
+  dynamicTitleSection(
+    /^\s*BLACK\s+HISTORY\s+MONTH\s*$/i,
+    'Black History Month',
+    '#9C4A1A',
+  ),
   dynamicTitleSection(/^\s*JUST\s+JERK\s*$/i, 'Just Jerk', '#9C4A1A'),
   dynamicTitleSection(
     /^\s*ALTHEA\s+QUEEN\s+OF\s+THE\s+CARNIVAL\s*$/i,
@@ -193,6 +198,7 @@ const SECTIONS = [
     '#9C4A1A',
   ),
   dynamicTitleSection(/^\s*BRITISH\s+ROAST\s*$/i, 'British Roast', '#9C4A1A'),
+  dynamicTitleSection(/^\s*FRENCH\s+BISTRO\s*$/i, 'French Bistro', '#3360ff'),
   dynamicTitleSection(
     /^\s*TURKISH\s+LAHMA(?:CUN|UNAN)\s*$/i,
     'Turkish Lahmacun',
@@ -251,6 +257,11 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*WOK\s+IT\s+UP\s*$/i, 'Wok It Up', '#C2185B'),
   dynamicTitleSection(/^\s*CHICKEN\s+ADOBO\s*$/i, 'Chicken Adobo', '#C2185B'),
   dynamicTitleSection(/^\s*BIG\s+DOG\s*$/i, 'Big Dog', '#5a8ed5'),
+  dynamicTitleSection(
+    /^\s*(?:OCTOBER|OKTOBER)\s*FEST\s*$/i,
+    'October Fest',
+    '#5a8ed5',
+  ),
   dynamicTitleSection(/^\s*HASH\s+HUT\s*$/i, 'Hash Hut', '#795548'),
   dynamicTitleSection(
     /^\s*THE\s+BIG\s+(?:PHIILY|PHILLY)\s+MELT\s*$/i,
@@ -329,6 +340,7 @@ const SECTIONS = [
     'Vegetarian Station',
     '#008575',
   ),
+  dynamicTitleSection(/^\s*VEGGIE\s+BAKE\s*$/i, 'Veggie Bake', '#008575'),
   dynamicTitleSection(
     /^\s*VEGANUARY(?:\s+(?:STATION|COUNTER))?\s*$/i,
     'Veganuary',
