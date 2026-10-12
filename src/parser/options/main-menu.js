@@ -156,6 +156,11 @@ const SECTIONS = [
     '#2F80C1',
   ),
   dynamicTitleSection(
+    /^\s*CRISPY\s+LIME\s+FISH\s+TACOS\s*$/i,
+    'Crispy Lime Fish Tacos',
+    '#E67E22',
+  ),
+  dynamicTitleSection(
     /^\s*(?:CAPONATA|VEGETABLE\s+RATA(?:T)?OUILLE)\s*$/i,
     'Caponata',
     '#804167',
@@ -181,11 +186,20 @@ const SECTIONS = [
     '#558B2F',
   ),
   dynamicTitleSection(
-    /^\s*CLASSIC\s+COB{1,2}\s+SALAD\s*$/i,
+    /^\s*(?:CLASSIC\s+)?COB{1,2}\s+SALAD\s*$/i,
     'Classic Cobb Salad',
     '#558B2F',
   ),
-  dynamicTitleSection(/^\s*CHEEKY\s+CHILLI\s*$/i, 'Cheeky Chilli', '#ca650c'),
+  dynamicTitleSection(
+    /^\s*(?:CHEEKY|PLANT\s+BASED)\s+CHILLI\s*$/i,
+    'Cheeky Chilli',
+    '#ca650c',
+  ),
+  dynamicTitleSection(
+    /^\s*CLASSIC\s+COMFORT\s*$/i,
+    'Classic Comfort',
+    '#5C6BC0',
+  ),
   dynamicTitleSection(
     /^\s*(?:VEGGIE|ASIAN)\s+NOODLE\s+BOWL\s*$/i,
     'Noodle Bowl',
@@ -252,7 +266,11 @@ const SECTIONS = [
     '#008575',
   ),
   dynamicTitleSection(/^\s*PAELLA\s*$/i, 'Paella', '#C7990F'),
-  dynamicTitleSection(/^\s*RIS{1,2}OTTO\s+BAR\s*$/i, 'Risotto Bar', '#C7990F'),
+  dynamicTitleSection(
+    /^\s*RIS{1,2}OTTO(?:\s+BAR)?\s*$/i,
+    'Risotto Bar',
+    '#C7990F',
+  ),
   dynamicTitleSection(/^\s*NORTH\s+AFRICAN\s*$/i, 'North African', '#7E57C2'),
   dynamicTitleSection(/^\s*WOK\s+IT\s+UP\s*$/i, 'Wok It Up', '#C2185B'),
   dynamicTitleSection(/^\s*CHICKEN\s+ADOBO\s*$/i, 'Chicken Adobo', '#C2185B'),
@@ -280,7 +298,7 @@ const SECTIONS = [
     '#008C95',
   ),
   {
-    matcher: /^\s*(?:KFTB|TKFB)\s*$/i,
+    matcher: /^\s*(?:KFTB|TKFB|KFCB)\s*$/i,
     displayName: 'KFTB',
     formatTitle: line => line.trim().toUpperCase(),
     color: '#26A69A',
@@ -341,6 +359,7 @@ const SECTIONS = [
     '#008575',
   ),
   dynamicTitleSection(/^\s*VEGGIE\s+BAKE\s*$/i, 'Veggie Bake', '#008575'),
+  dynamicTitleSection(/^\s*FRITTATA\s*$/i, 'Frittata', '#008575'),
   dynamicTitleSection(
     /^\s*VEGANUARY(?:\s+(?:STATION|COUNTER))?\s*$/i,
     'Veganuary',
