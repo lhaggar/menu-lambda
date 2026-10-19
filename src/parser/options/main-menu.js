@@ -229,6 +229,11 @@ const SECTIONS = [
     'Cantonese Beef Chow Fun',
     '#C2185B',
   ),
+  dynamicTitleSection(
+    /^\s*SWEET\s+AND\s+SOUR\s*$/i,
+    'Sweet and Sour',
+    '#C2185B',
+  ),
   {
     matcher: /^\s*TNB\s+BOSS\s+MAN\s+CHICKEN\s+SHOP\s*$/i,
     displayName: 'TNB Boss Man Chicken Shop',
@@ -237,6 +242,7 @@ const SECTIONS = [
   },
   dynamicTitleSection(/^\s*FUNGI\s+FRIDAY\s*$/i, 'Fungi Friday', '#804167'),
   dynamicTitleSection(/^\s*LEBANESE\s*$/i, 'Lebanese', '#7E57C2'),
+  dynamicTitleSection(/^\s*CHICKEN\s+PARM\s*$/i, 'Chicken Parm', '#B85C38'),
   {
     matcher: /^\s*(?:SUMMER|RANCH)\s+BBQ\s+SALAD\s*$/i,
     displayName: 'Summer BBQ Salad',
@@ -256,7 +262,7 @@ const SECTIONS = [
     '#E67E22',
   ),
   dynamicTitleSection(
-    /^\s*CHRISTIAN\s+FAULKNER\s+POP\s+UP\s*$/i,
+    /^\s*CHRISTIAN\s+FAULKNER\s+(?:POP\s+UP|TAKEOVER)\s*$/i,
     'Christian Faulkner Pop Up',
     '#3360ff',
   ),
@@ -366,12 +372,12 @@ const SECTIONS = [
     '#008554',
   ),
   dynamicTitleSection(
-    /^\s*VEGAN\s+(?:STATION|COUNTER|FRIENDLY|MONDAY)\s*$/i,
+    /^\s*VEGAN(?:\s+(?:STATION|COUNTER|FRIENDLY|MONDAY))?\s*$/i,
     'Vegan Station',
     '#008554',
   ),
   dynamicTitleSection(
-    /^\s*MUSHROOM\s+STROGANOFF\s*$/i,
+    /^\s*MUSHROOM\s+(?:STROGANOFF|STRAGNOFF)\s*$/i,
     'Mushroom Stroganoff',
     '#804167',
   ),
