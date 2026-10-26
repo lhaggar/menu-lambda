@@ -10730,3 +10730,501 @@ Array [
   },
 ]
 `;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 130`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Diced lamb slowly braised in a fragrant tagine sauce served with mint and lemon tabbouleh, dried fruits and mint labneh",
+    ],
+    "color": "#7E57C2",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Garlic grilled flat bread (£1.40)",
+      ],
+      "£": Array [
+        "5.65",
+      ],
+    },
+    "title": "North African",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "Pan fried potato gnocchi with pumpkin, goats cheese, crispy sage, toasted pine nuts and sundried tomatoes",
+    ],
+    "color": "#c7990f",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Wild rocket, cherry tomato and parmesan salad (£1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Fresh Pasta Bar",
+  },
+  Object {
+    "body": Array [
+      "BBQ chicken wings",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 131`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Jerk rubbed chicken leg served with rice and peas, fried plantain and crunchy slaw",
+    ],
+    "color": "#9C4A1A",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Festival dumplings (£2.00)",
+      ],
+      "£": Array [
+        "6.25",
+      ],
+    },
+    "title": "Black History Month",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "24 hour fermented hand-stretched dough, house tomato sauce or pesto with a choice of:",
+      "Slow roast tomato sauce and grated mozzarella - £5.45",
+      "Roast pepper, sweetcorn, mushroom and feta - £5.45",
+    ],
+    "color": "#D94F1F",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Hot honey BBQ chicken (£1.40)",
+      ],
+    },
+    "title": "Pizza on 14",
+  },
+  Object {
+    "body": Array [
+      "Mini vegetable samosa with mango chutney",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 132`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Chargrilled chicken breast smothered with a tomato and basil sauce and mozzarella, served with green beans and crushed potatoes",
+    ],
+    "color": "#B85C38",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Vegetable spring roll (£2.00)",
+      ],
+      "£": Array [
+        "5.65",
+      ],
+    },
+    "title": "Chicken Parm",
+  },
+  Object {
+    "body": Array [
+      "A vibrant salad selection with beetroot, carrots, red cabbage, soybeans, sweetcorn, rainbow slaw and lemon couscous",
+    ],
+    "color": "#43A047",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "Raw Salad Rainbow Bowl",
+  },
+  Object {
+    "body": Array [
+      "Grilled portobello mushroom, spinach, hash brown, gem lettuce and vegan cheese sauce served in a soft bap with French fries",
+    ],
+    "color": "#008554",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Red cabbage slaw (£1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Vegan",
+  },
+  Object {
+    "body": Array [
+      "Cumberland sausage and cheddar roll",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 133`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Cumberland sausage, pork and leek or Lincolnshire sausage with creamed Maris piper mash, braised cabbage and a red onion gravy",
+    ],
+    "color": "#5a8ed5",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Yorkshire pudding (£1.40)",
+      ],
+      "£": Array [
+        "5.65",
+      ],
+    },
+    "title": "British Bangers",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "Roast Boundary farm cauliflower, celeriac, leek and squash cooked in a creamy cheese sauce topped with a parsley and cheddar crumb served with sautéed new potatoes",
+    ],
+    "color": "#008575",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Grilled tender stem broccoli (£1.40)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Veggie Gratain",
+  },
+  Object {
+    "body": Array [
+      "Smoked paprika and honey halloumi fries",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;
+
+exports[`parser/index.js mainMenuParser should parse the html snippet 134`] = `
+Array [
+  Object {
+    "body": Array [
+      "07:30 - 10:30",
+      "Breakfast pastries and muffins, cereal bar with dairy and alternative milks. oat and milk porridge with preserves and toppings",
+      "Bacon baps, sausage baps, egg baps",
+      "Full English breakfast available from the street food counter",
+      "Self-service toast area including bagels, granary, white, malt and gluten-free bread with preserves and spreads",
+    ],
+    "color": "#ffbf00",
+    "subsections": Object {},
+    "title": "Breakfast",
+  },
+  Object {
+    "body": Array [
+      "12:00 - 14:30",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Lunch",
+  },
+  Object {
+    "body": Array [
+      "Soup of the day",
+    ],
+    "color": "#e6e600",
+    "subsections": Object {
+      "£": Array [
+        "1.70 / £1.95",
+      ],
+    },
+    "title": "Soup",
+  },
+  Object {
+    "body": Array [
+      "Battered pollock or Beef or chicken pie",
+      "Chip shop chips",
+      "Tartare sauce",
+      "Garden peas or Mushy peas",
+      "Curry sauce or Gravy",
+    ],
+    "color": "#2F80C1",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Battered sausage (£1.40)",
+      ],
+      "£": Array [
+        "5.65",
+      ],
+    },
+    "title": "Chippie",
+  },
+  Object {
+    "body": Array [
+      "A selection of grains, greens and composite salads freshly prepared by our chef team",
+    ],
+    "color": "#2f8500",
+    "subsections": Object {
+      "£": Array [
+        "5.50",
+      ],
+    },
+    "title": "The Salad Bar",
+  },
+  Object {
+    "body": Array [
+      "Mexican mixed beans and grain burrito with roasted onion and tomato salsa served with lime and coriander rice",
+    ],
+    "color": "#795548",
+    "subsections": Object {
+      "Add on: ": Array [
+        "Cream cheese jalapeno poppers (£2.00)",
+      ],
+      "£": Array [
+        "5.45",
+      ],
+    },
+    "title": "Veggie Burrito",
+  },
+  Object {
+    "body": Array [
+      "Chargrilled chicken koftas",
+    ],
+    "color": "#990099",
+    "subsections": Object {
+      "£": Array [
+        "2.95",
+      ],
+    },
+    "title": "Hot Snack",
+  },
+  Object {
+    "body": Array [
+      "SELECTION OF SALADS, SANDWICHES, BAGUETTES AND WRAPS",
+    ],
+    "color": "#19b7b4",
+    "subsections": Object {},
+    "title": "Sandwiches and Salads",
+  },
+]
+`;

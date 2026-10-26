@@ -92,12 +92,12 @@ const SECTIONS = [
     '#F57C00',
   ),
   dynamicTitleSection(
-    /^\s*BANGING\s+BANGERS\s+BAR\s*$/i,
+    /^\s*(?:BANGING\s+BANGERS\s+BAR|BRITISH\s+BANGERS)\s*$/i,
     'Banging Bangers Bar',
     '#5a8ed5',
   ),
   dynamicTitleSection(
-    /^\s*(?:BIG\s+BOY|MEXICAN)\s+BURRIT{1,2}O\s*$/i,
+    /^\s*(?:BIG\s+BOY|MEXICAN|VEGGIE)\s+BURRIT{1,2}O\s*$/i,
     'Big Boy Burrito',
     '#795548',
   ),
@@ -320,7 +320,7 @@ const SECTIONS = [
     color: '#D94F1F',
   },
   dynamicTitleSection(
-    /^\s*(?:(?:chef(?:'|’)?s|italian)\s+)?(?:live\s+)?pasta\s+bar\s*$/i,
+    /^\s*(?:(?:chef(?:'|’)?s|italian|fresh)\s+)?(?:live\s+)?pasta\s+bar\s*$/i,
     'Pasta Bar',
     '#c7990f',
   ),
@@ -364,7 +364,11 @@ const SECTIONS = [
     'Vegetarian Station',
     '#008575',
   ),
-  dynamicTitleSection(/^\s*VEGGIE\s+BAKE\s*$/i, 'Veggie Bake', '#008575'),
+  dynamicTitleSection(
+    /^\s*VEGGIE\s+(?:BAKE|GRATA?IN)\s*$/i,
+    'Veggie Bake',
+    '#008575',
+  ),
   dynamicTitleSection(/^\s*FRITTATA\s*$/i, 'Frittata', '#008575'),
   dynamicTitleSection(
     /^\s*VEGANUARY(?:\s+(?:STATION|COUNTER))?\s*$/i,
