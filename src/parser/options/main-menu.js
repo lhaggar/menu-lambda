@@ -97,7 +97,7 @@ const SECTIONS = [
     '#5a8ed5',
   ),
   dynamicTitleSection(
-    /^\s*(?:BIG\s+BOY|MEXICAN|VEGGIE)\s+BURRIT{1,2}O\s*$/i,
+    /^\s*(?:(?:BIG\s+BOY|MEXICAN|VEGGIE)\s+BURRIT{1,2}O|MEXICAN)\s*$/i,
     'Big Boy Burrito',
     '#795548',
   ),
@@ -280,6 +280,13 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*NORTH\s+AFRICAN\s*$/i, 'North African', '#7E57C2'),
   dynamicTitleSection(/^\s*WOK\s+IT\s+UP\s*$/i, 'Wok It Up', '#C2185B'),
   dynamicTitleSection(/^\s*CHICKEN\s+ADOBO\s*$/i, 'Chicken Adobo', '#C2185B'),
+  dynamicTitleSection(/^\s*BAO\s+BUNS\s*$/i, 'Bao Buns', '#C2185B'),
+  dynamicTitleSection(/^\s*CHICKEN\s+STEW\s*$/i, 'Chicken Stew', '#5C6BC0'),
+  dynamicTitleSection(
+    /^\s*DI(?:V)?WALI\s+TAKE\s*OVER\s*$/i,
+    'Diwali Take Over',
+    '#F57C00',
+  ),
   dynamicTitleSection(/^\s*BIG\s+DOG\s*$/i, 'Big Dog', '#5a8ed5'),
   dynamicTitleSection(
     /^\s*(?:OCTOBER|OKTOBER)\s*FEST\s*$/i,
@@ -391,7 +398,7 @@ const SECTIONS = [
     '#5C6BC0',
   ),
   dynamicTitleSection(
-    /^\s*[a-z0-9&'’.-][a-z0-9&'’.\-\s]*BURGERS?\s*$/i,
+    /^\s*(?:[a-z0-9&'’.-][a-z0-9&'’.\-\s]*BURGERS?|REMEM(?:E)?BER\s+THE\s+BURGER\s+OF\s+NOVEMBER)\s*$/i,
     'Burger',
     '#6C8EBF',
   ),
