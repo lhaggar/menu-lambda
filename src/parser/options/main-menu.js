@@ -218,7 +218,7 @@ const SECTIONS = [
     'Turkish Lahmacun',
     '#7E57C2',
   ),
-  dynamicTitleSection(/^\s*ITALIAN\s*$/i, 'Italian', '#B85C38'),
+  dynamicTitleSection(/^\s*(?:CLASSIC\s+)?ITALIAN\s*$/i, 'Italian', '#B85C38'),
   dynamicTitleSection(
     /^\s*FRIES\s+GONE\s+WILD\s*-\s*LOADED\s+FRIES\s*$/i,
     'Fries Gone Wild - Loaded Fries',
@@ -277,7 +277,26 @@ const SECTIONS = [
     'Risotto Bar',
     '#C7990F',
   ),
-  dynamicTitleSection(/^\s*NORTH\s+AFRICAN\s*$/i, 'North African', '#7E57C2'),
+  dynamicTitleSection(
+    /^\s*(?:NORTH\s+AFRICAN|BERBA\s+BLENDS)\s*$/i,
+    'North African',
+    '#7E57C2',
+  ),
+  dynamicTitleSection(
+    /^\s*NASI\s+GORENG\s+AYAM\s*$/i,
+    'Nasi Goreng Ayam',
+    '#C2185B',
+  ),
+  dynamicTitleSection(
+    /^\s*YOU(?:'|’)RE\s+HAVING\s+A\s+BUBBLE\s*$/i,
+    "You're Having a Bubble",
+    '#008575',
+  ),
+  dynamicTitleSection(
+    /^\s*VEGAN\s+KOREAN\s+JJAJANGMYEON\s*$/i,
+    'Vegan Korean Jjajangmyeon',
+    '#008554',
+  ),
   dynamicTitleSection(/^\s*WOK\s+IT\s+UP\s*$/i, 'Wok It Up', '#C2185B'),
   dynamicTitleSection(/^\s*CHICKEN\s+ADOBO\s*$/i, 'Chicken Adobo', '#C2185B'),
   dynamicTitleSection(/^\s*BAO\s+BUNS\s*$/i, 'Bao Buns', '#C2185B'),
@@ -317,7 +336,7 @@ const SECTIONS = [
     color: '#26A69A',
   },
   dynamicTitleSection(
-    /^\s*BRUSCHETTA\s+ON\s+14\s*$/i,
+    /^\s*BRUSCHETTA(?:\s+ON\s+14)?\s*$/i,
     'Bruschetta On 14',
     '#8E7CC3',
   ),
