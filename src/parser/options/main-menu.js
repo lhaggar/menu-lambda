@@ -302,6 +302,11 @@ const SECTIONS = [
   dynamicTitleSection(/^\s*BAO\s+BUNS\s*$/i, 'Bao Buns', '#C2185B'),
   dynamicTitleSection(/^\s*CHICKEN\s+STEW\s*$/i, 'Chicken Stew', '#5C6BC0'),
   dynamicTitleSection(
+    /^\s*BUTTERBEAN\s+STEW\s*$/i,
+    'Butterbean Stew',
+    '#008575',
+  ),
+  dynamicTitleSection(
     /^\s*DI(?:V)?WALI\s+TAKE\s*OVER\s*$/i,
     'Diwali Take Over',
     '#F57C00',
@@ -346,7 +351,7 @@ const SECTIONS = [
     color: '#D94F1F',
   },
   dynamicTitleSection(
-    /^\s*(?:(?:chef(?:'|’)?s|italian|fresh)\s+)?(?:live\s+)?pasta\s+bar\s*$/i,
+    /^\s*(?:(?:(?:chef(?:'|’)?s|italian|fresh)\s+)?(?:live\s+)?pasta\s+bar|PASTA\s+MONDAY)\s*$/i,
     'Pasta Bar',
     '#c7990f',
   ),
@@ -402,7 +407,7 @@ const SECTIONS = [
     '#008554',
   ),
   dynamicTitleSection(
-    /^\s*VEGAN(?:\s+(?:STATION|COUNTER|FRIENDLY|MONDAY))?\s*$/i,
+    /^\s*VEGAN(?:\s+(?:STATION|COUNTER|FRIENDLY|MONDAY|TURKISH))?\s*$/i,
     'Vegan Station',
     '#008554',
   ),
