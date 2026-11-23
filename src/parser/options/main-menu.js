@@ -262,7 +262,7 @@ const SECTIONS = [
     '#E67E22',
   ),
   dynamicTitleSection(
-    /^\s*CHRISTIAN\s+FAULKNER\s+(?:POP\s+UP|TAKEOVER)\s*$/i,
+    /^\s*CHRISTIAN\s+FAULKNER(?:\s+(?:POP\s+UP|TAKEOVER))?\s*$/i,
     'Christian Faulkner Pop Up',
     '#3360ff',
   ),
@@ -306,6 +306,13 @@ const SECTIONS = [
     'Butterbean Stew',
     '#008575',
   ),
+  dynamicTitleSection(/^\s*SESAME\s+TOFU\s*$/i, 'Sesame Tofu', '#008554'),
+  dynamicTitleSection(
+    /^\s*AUBERGINE\s+SCHNITZEL\s*$/i,
+    'Aubergine Schnitzel',
+    '#804167',
+  ),
+  dynamicTitleSection(/^\s*THANKSGIVING\s*$/i, 'Thanksgiving', '#9C4A1A'),
   dynamicTitleSection(
     /^\s*DI(?:V)?WALI\s+TAKE\s*OVER\s*$/i,
     'Diwali Take Over',
@@ -396,7 +403,7 @@ const SECTIONS = [
     '#008575',
   ),
   dynamicTitleSection(
-    /^\s*VEGGIE\s+(?:BAKE|GRATA?IN)\s*$/i,
+    /^\s*(?:VEGGIE\s+(?:BAKE|GRATA?IN)|VEGETABLE\s+GRATIN)\s*$/i,
     'Veggie Bake',
     '#008575',
   ),
@@ -417,7 +424,7 @@ const SECTIONS = [
     '#804167',
   ),
   dynamicTitleSection(
-    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)|EASY\s+AS|COTTAGE)\s+PIE\s*$/i,
+    /^\s*(?:(?:[a-z0-9&'’.-]+\s+){0,4}(?:SHEPHERD(?:'|’)?S?|SHEPHERDESS)|EASY\s+AS|COTTAGE|HEARTY)\s+PIE\s*$/i,
     "Shepherd's Pie",
     '#5C6BC0',
   ),
